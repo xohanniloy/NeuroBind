@@ -1,7 +1,7 @@
 import { ChevronDown, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import NeuralBackground from "@/components/ui/neural-background";
-import Particles from "@/components/ui/particles";
+import NeuralBackground from "../ui/neural-background";
+import BrainParticles from "../ui/brain-particles";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +17,7 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neural-bg via-deep-purple to-neural-bg"
     >
       <NeuralBackground />
-      <Particles />
+      <BrainParticles />
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">

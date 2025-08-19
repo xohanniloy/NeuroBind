@@ -256,6 +256,32 @@
   }
 }
 
+@keyframes brain-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.3));
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 16px rgba(138, 43, 226, 0.6));
+  }
+}
+
+@keyframes synaptic-fire {
+  0% {
+    stroke-dashoffset: 20;
+    opacity: 0.3;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -20;
+    opacity: 0.3;
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -274,4 +300,12 @@
 
 .animate-particle-float {
   animation: particle-float 8s ease-in-out infinite;
+}
+
+.animate-brain-pulse {
+  animation: brain-pulse 4s ease-in-out infinite;
+}
+
+.animate-synaptic-fire {
+  animation: synaptic-fire 2s ease-in-out infinite;
 }

@@ -17,6 +17,21 @@ interface BrainParticle {
   };
 }
 
+interface FloatingIcon {
+  id: number;
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  service: {
+    icon: typeof Brain;
+    title: string;
+    description: string;
+    sectionId: string;
+  };
+  size: number;
+}
+
 const services = [
   {
     icon: Brain,
@@ -59,10 +74,12 @@ const services = [
 export default function BrainParticles() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [particles, setParticles] = useState<BrainParticle[]>([]);
+  const [floatingIcons, setFloatingIcons] = useState<FloatingIcon[]>([]);
   const [hoveredParticle, setHoveredParticle] = useState<BrainParticle | null>(null);
   const [showService, setShowService] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [showHint, setShowHint] = useState(true);
+  const [activeIcon, setActiveIcon] = useState<FloatingIcon | null>(null);
 
   // Generate brain-shaped particle positions
   const generateBrainParticles = useCallback(() => {
@@ -161,9 +178,28 @@ export default function BrainParticles() {
     setParticles(newParticles);
   }, []);
 
+  // Generate floating icons
+  const generateFloatingIcons = useCallback(() => {
+    const containerWidth = containerRef.current?.clientWidth || 800;
+    const containerHeight = containerRef.current?.clientHeight || 600;
+    
+    const newFloatingIcons: FloatingIcon[] = services.slice(0, 3).map((service, index) => ({
+      id: index,
+      x: Math.random() * 70 + 15, // Keep away from edges
+      y: Math.random() * 60 + 20,
+      vx: (Math.random() - 0.5) * 0.5, // Slower movement
+      vy: (Math.random() - 0.5) * 0.5,
+      service,
+      size: 32
+    }));
+    
+    setFloatingIcons(newFloatingIcons);
+  }, []);
+
   useEffect(() => {
     generateBrainParticles();
-  }, [generateBrainParticles]);
+    generateFloatingIcons();
+  }, [generateBrainParticles, generateFloatingIcons]);
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     if (!containerRef.current) return;
@@ -215,6 +251,72 @@ export default function BrainParticles() {
     }
   }, []);
 
+  // Animate floating icons and check collisions
+  useEffect(() => {
+    const animateIcons = () => {
+      setFloatingIcons(prev => prev.map(icon => {
+        let newX = icon.x + icon.vx;
+        let newY = icon.y + icon.vy;
+        let newVx = icon.vx;
+        let newVy = icon.vy;
+
+        // Boundary bouncing
+        if (newX <= 5 || newX >= 95) {
+          newVx = -newVx;
+          newX = Math.max(5, Math.min(95, newX));
+        }
+        if (newY <= 10 || newY >= 90) {
+          newVy = -newVy;
+          newY = Math.max(10, Math.min(90, newY));
+        }
+
+        return {
+          ...icon,
+          x: newX,
+          y: newY,
+          vx: newVx,
+          vy: newVy
+        };
+      }));
+
+      // Check collisions with particles
+      setFloatingIcons(currentIcons => {
+        let foundCollision = false;
+        
+        currentIcons.forEach(icon => {
+          particles.forEach(particle => {
+            const distance = Math.sqrt(
+              Math.pow(icon.x - particle.x, 2) + Math.pow(icon.y - particle.y, 2)
+            );
+            
+            if (distance < 8 && !foundCollision) { // Collision detected
+              foundCollision = true;
+              setActiveIcon(icon);
+              setShowService(true);
+              setShowHint(false);
+              
+              // Highlight the particle
+              setParticles(prev => prev.map(p => 
+                p.id === particle.id ? { ...p, glow: 1 } : { ...p, glow: 0 }
+              ));
+            }
+          });
+        });
+
+        if (!foundCollision && activeIcon) {
+          setActiveIcon(null);
+          setShowService(false);
+          setParticles(prev => prev.map(p => ({ ...p, glow: 0 })));
+        }
+
+        return currentIcons;
+      });
+    };
+
+    const interval = setInterval(animateIcons, 50);
+    return () => clearInterval(interval);
+  }, [particles, activeIcon]);
+
   return (
     <div 
       ref={containerRef}
@@ -249,6 +351,48 @@ export default function BrainParticles() {
             cursor: 'pointer',
           }}
         />
+      ))}
+
+      {/* Floating service icons */}
+      {floatingIcons.map((icon) => (
+        <div
+          key={`floating-${icon.id}`}
+          className="absolute transition-all duration-300 ease-out animate-pulse"
+          style={{
+            left: `${icon.x}%`,
+            top: `${icon.y}%`,
+            width: `${icon.size}px`,
+            height: `${icon.size}px`,
+            zIndex: 15,
+          }}
+        >
+          <div className="relative w-full h-full">
+            {/* Icon background with glow */}
+            <div 
+              className="absolute inset-0 rounded-xl flex items-center justify-center"
+              style={{
+                background: 'linear-gradient(135deg, rgba(138, 43, 226, 0.9) 0%, rgba(0, 212, 255, 0.8) 100%)',
+                boxShadow: '0 0 20px rgba(138, 43, 226, 0.8), 0 0 40px rgba(0, 212, 255, 0.6)',
+                border: '2px solid rgba(255, 255, 255, 0.3)',
+              }}
+            >
+              <icon.service.icon 
+                size={18} 
+                className="text-white drop-shadow-lg" 
+              />
+            </div>
+            
+            {/* Trailing particles effect */}
+            <div 
+              className="absolute inset-0 rounded-xl opacity-60"
+              style={{
+                background: 'radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%)',
+                filter: 'blur(2px)',
+                transform: `translate(${-icon.vx * 10}px, ${-icon.vy * 10}px)`,
+              }}
+            />
+          </div>
+        </div>
       ))}
 
       {/* Brain outline */}
@@ -321,27 +465,34 @@ export default function BrainParticles() {
       </svg>
 
       {/* Enhanced Service popup */}
-      {showService && hoveredParticle && (
+      {showService && (hoveredParticle || activeIcon) && (
         <div
           className="fixed z-50 bg-neural-bg-secondary border-2 border-neuro-purple rounded-xl p-5 max-w-sm shadow-2xl transform transition-all duration-300 ease-out animate-slide-up cursor-pointer hover:scale-105"
           style={{
-            left: `${Math.min(mousePos.x + 20, window.innerWidth - 350)}px`,
-            top: `${Math.max(mousePos.y - 60, 20)}px`,
+            left: `${Math.min((hoveredParticle ? mousePos.x : window.innerWidth / 2) + 20, window.innerWidth - 350)}px`,
+            top: `${Math.max((hoveredParticle ? mousePos.y : window.innerHeight / 2) - 60, 20)}px`,
             boxShadow: '0 25px 50px rgba(138, 43, 226, 0.4), 0 0 40px rgba(0, 212, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
             background: 'linear-gradient(135deg, rgba(34, 34, 47, 0.95) 0%, rgba(45, 45, 58, 0.95) 100%)',
           }}
-          onClick={() => handleServiceClick(hoveredParticle.service.sectionId)}
+          onClick={() => {
+            const service = hoveredParticle ? hoveredParticle.service : activeIcon!.service;
+            handleServiceClick(service.sectionId);
+          }}
         >
           <div className="flex items-start space-x-4">
             <div className="text-electric-blue text-3xl flex-shrink-0 p-2 bg-neural-bg rounded-lg">
-              <hoveredParticle.service.icon size={28} />
+              {hoveredParticle ? (
+                <hoveredParticle.service.icon size={28} />
+              ) : activeIcon ? (
+                <activeIcon.service.icon size={28} />
+              ) : null}
             </div>
             <div className="flex-1">
               <h3 className="text-neuro-purple font-montserrat font-bold mb-2 text-lg">
-                {hoveredParticle.service.title}
+                {hoveredParticle ? hoveredParticle.service.title : activeIcon!.service.title}
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                {hoveredParticle.service.description}
+                {hoveredParticle ? hoveredParticle.service.description : activeIcon!.service.description}
               </p>
               <div className="flex items-center text-electric-blue text-xs font-semibold">
                 <span>Click to explore</span>
@@ -376,7 +527,7 @@ export default function BrainParticles() {
       {showHint && (
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-40 bg-neural-bg-secondary border border-electric-blue rounded-full px-6 py-3 flex items-center space-x-3 shadow-lg animate-pulse">
           <div className="w-3 h-3 bg-electric-blue rounded-full animate-ping"></div>
-          <span className="text-electric-blue text-sm font-medium">Hover over the brain particles to discover our services</span>
+          <span className="text-electric-blue text-sm font-medium">Watch the floating service icons touch brain particles!</span>
           <svg className="w-4 h-4 text-electric-blue animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

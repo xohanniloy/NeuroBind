@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro Binding - Binding Minds, Building Brands | Bangladesh Web Design Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neuro-blue': '#003366',
+                        'mind-gold': '#FFD700',
+                        'brain-gray': '#4D4D4D',
+                        'neuron-white': '#FFFFFF',
+                        'synapse-teal': '#00B3B3'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'open-sans': ['Open Sans', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .neural-bg {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(0, 179, 179, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(0, 51, 102, 0.05) 0%, transparent 50%);
+        }
+        
+        .neural-connection {
+            position: relative;
+        }
+        
+        .neural-connection::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 4px;
+            background: #00B3B3;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #003366, #00B3B3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="font-open-sans text-brain-gray bg-neuron-white">
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [responsive navbar with brand logo and menu items] -->
+    <nav class="bg-neuron-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIxMCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOTMzM0ZGIj5ORVVSTzwvdGV4dD4KPHR5eHQgeD0iMTAiIHk9IjU1IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzkzMzNGRiI+QklORElORzwvdGV4dD4KPHN2ZyB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiPgo8Y2lyY2xlIGN4PSIxNSIgY3k9IjE1IiByPSI4IiBzdHJva2U9IiM5MzMzRkYiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8Y2lyY2xlIGN4PSI0NSIgY3k9IjE1IiByPSI2IiBzdHJva2U9IiM5MzMzRkYiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjQ1IiByPSI1IiBzdHJva2U9IiM5MzMzRkYiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8bGluZSB4MT0iMjMiIHkxPSIxNSIgeDI9IjM3IiB5Mj0iMTUiIHN0cm9rZT0iIzkzMzNGRiIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxsaW5lIHgxPSIyNSIgeTE9IjI1IiB4Mj0iMzUiIHkyPSIzNSIgc3Ryb2tlPSIjOTMzM0ZGIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cjwvc3ZnPg==" alt="Neuro Binding Logo" class="h-12 w-auto" data-mock="true" data-implementation="Replace with actual logo file">
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">Services</a>
+                    <a href="#portfolio" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">Portfolio</a>
+                    <a href="#about" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">About</a>
+                    <a href="#blog" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">Blog</a>
+                    <a href="#contact" class="text-brain-gray hover:text-neuro-blue font-medium transition-colors">Contact</a>
+                </div>
+                
+                <div class="hidden md:flex">
+                    <button class="bg-mind-gold text-neuro-blue font-montserrat font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors" data-event="click:handleCTAClick" data-implementation="Should open contact form or lead magnet">
+                        Get Free Audit
+                    </button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-brain-gray">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: HeroSection [main landing section with value proposition and primary CTA] -->
+    <section id="home" class="relative bg-gradient-to-br from-neuro-blue to-blue-900 text-neuron-white py-20 lg:py-32 neural-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="font-montserrat font-bold text-4xl lg:text-6xl leading-tight">
+                            <span class="text-mind-gold">Binding Minds,</span><br>
+                            Building Brands
+                        </h1>
+                        <p class="text-xl lg:text-2xl text-blue-100">
+                            আমরা ডিজাইন + কন্টেন্টে নিউরো মার্কেটিং কৌশল প্রয়োগ করে ওয়েবসাইটকে ২৪/৭ সেলসম্যান-এ রূপান্তর করি।
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <p class="text-lg font-playfair italic text-blue-200">
+                            "We combine the science of the brain with the art of design to build websites that think, feel, and sell — just like your best salesperson, but working 24/7."
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-mind-gold text-neuro-blue font-montserrat font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-400 transition-all hover-scale" data-event="click:handleMainCTA">
+                                Get Your Free Neuro Marketing Audit
+                            </button>
+                            <button class="border-2 border-synapse-teal text-synapse-teal font-montserrat font-semibold px-8 py-4 rounded-lg text-lg hover:bg-synapse-teal hover:text-neuro-blue transition-all">
+                                See Our Work
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust indicators -->
+                    <div class="flex items-center space-x-8 pt-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-mind-gold" data-bind="stats.clients">50+</div>
+                            <div class="text-sm text-blue-200">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-mind-gold" data-bind="stats.conversion">3x</div>
+                            <div class="text-sm text-blue-200">Avg. Conversion Boost</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-mind-gold" data-bind="stats.experience">5</div>
+                            <div class="text-sm text-blue-200">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Hero mockup showing neuro marketing concepts -->
+                    <!-- A professional team analyzing website analytics and user behavior data on multiple monitors -->
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Team analyzing neuro marketing data" class="rounded-2xl shadow-2xl w-full h-auto" data-mock="true">
+                    
+                    <!-- Floating elements for visual appeal -->
+                    <div class="absolute -top-4 -right-4 bg-mind-gold text-neuro-blue p-4 rounded-full shadow-lg">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-synapse-teal text-neuron-white p-4 rounded-full shadow-lg">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- Services Section -->
+    <!-- @COMPONENT: ServicesSection [showcase of core service offerings with neuro marketing focus] -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat font-bold text-4xl lg:text-5xl text-neuro-blue mb-6">
+                    Our Neuro Marketing <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-xl text-brain-gray max-w-3xl mx-auto">
+                    আমাদের বিশেষত্ব হলো মনোবিজ্ঞান এবং প্রযুক্তির সমন্বয়ে এমন ওয়েবসাইট তৈরি করা যা দর্শকদের গ্রাহকে রূপান্তর করে।
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Neuro Web Design</h3>
+                    <p class="text-brain-gray mb-6">
+                        গবেষণা-ভিত্তিক ডিজাইন যা দর্শকের মনস্তত্ত্বে প্রভাব ফেলে এবং কনভার্শন বাড়ায়।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Heatmap Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> User Behavior Tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> A/B Testing</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-edit text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Conversion Content</h3>
+                    <p class="text-brain-gray mb-6">
+                        স্টোরি-বেসড কন্টেন্ট যা পাঠকের আবেগের সাথে সংযোগ স্থাপন করে।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Psychology-driven Copy</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Emotional Triggers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> CTA Optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-magnet text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Lead Magnet System</h3>
+                    <p class="text-brain-gray mb-6">
+                        স্মার্ট লিড ক্যাপচার সিস্টেম যা আপনার ব্যবসায়ে নিয়মিত কোয়ালিটি লিড আনে।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> High-Converting Forms</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Email Automation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Nurture Sequences</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Performance Analytics</h3>
+                    <p class="text-brain-gray mb-6">
+                        ডেটা-ড্রিভেন ইনসাইট যা আপনার ওয়েবসাইটের প্রতিটি এলিমেন্ট অপটিমাইজ করে।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Conversion Tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> User Journey Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> ROI Reporting</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-mobile-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Mobile Optimization</h3>
+                    <p class="text-brain-gray mb-6">
+                        মোবাইল-ফার্স্ট অভিগমন যা সব ডিভাইসে পারফেক্ট ইউজার এক্সপেরিয়েন্স নিশ্চিত করে।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Responsive Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Fast Loading</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Touch-Optimized</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-neuron-white p-8 rounded-2xl shadow-lg hover-scale group">
+                    <div class="bg-neuro-blue text-neuron-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-synapse-teal transition-colors">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-4">Sales Funnel Setup</h3>
+                    <p class="text-brain-gray mb-6">
+                        সম্পূর্ণ সেলস ফানেল যা ভিজিটরকে ধাপে ধাপে পেইড কাস্টমারে রূপান্তর করে।
+                    </p>
+                    <ul class="space-y-2 text-sm text-brain-gray">
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Landing Pages</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Thank You Pages</li>
+                        <li class="flex items-center"><i class="fas fa-check text-synapse-teal mr-2"></i> Follow-up Sequences</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-mind-gold text-neuro-blue font-montserrat font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-400 transition-all hover-scale" data-event="click:handleServicesCTA">
+                    Start Building Your 24/7 Sales Machine
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ServicesSection -->
+
+    <!-- Portfolio/Case Studies Section -->
+    <!-- @COMPONENT: PortfolioSection [showcase of successful projects and results] -->
+    <section id="portfolio" class="py-20 bg-neuron-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat font-bold text-4xl lg:text-5xl text-neuro-blue mb-6">
+                    Success Stories That <span class="gradient-text">Speak Numbers</span>
+                </h2>
+                <p class="text-xl text-brain-gray max-w-3xl mx-auto">
+                    আমাদের ক্লায়েন্টরা কীভাবে নিউরো মার্কেটিং এর মাধ্যমে তাদের ব্যবসায় ৩ গুণ বেশি কনভার্শন পেয়েছেন।
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <!-- @MAP: portfolioItems.map(item => ( -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- A modern e-commerce website mockup displaying conversion optimization features -->
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="E-commerce conversion optimization case study" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="item.category">E-commerce</span>
+                            <div class="text-mind-gold font-bold text-lg" data-bind="item.improvement">+340%</div>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-2" data-bind="item.title">Fashion Brand Conversion Boost</h3>
+                        <p class="text-brain-gray text-sm mb-4" data-bind="item.description">
+                            নিউরো মার্কেটিং টেকনিক ব্যবহার করে পণ্যের পেজে গ্রাহকের আবেগ জাগিয়ে সেলস ৩.৪ গুণ বৃদ্ধি।
+                        </p>
+                        <div class="flex justify-between text-sm text-brain-gray">
+                            <span>Conversion Rate</span>
+                            <span class="font-semibold">2.1% → 7.1%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- A professional services website showcasing lead generation features -->
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Professional services lead generation website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold">Service Business</span>
+                            <div class="text-mind-gold font-bold text-lg">+280%</div>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-2">Legal Firm Lead Generation</h3>
+                        <p class="text-brain-gray text-sm mb-4">
+                            সাইকোলজিক্যাল ট্রাস্ট সিগন্যাল এবং সোশ্যাল প্রুফ ব্যবহার করে লিড কোয়ালিটি এবং কোয়ান্টিটি দুটোই বৃদ্ধি।
+                        </p>
+                        <div class="flex justify-between text-sm text-brain-gray">
+                            <span>Monthly Leads</span>
+                            <span class="font-semibold">45 → 126</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- A tech startup website displaying growth metrics and user engagement -->
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Tech startup growth metrics dashboard" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold">SaaS</span>
+                            <div class="text-mind-gold font-bold text-lg">+420%</div>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-2">SaaS Platform Signup Rate</h3>
+                        <p class="text-brain-gray text-sm mb-4">
+                            ইউজার জার্নি অপটিমাইজেশন এবং কগনিটিভ লোড রিডাকশনের মাধ্যমে ফ্রি ট্রায়াল সাইনআপ বৃদ্ধি।
+                        </p>
+                        <div class="flex justify-between text-sm text-brain-gray">
+                            <span>Trial Signups</span>
+                            <span class="font-semibold">180 → 756/month</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-neuro-blue text-neuron-white font-montserrat font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-800 transition-colors">
+                    See How Your Website Can Convert 3x More
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: PortfolioSection -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: AboutSection [team information and methodology explanation] -->
+    <section id="about" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-montserrat font-bold text-4xl lg:text-5xl text-neuro-blue mb-6">
+                        Why <span class="gradient-text">Neuro Binding</span> Works?
+                    </h2>
+                    <div class="space-y-6 text-lg text-brain-gray">
+                        <p>
+                            আমরা শুধু ওয়েবসাইট বানাই না - আমরা <strong class="text-neuro-blue">মানুষের মনোবিজ্ঞান</strong> বুঝে এমন ডিজিটাল অভিজ্ঞতা তৈরি করি যা দর্শকের আবেগের সাথে সংযোগ স্থাপন করে।
+                        </p>
+                        <p>
+                            আমাদের টিম <strong class="text-synapse-teal">নিউরো সাইন্স, ইউএক্স সাইকোলজি, এবং ডিজিটাল মার্কেটিং</strong> এর সমন্বয়ে কাজ করে। ফলে আপনার ওয়েবসাইট হয়ে ওঠে একটি ২৪/৭ কর্মক্ষম সেলস মেশিন।
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-synapse-teal text-neuron-white p-2 rounded-full">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-montserrat font-semibold text-neuro-blue">নিউরো মার্কেটিং রিসার্চ</h4>
+                                <p class="text-brain-gray">গ্রাহকের মনস্তত্ত্ব বিশ্লেষণ করে কনটেন্ট ও ডিজাইন তৈরি</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-synapse-teal text-neuron-white p-2 rounded-full">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-montserrat font-semibold text-neuro-blue">ডেটা-ড্রিভেন অপটিমাইজেশন</h4>
+                                <p class="text-brain-gray">হিটম্যাপ, A/B টেস্টিং এবং ইউজার বিহেভিয়ার ট্র্যাকিং</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-synapse-teal text-neuron-white p-2 rounded-full">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-montserrat font-semibold text-neuro-blue">কনভার্শন-ফোকাসড ডিজাইন</h4>
+                                <p class="text-brain-gray">প্রতিটি এলিমেন্ট কনভার্শন বৃদ্ধির জন্য অপটিমাইজড</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Professional team collaboration in a modern office environment -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Professional team working together" class="rounded-2xl shadow-2xl w-full h-auto" data-mock="true">
+                    
+                    <!-- Stats overlay -->
+                    <div class="absolute -bottom-8 -left-8 bg-neuron-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-neuro-blue" data-bind="stats.yearExperience">5+</div>
+                            <div class="text-sm text-brain-gray">Years in Neuro Marketing</div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-8 -right-8 bg-mind-gold p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-neuro-blue" data-bind="stats.avgIncrease">300%</div>
+                            <div class="text-sm text-neuro-blue">Avg. Conversion Increase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- Testimonials Section -->
+    <!-- @COMPONENT: TestimonialsSection [client testimonials and social proof] -->
+    <section class="py-20 bg-neuron-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat font-bold text-4xl lg:text-5xl text-neuro-blue mb-6">
+                    What Our <span class="gradient-text">Clients Say</span>
+                </h2>
+                <p class="text-xl text-brain-gray max-w-3xl mx-auto">
+                    ক্লায়েন্টদের সফলতার গল্প যা প্রমাণ করে আমাদের নিউরো মার্কেটিং অ্যাপ্রোচ কতটা কার্যকর।
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: testimonials.map(testimonial => ( -->
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="text-mind-gold text-3xl">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <p class="font-playfair text-lg text-brain-gray mb-6 italic" data-bind="testimonial.content">
+                        "নিউরো বাইন্ডিং আমাদের ই-কমার্স সাইটকে সম্পূর্ণ বদলে দিয়েছে। মাত্র ২ মাসে আমাদের সেলস ৩.৫ গুণ বেড়েছে!"
+                    </p>
+                    <div class="flex items-center">
+                        <!-- A confident business owner in professional attire -->
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=64&h=64" alt="Testimonial client photo" class="w-12 h-12 rounded-full mr-4" data-mock="true">
+                        <div>
+                            <div class="font-montserrat font-semibold text-neuro-blue" data-bind="testimonial.name">রাহুল আহমেদ</div>
+                            <div class="text-sm text-brain-gray" data-bind="testimonial.position">CEO, Fashion Hub BD</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="text-mind-gold text-3xl">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <p class="font-playfair text-lg text-brain-gray mb-6 italic">
+                        "আমাদের লিগ্যাল ফার্মের জন্য তারা যে ওয়েবসাইট বানিয়েছে, সেটা থেকে এখন মাসে ১০০+ কোয়ালিটি লিড আসে।"
+                    </p>
+                    <div class="flex items-center">
+                        <!-- A professional female lawyer in business attire -->
+                        <img src="https://pixabay.com/get/gfe131341923a8637bc44351c6e915ec7c2ae3c46489110c9225b46592b593dc485da19e7edb1b85e5a1ec4a89c264d6348724f3e58a359f5eff329065239cfa6_1280.jpg" alt="Female lawyer client testimonial" class="w-12 h-12 rounded-full mr-4" data-mock="true">
+                        <div>
+                            <div class="font-montserrat font-semibold text-neuro-blue">অ্যাডভোকেট ফারিয়া খান</div>
+                            <div class="text-sm text-brain-gray">Managing Partner, Khan & Associates</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="text-mind-gold text-3xl">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <p class="font-playfair text-lg text-brain-gray mb-6 italic">
+                        "টেকনোলজি কোম্পানি হিসেবে আমরা অনেক এজেন্সির সাথে কাজ করেছি, কিন্তু নিউরো বাইন্ডিং এর কাজের মান সত্যিই অসাধারণ।"
+                    </p>
+                    <div class="flex items-center">
+                        <!-- A young tech entrepreneur in casual professional attire -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=64&h=64" alt="Tech entrepreneur client testimonial" class="w-12 h-12 rounded-full mr-4" data-mock="true">
+                        <div>
+                            <div class="font-montserrat font-semibold text-neuro-blue">করিম উদ্দিন</div>
+                            <div class="text-sm text-brain-gray">Founder, TechStart Bangladesh</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- Blog Section -->
+    <!-- @COMPONENT: BlogSection [latest blog posts and content marketing] -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat font-bold text-4xl lg:text-5xl text-neuro-blue mb-6">
+                    Latest <span class="gradient-text">Insights</span>
+                </h2>
+                <p class="text-xl text-brain-gray max-w-3xl mx-auto">
+                    নিউরো মার্কেটিং, ওয়েব ডিজাইন, এবং কনভার্শন অপটিমাইজেশনের উপর আমাদের সর্বশেষ টিপস ও গাইড।
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: blogPosts.map(post => ( -->
+                <!-- Blog Post 1 -->
+                <article class="bg-neuron-white rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- A visual representation of brain science and marketing psychology concepts -->
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Brain science and marketing psychology visualization" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="post.category">Neuro Marketing</span>
+                            <span class="text-sm text-brain-gray" data-bind="post.date">Jan 15, 2024</span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-3 group-hover:text-synapse-teal transition-colors" data-bind="post.title">
+                            ৫টি নিউরো মার্কেটিং ট্রিক যা আপনার সেলস ডাবল করবে
+                        </h3>
+                        <p class="text-brain-gray mb-4" data-bind="post.excerpt">
+                            গ্রাহকের মনস্তত্ত্ব বুঝে কীভাবে আপনার প্রোডাক্ট বা সার্ভিসের প্রতি আগ্রহ বাড়াবেন এবং কনভার্শন রেট উন্নতি করবেন।
+                        </p>
+                        <a href="#" class="text-synapse-teal font-semibold hover:text-neuro-blue transition-colors flex items-center">
+                            আরও পড়ুন <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-neuron-white rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- A modern website design process showing UX/UI elements -->
+                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Modern website design process and UX elements" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold">Web Design</span>
+                            <span class="text-sm text-brain-gray">Jan 10, 2024</span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-3 group-hover:text-synapse-teal transition-colors">
+                            ওয়েবসাইট ডিজাইনে কালার সাইকোলজির ব্যবহার
+                        </h3>
+                        <p class="text-brain-gray mb-4">
+                            বিভিন্ন রঙ মানুষের মনে কী প্রভাব ফেলে এবং কীভাবে সঠিক কালার প্যালেট ব্যবহার করে আপনার ব্র্যান্ডের বিশ্বাসযোগ্যতা বাড়াবেন।
+                        </p>
+                        <a href="#" class="text-synapse-teal font-semibold hover:text-neuro-blue transition-colors flex items-center">
+                            আরও পড়ুন <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-neuron-white rounded-2xl overflow-hidden shadow-lg hover-scale group">
+                    <!-- Business growth chart and success metrics visualization -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Business growth analytics and success metrics" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-mock="true">
+                    
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-synapse-teal text-neuron-white px-3 py-1 rounded-full text-sm font-semibold">Conversion</span>
+                            <span class="text-sm text-brain-gray">Jan 5, 2024</span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-neuro-blue mb-3 group-hover:text-synapse-teal transition-colors">
+                            A/B টেস্টিং দিয়ে কনভার্শন রেট ৫০% বাড়ানোর উপায়
+                        </h3>
+                        <p class="text-brain-gray mb-4">
+                            ডেটা-ড্রিভেন ডিসিশন নিয়ে কীভাবে আপনার ওয়েবসাইটের প্রতিটি এলিমেন্ট টেস্ট করে সর্বোচ্চ কনভার্শন অর্জন করবেন।
+                        </p>
+                        <a href="#" class="text-synapse-teal font-semibold hover:text-neuro-blue transition-colors flex items-center">
+                            আরও পড়ুন <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-neuro-blue text-neuron-white font-montserrat font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-800 transition-colors">
+                    View All Articles
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BlogSection -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: ContactSection [contact form with lead magnet integration] -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-neuro-blue to-blue-900 text-neuron-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-montserrat font-bold text-4xl lg:text-5xl mb-6">
+                    Ready to <span class="text-mind-gold">Transform</span> Your Business?
+                </h2>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    আজই আমাদের সাথে যোগাযোগ করুন এবং পান একটি ফ্রি নিউরো মার্কেটিং অডিট যা আপনার ওয়েবসাইটের লুকানো সমস্যা এবং সুযোগ চিহ্নিত করবে।
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-montserrat font-bold text-2xl mb-6 text-mind-gold">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-synapse-teal p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-blue-200">Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-synapse-teal p-3 rounded-full">
+                                    <i class="fas fa-phone text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-blue-200">+880 1XXX-XXXXXX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-synapse-teal p-3 rounded-full">
+                                    <i class="fas fa-envelope text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-blue-200">hello@neurobinding.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-synapse-teal p-3 rounded-full">
+                                    <i class="fas fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Working Hours</h4>
+                                    <p class="text-blue-200">Sunday - Thursday, 9AM - 6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lead Magnet Offer -->
+                    <div class="bg-gradient-to-r from-mind-gold to-yellow-400 text-neuro-blue p-6 rounded-xl">
+                        <h4 class="font-montserrat font-bold text-xl mb-2">🎁 Special Offer</h4>
+                        <p class="font-semibold mb-4">Get a FREE Neuro Marketing Website Audit (Worth $500)</p>
+                        <ul class="space-y-1 text-sm">
+                            <li>✓ Conversion bottleneck analysis</li>
+                            <li>✓ User psychology assessment</li>
+                            <li>✓ 15+ actionable recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-neuron-white text-brain-gray p-8 rounded-2xl shadow-2xl">
+                    <h3 class="font-montserrat font-bold text-2xl text-neuro-blue mb-6">Start Your Free Consultation</h3>
+                    
+                    <!-- @STATE: formData:object = {name:'', email:'', phone:'', company:'', projectType:'', message:'', agreeToTerms:false} -->
+                    <form class="space-y-6" data-event="submit:handleContactForm" data-implementation="Should validate and submit contact form with lead magnet integration">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2" for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" placeholder="আপনার নাম" data-bind="formData.name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" placeholder="+880 1XXX-XXXXXX" data-bind="formData.phone">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" placeholder="your@email.com" data-bind="formData.email">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2" for="company">Company/Business Name</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" placeholder="আপনার ব্যবসার নাম" data-bind="formData.company">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2" for="project_type">Project Type</label>
+                            <select id="project_type" name="project_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" data-bind="formData.projectType">
+                                <option value="">Select your project type</option>
+                                <option value="new_website">New Website Development</option>
+                                <option value="redesign">Website Redesign</option>
+                                <option value="optimization">Conversion Optimization</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="consultation">Consultation Only</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2" for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-synapse-teal focus:border-transparent" placeholder="আপনার প্রজেক্ট সম্পর্কে বিস্তারিত লিখুন..." data-bind="formData.message"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="terms" name="terms" class="mt-1 h-5 w-5 text-synapse-teal border-gray-300 rounded focus:ring-synapse-teal" data-bind="formData.agreeToTerms">
+                            <label for="terms" class="text-sm text-brain-gray">
+                                I agree to receive the free audit report and marketing communications from Neuro Binding. *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-mind-gold text-neuro-blue font-montserrat font-bold py-4 rounded-lg text-lg hover:bg-yellow-400 transition-all hover-scale">
+                            Get My Free Audit + Consultation
+                        </button>
+                    </form>
+                    
+                    <p class="text-center text-sm text-brain-gray mt-4">
+                        🔒 Your information is secure and will never be shared.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ContactSection -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [company information, links, and social media] -->
+    <footer class="bg-neuro-blue text-neuron-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjAwIDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIxMCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJNb250c2VycmF0LCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjRkZENzAwIj5ORVVSTzwvdGV4dD4KPHR5eHQgeD0iMTAiIHk9IjU1IiBmb250LWZhbWlseT0iTW9udHNlcnJhdCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI0ZGRDcwMCI+QklORElORzwvdGV4dD4KPHN2ZyB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiPgo8Y2lyY2xlIGN4PSIxNSIgY3k9IjE1IiByPSI4IiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8Y2lyY2xlIGN4PSI0NSIgY3k9IjE1IiByPSI2IiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjQ1IiByPSI1IiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8bGluZSB4MT0iMjMiIHkxPSIxNSIgeDI9IjM3IiB5Mj0iMTUiIHN0cm9rZT0iI0ZGRDcwMCIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxsaW5lIHgxPSIyNSIgeTE9IjI1IiB4Mj0iMzUiIHkyPSIzNSIgc3Ryb2tlPSIjRkZENzAwIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cjwvc3ZnPg==" alt="Neuro Binding" class="h-12 w-auto" data-mock="true">
+                    <p class="text-blue-200">
+                        আমরা নিউরো মার্কেটিং এর শক্তি ব্যবহার করে ওয়েবসাইট তৈরি করি যা শুধু সুন্দরই না, বরং দর্শকের মনস্তত্ত্বে প্রভাব ফেলে।
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-synapse-teal p-2 rounded-full hover:bg-teal-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-synapse-teal p-2 rounded-full hover:bg-teal-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-synapse-teal p-2 rounded-full hover:bg-teal-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-synapse-teal p-2 rounded-full hover:bg-teal-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-montserrat font-bold text-lg mb-6 text-mind-gold">Services</h4>
+                    <ul class="space-y-3 text-blue-200">
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Neuro Web Design</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Conversion Content</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Lead Magnet System</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Performance Analytics</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Mobile Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="font-montserrat font-bold text-lg mb-6 text-mind-gold">Company</h4>
+                    <ul class="space-y-3 text-blue-200">
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-montserrat font-bold text-lg mb-6 text-mind-gold">Resources</h4>
+                    <ul class="space-y-3 text-blue-200">
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Free Audit</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Neuro Marketing Guide</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Conversion Templates</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-neuron-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-200 text-sm">
+                    © 2024 Neuro Binding. All rights reserved. Made with 🧠 in Bangladesh.
+                </p>
+                <p class="text-blue-200 text-sm mt-4 md:mt-0">
+                    Binding Minds, Building Brands
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('nav');
+                if (window.scrollY > 100) {
+                    header.classList.add('bg-opacity-95', 'backdrop-blur-sm');
+                } else {
+                    header.classList.remove('bg-opacity-95', 'backdrop-blur-sm');
+                }
+            });
+            
+            // Form validation placeholder
+            const contactForm = document.querySelector('form[data-event="submit:handleContactForm"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form validation and submission
+                    console.log('Form submitted - implement actual submission logic');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

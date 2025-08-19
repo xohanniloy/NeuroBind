@@ -282,6 +282,17 @@
   }
 }
 
+@keyframes particle-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.5), 0 0 4px rgba(138, 43, 226, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.7), 0 0 6px rgba(138, 43, 226, 0.6);
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -308,4 +319,8 @@
 
 .animate-synaptic-fire {
   animation: synaptic-fire 2s ease-in-out infinite;
+}
+
+.animate-particle-breathe {
+  animation: particle-breathe 3s ease-in-out infinite;
 }

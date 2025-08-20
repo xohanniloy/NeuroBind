@@ -1,12 +1,30 @@
 # Overview
 
-This is a full-stack web application for Neuro Binding, a Bangladesh-based neuro marketing focused web design and content agency. The application is built as a modern React multi-page application with an Express.js backend, featuring separate pages for different sections (Home, About, Services, Portfolio, Contact) with dynamic animations and interactive elements throughout. The project emphasizes neuro marketing principles through its design and user experience.
+This is a full-stack web application for Neuro Binding, a Bangladesh-based neuro marketing focused web design and content agency. The application is being migrated from a React/Express.js stack to Next.js with TypeScript, while maintaining the exact same design and functionality. The project features separate pages for different sections (Home, About, Services, Portfolio, Contact) with dynamic animations and interactive elements throughout. The project emphasizes neuro marketing principles through its design and user experience.
+
+## Migration Status (Next.js)
+- ✓ Next.js framework installed and configured
+- ✓ App router structure created (/app directory)
+- ✓ TypeScript configuration updated
+- ✓ Tailwind CSS globals and neural theme styles migrated
+- ✓ SEO metadata implemented for all pages
+- ✓ Page components created (Home, About, Services, Portfolio, Contact)
+- ✓ Component architecture preserved (layout, sections, ui)
+- ✓ All components copied from client/src to app directory
+- ✓ Navigation and Footer components updated for Next.js
+- ✓ Next.js API routes created to replace Express endpoints
+- ✓ Enhanced interactive team section with dynamic features
+- ⏳ Import path resolution and component integration in progress
+- ⏳ Workflow configuration update to use Next.js dev server
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
 Site architecture: Multi-page application with separate routes for each section (Home, About, Services, Portfolio, Contact).
 Animation preferences: Dynamic animations and interactive elements throughout all sections with smooth transitions and hover effects.
+Home page: Include short summary of all pages content for easy navigation and overview.
+Home page preference: Show all page sections directly on home page (section by section) rather than summary cards.
+Home page: Include short summary of all pages content for easy navigation and overview.
 
 # System Architecture
 

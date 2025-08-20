@@ -16,7 +16,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Binding minds, building brands through the power of neuro marketing and cutting-edge web design.
+            Binding mindsx, building brands through the power of neuro marketing and cutting-edge web design.
           </p>
           <div className="border-t border-gray-700 pt-8">
             <p className="text-gray-500">

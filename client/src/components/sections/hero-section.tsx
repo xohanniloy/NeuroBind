@@ -35,7 +35,7 @@ export default function HeroSection() {
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up" style={{animationDelay: "0.2s"}}>
             We combine the science of the brain with the art of design to build websites that 
-            think, feel, and sell — just like your best salesperson, but working 24/7.
+            think, feel, and sell — just like your best salesperson, but working 24/7xzx.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style={{animationDelay: "0.4s"}}>

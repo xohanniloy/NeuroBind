@@ -22,17 +22,17 @@ export default function AboutSection() {
             </p>
             
             <div className="grid grid-cols-2 gap-6 mb-8">
-              <div className="glassmorphism-dark rounded-xl p-6 text-center">
-                <div className="text-3xl font-montserrat font-bold text-neon-green mb-2">
+              <div className="glassmorphism-dark rounded-xl p-6 text-center hover-lift group transition-all duration-500 animate-slide-up">
+                <div className="text-3xl font-montserrat font-bold text-neon-green mb-2 group-hover:scale-110 transition-transform duration-300 animate-bounce-gentle">
                   5+
                 </div>
-                <p className="text-gray-400">Years Experience</p>
+                <p className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">Years Experience</p>
               </div>
-              <div className="glassmorphism-dark rounded-xl p-6 text-center">
-                <div className="text-3xl font-montserrat font-bold text-electric-blue mb-2">
+              <div className="glassmorphism-dark rounded-xl p-6 text-center hover-lift group transition-all duration-500 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+                <div className="text-3xl font-montserrat font-bold text-electric-blue mb-2 group-hover:scale-110 transition-transform duration-300 animate-bounce-gentle" style={{ animationDelay: "0.1s" }}>
                   25+
                 </div>
-                <p className="text-gray-400">Team Members</p>
+                <p className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">Team Members</p>
               </div>
             </div>
             
@@ -49,18 +49,18 @@ export default function AboutSection() {
             />
             
             {/* Floating elements */}
-            <div className="absolute -top-8 -right-8 glassmorphism-dark rounded-2xl p-6 animate-float">
-              <div className="text-electric-blue text-3xl mb-2">
+            <div className="absolute -top-8 -right-8 glassmorphism-dark rounded-2xl p-6 animate-float hover-lift cursor-pointer group">
+              <div className="text-electric-blue text-3xl mb-2 group-hover:scale-125 transition-transform duration-300 animate-neural-pulse">
                 <Lightbulb size={32} />
               </div>
-              <p className="text-sm font-semibold">Innovative Ideas</p>
+              <p className="text-sm font-semibold group-hover:text-electric-blue transition-colors duration-300">Innovative Ideas</p>
             </div>
             
-            <div className="absolute -bottom-8 -left-8 glassmorphism-dark rounded-2xl p-6 animate-float" style={{animationDelay: "2s"}}>
-              <div className="text-neon-green text-3xl mb-2">
+            <div className="absolute -bottom-8 -left-8 glassmorphism-dark rounded-2xl p-6 animate-float hover-lift cursor-pointer group" style={{animationDelay: "2s"}}>
+              <div className="text-neon-green text-3xl mb-2 group-hover:scale-125 transition-transform duration-300 animate-neural-pulse" style={{animationDelay: "1s"}}>
                 <TrendingUp size={32} />
               </div>
-              <p className="text-sm font-semibold">Data-Driven Results</p>
+              <p className="text-sm font-semibold group-hover:text-neon-green transition-colors duration-300">Data-Driven Results</p>
             </div>
           </div>
         </div>

@@ -48,14 +48,23 @@ export default function TestimonialsSection() {
         
         {/* Testimonials Carousel */}
         <div className="max-w-4xl mx-auto">
-          <div className="glassmorphism-dark rounded-2xl p-8 text-center relative">
-            <div className="flex justify-center mb-6">
-              <div className="flex space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="text-neon-green fill-current" size={20} />
-                ))}
+          <div className="relative glassmorphism-dark rounded-2xl p-8 text-center group overflow-hidden hover-lift">
+            {/* Animated border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/20 via-neon-green/20 to-neuro-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl animate-shimmer"></div>
+            
+            <div className="relative z-10">
+              <div className="flex justify-center mb-6">
+                <div className="flex space-x-1 animate-bounce-gentle">
+                  {[...Array(5)].map((_, i) => (
+                    <Star 
+                      key={i} 
+                      className="text-neon-green fill-current transition-all duration-500 hover:scale-125" 
+                      size={20}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
             
             <blockquote className="text-2xl text-gray-200 mb-8 italic">
               "{testimonials[currentTestimonial].quote}"
@@ -77,19 +86,20 @@ export default function TestimonialsSection() {
               </div>
             </div>
 
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevTestimonial}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-electric-blue transition-colors duration-300"
-            >
-              <ChevronLeft size={32} />
-            </button>
-            <button
-              onClick={nextTestimonial}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-electric-blue transition-colors duration-300"
-            >
-              <ChevronRight size={32} />
-            </button>
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevTestimonial}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-electric-blue transition-all duration-300 hover:scale-110 animate-bounce-gentle"
+              >
+                <ChevronLeft size={32} />
+              </button>
+              <button
+                onClick={nextTestimonial}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-electric-blue transition-all duration-300 hover:scale-110 animate-bounce-gentle"
+              >
+                <ChevronRight size={32} />
+              </button>
+            </div>
           </div>
           
           {/* Carousel Indicators */}
@@ -98,9 +108,12 @@ export default function TestimonialsSection() {
               <button
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentTestimonial ? "bg-neuro-purple" : "bg-gray-600"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-500 transform hover:scale-150 ${
+                  index === currentTestimonial 
+                    ? "bg-gradient-to-r from-neuro-purple to-electric-blue animate-glow-pulse scale-125" 
+                    : "bg-gray-600 hover:bg-gray-400"
+                } animate-bounce-gentle`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               />
             ))}
           </div>

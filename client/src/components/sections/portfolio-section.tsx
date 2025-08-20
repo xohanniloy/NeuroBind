@@ -81,18 +81,22 @@ export default function PortfolioSection() {
         
         {/* Portfolio Filter */}
         <div className="flex justify-center mb-12">
-          <div className="flex space-x-4 bg-neural-bg-secondary rounded-full p-2">
-            {filters.map((filter) => (
+          <div className="flex space-x-4 bg-neural-bg-secondary rounded-full p-2 glassmorphism-dark animate-slide-up">
+            {filters.map((filter, index) => (
               <button
                 key={filter.key}
                 onClick={() => setActiveFilter(filter.key)}
-                className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                className={`relative px-6 py-2 rounded-full transition-all duration-500 transform hover:scale-105 overflow-hidden group ${
                   activeFilter === filter.key
-                    ? "bg-neuro-purple text-white"
-                    : "hover:bg-gray-700"
-                }`}
+                    ? "bg-gradient-to-r from-neuro-purple to-electric-blue text-white animate-glow-pulse"
+                    : "text-gray-300 hover:text-white hover:bg-gray-700"
+                } animate-bounce-gentle`}
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
-                {filter.label}
+                {/* Ripple effect on click */}
+                <div className="absolute inset-0 bg-white/10 rounded-full transform scale-0 group-active:scale-100 transition-transform duration-300"></div>
+                
+                <span className="relative z-10">{filter.label}</span>
               </button>
             ))}
           </div>
@@ -100,22 +104,43 @@ export default function PortfolioSection() {
         
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item) => (
-            <div key={item.id} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl bg-neural-bg-secondary hover-lift">
+          {filteredItems.map((item, index) => (
+            <div 
+              key={item.id} 
+              className="group cursor-pointer animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="relative overflow-hidden rounded-2xl bg-neural-bg-secondary hover-lift glassmorphism-dark group-hover:border-electric-blue/50 transition-all duration-500">
+                {/* Animated border effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/20 via-neuro-purple/20 to-neon-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl animate-shimmer"></div>
+                
                 <img
                   src={item.image}
                   alt={item.alt}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700 filter group-hover:brightness-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-neural-bg via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-xl font-montserrat font-semibold text-white mb-2">
+                
+                {/* Glowing overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neural-bg via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-500"></div>
+                
+                {/* Floating content */}
+                <div className="absolute bottom-4 left-4 right-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                  <h3 className="text-xl font-montserrat font-semibold text-white mb-2 animate-bounce-gentle">
                     {item.title}
                   </h3>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {item.description}
                   </p>
+                  
+                  {/* View more button */}
+                  <button className="mt-3 px-4 py-2 bg-gradient-to-r from-electric-blue to-neuro-purple text-white rounded-full text-sm font-medium transform scale-95 group-hover:scale-100 transition-transform duration-300 animate-glow-pulse">
+                    View Details
+                  </button>
+                </div>
+                
+                {/* Category badge */}
+                <div className="absolute top-4 right-4 px-3 py-1 bg-neon-green/80 text-neural-bg rounded-full text-xs font-semibold uppercase tracking-wider transform translate-x-8 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 animate-bounce-gentle">
+                  {item.category}
                 </div>
               </div>
             </div>

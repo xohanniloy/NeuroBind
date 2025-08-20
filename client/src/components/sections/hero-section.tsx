@@ -37,17 +37,18 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style={{animationDelay: "0.4s"}}>
             <Button 
               size="lg"
-              className="bg-gradient-neural px-8 py-4 rounded-full text-lg font-semibold hover-lift animate-pulse-glow"
+              className="relative bg-gradient-neural px-8 py-4 rounded-full text-lg font-semibold hover-lift animate-glow-pulse overflow-hidden group"
               onClick={() => scrollToSection("contact")}
             >
-              Get Your Free Neuro Marketing Audit
+              <span className="relative z-10">Get Your Free Neuro Marketing Audit</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-neon-green opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </Button>
             <Button 
               variant="outline"
               size="lg"
-              className="border-2 border-electric-blue text-electric-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-electric-blue hover:text-neural-bg transition-all duration-300"
+              className="relative border-2 border-electric-blue text-electric-blue px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-electric-blue hover:text-neural-bg hover:scale-105 hover:shadow-[0_0_25px_rgba(0,212,255,0.6)] animate-shimmer group"
             >
-              <Play className="mr-2 h-5 w-5" />
+              <Play className="mr-2 h-5 w-5 group-hover:animate-bounce-gentle" />
               Watch Demo
             </Button>
           </div>

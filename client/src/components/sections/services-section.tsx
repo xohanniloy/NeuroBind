@@ -83,25 +83,45 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="glassmorphism-dark rounded-2xl p-8 hover-lift group"
+              className="relative glassmorphism-dark rounded-2xl p-8 hover-lift group overflow-hidden transition-all duration-500 hover:scale-105 animate-shimmer"
+              style={{animationDelay: `${index * 0.1}s`}}
             >
-              <div className="text-electric-blue text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                <service.icon size={48} />
+              {/* Animated border effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-electric-blue via-neuro-purple to-neon-green opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-2xl"></div>
+              
+              <div className="relative z-10">
+                <div className="text-electric-blue text-4xl mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 animate-glow-pulse">
+                  <service.icon size={48} />
+                </div>
+                <h3 className="text-2xl font-montserrat font-semibold mb-4 text-neuro-purple group-hover:text-electric-blue transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-gray-300 mb-6 group-hover:text-white transition-colors duration-300">
+                  {service.description}
+                </p>
+                <ul className="text-sm text-gray-400 space-y-3">
+                  {service.features.map((feature, featureIndex) => (
+                    <li 
+                      key={featureIndex} 
+                      className="flex items-center group-hover:translate-x-2 transition-transform duration-300"
+                      style={{transitionDelay: `${featureIndex * 0.1}s`}}
+                    >
+                      <Check className="text-neon-green mr-3 h-4 w-4 group-hover:scale-125 transition-transform duration-300" />
+                      <span className="group-hover:text-gray-200 transition-colors duration-300">
+                        {feature}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="text-2xl font-montserrat font-semibold mb-4 text-neuro-purple">
-                {service.title}
-              </h3>
-              <p className="text-gray-300 mb-6">
-                {service.description}
-              </p>
-              <ul className="text-sm text-gray-400 space-y-2">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center">
-                    <Check className="text-neon-green mr-2 h-4 w-4" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+              
+              {/* Hover glow effect */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-electric-blue to-transparent"></div>
+                <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-neuro-purple to-transparent"></div>
+                <div className="absolute left-0 top-0 w-px h-full bg-gradient-to-b from-transparent via-neon-green to-transparent"></div>
+                <div className="absolute right-0 top-0 w-px h-full bg-gradient-to-b from-transparent via-electric-blue to-transparent"></div>
+              </div>
             </div>
           ))}
         </div>

@@ -1,10 +1,12 @@
 # Overview
 
-This is a full-stack web application for Neuro Binding, a Bangladesh-based neuro marketing focused web design and content agency. The application is built as a modern React SPA with an Express.js backend, showcasing the agency's services and providing a contact form for potential clients. The project emphasizes neuro marketing principles through its design and user experience.
+This is a full-stack web application for Neuro Binding, a Bangladesh-based neuro marketing focused web design and content agency. The application is built as a modern React multi-page application with an Express.js backend, featuring separate pages for different sections (Home, About, Services, Portfolio, Contact) with dynamic animations and interactive elements throughout. The project emphasizes neuro marketing principles through its design and user experience.
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Site architecture: Multi-page application with separate routes for each section (Home, About, Services, Portfolio, Contact).
+Animation preferences: Dynamic animations and interactive elements throughout all sections with smooth transitions and hover effects.
 
 # System Architecture
 

@@ -77,13 +77,17 @@ export default function ContactSection() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="glassmorphism-dark rounded-2xl p-8">
-              <h3 className="text-2xl font-montserrat font-semibold mb-6 text-neuro-purple">
-                Get Your Free Consultation
-              </h3>
+            <div className="relative glassmorphism-dark rounded-2xl p-8 group overflow-hidden hover-lift">
+              {/* Animated border effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-electric-blue/20 via-neuro-purple/20 to-neon-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl animate-shimmer"></div>
               
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <div className="relative z-10">
+                <h3 className="text-2xl font-montserrat font-semibold mb-6 text-neuro-purple group-hover:text-electric-blue transition-colors duration-300">
+                  Get Your Free Consultation
+                </h3>
+              
+                <Form {...form}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
@@ -179,15 +183,16 @@ export default function ContactSection() {
                     )}
                   />
                   
-                  <Button
-                    type="submit"
-                    className="w-full bg-gradient-neural py-4 rounded-xl text-lg font-semibold hover-lift animate-pulse-glow"
-                    disabled={contactMutation.isPending}
-                  >
-                    {contactMutation.isPending ? "Sending..." : "Start Building Your 24/7 Sales Machine"}
-                  </Button>
-                </form>
-              </Form>
+                    <Button
+                      type="submit"
+                      className="w-full bg-gradient-neural py-4 rounded-xl text-lg font-semibold hover-lift animate-glow-pulse transform hover:scale-105 transition-all duration-300"
+                      disabled={contactMutation.isPending}
+                    >
+                      {contactMutation.isPending ? "Sending..." : "Start Building Your 24/7 Sales Machine"}
+                    </Button>
+                  </form>
+                </Form>
+              </div>
             </div>
             
             {/* Contact Information */}

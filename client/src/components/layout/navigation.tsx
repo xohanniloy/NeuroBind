@@ -28,11 +28,13 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img 
-              src={logoAsset} 
-              alt="Neuro Binding Logo" 
-              className="h-12 w-auto transition-all duration-300 hover:scale-105" 
-            />
+            <Link href="/">
+              <img 
+                src={logoAsset} 
+                alt="Neuro Binding Logo" 
+                className="h-12 w-auto transition-all duration-300 hover:scale-105 cursor-pointer" 
+              />
+            </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

@@ -95,7 +95,7 @@ export default function StatsSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-electric-blue/10 via-neuro-purple/10 to-neon-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
               
               <div className="relative z-10">
-                <div className={`text-6xl font-montserrat font-bold mb-4 ${stat.color} animate-glow-pulse group-hover:scale-125 transition-transform duration-300`}>
+                <div className={`text-6xl font-montserrat font-bold mb-4 ${stat.color} group-hover:scale-125 transition-transform duration-300`}>
                   {stat.prefix || ""}{counters[stat.key as keyof typeof counters]}{stat.suffix}
                 </div>
                 <p className="text-lg text-gray-200 group-hover:text-white transition-colors duration-300">

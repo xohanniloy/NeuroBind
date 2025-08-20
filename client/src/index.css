@@ -241,14 +241,6 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes glow-pulse {
-  0%, 100% { 
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3), 0 0 20px rgba(138, 43, 226, 0.2);
-  }
-  50% { 
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(138, 43, 226, 0.4);
-  }
-}
 
 @keyframes shimmer {
   0% { transform: translateX(-100%); }
@@ -325,9 +317,6 @@
   animation: pulse-glow 2s ease-in-out infinite alternate;
 }
 
-.animate-glow-pulse {
-  animation: glow-pulse 2s ease-in-out infinite;
-}
 
 .animate-shimmer::before {
   content: '';

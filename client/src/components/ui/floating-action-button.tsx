@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MessageSquare, Phone, Mail, X } from "lucide-react";
+import { useLocation } from "wouter";
 
 interface FloatingAction {
   icon: React.ElementType;
@@ -10,14 +11,14 @@ interface FloatingAction {
 
 export default function FloatingActionButton() {
   const [isOpen, setIsOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   const actions: FloatingAction[] = [
     {
       icon: MessageSquare,
       label: "Chat with us",
       action: () => {
-        const element = document.getElementById("contact");
-        if (element) element.scrollIntoView({ behavior: "smooth" });
+        setLocation("/contact");
       },
       color: "bg-electric-blue hover:bg-electric-blue/80"
     },
@@ -66,7 +67,7 @@ export default function FloatingActionButton() {
           isOpen 
             ? 'bg-red-500 hover:bg-red-600' 
             : 'bg-gradient-neural hover:shadow-[0_0_25px_rgba(0,212,255,0.6)]'
-        } p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-glow-pulse`}
+        } p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110`}
       >
         {isOpen ? (
           <X size={24} className="text-white" />

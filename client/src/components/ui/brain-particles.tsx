@@ -69,7 +69,7 @@ export default function BrainParticles() {
   // Generate random scattered particles
   const generateRandomParticles = useCallback(() => {
     const newParticles: BrainParticle[] = [];
-    const particleCount = 30; // Fewer particles for cleaner look
+    const particleCount = 60; // More particles for richer glow effect
     
     for (let i = 0; i < particleCount; i++) {
       const x = Math.random() * 90 + 5; // Keep particles away from edges
@@ -190,70 +190,7 @@ export default function BrainParticles() {
 
 
 
-      {/* Enhanced Service popup */}
-      {showService && hoveredParticle && (
-        <div
-          className="fixed z-50 bg-neural-bg-secondary border-2 border-neuro-purple rounded-xl p-5 max-w-sm shadow-2xl transform transition-all duration-300 ease-out animate-slide-up cursor-pointer hover:scale-105"
-          style={{
-            left: `${Math.min(mousePos.x + 20, window.innerWidth - 350)}px`,
-            top: `${Math.max(mousePos.y - 60, 20)}px`,
-            boxShadow: '0 25px 50px rgba(138, 43, 226, 0.4), 0 0 40px rgba(0, 212, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-            background: 'linear-gradient(135deg, rgba(34, 34, 47, 0.95) 0%, rgba(45, 45, 58, 0.95) 100%)',
-          }}
-          onClick={() => {
-            handleServiceClick(hoveredParticle.service.sectionId);
-          }}
-        >
-          <div className="flex items-start space-x-4">
-            <div className="text-electric-blue text-3xl flex-shrink-0 p-2 bg-neural-bg rounded-lg">
-              <hoveredParticle.service.icon size={28} />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-neuro-purple font-montserrat font-bold mb-2 text-lg">
-                {hoveredParticle.service.title}
-              </h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                {hoveredParticle.service.description}
-              </p>
-              <div className="flex items-center text-electric-blue text-xs font-semibold">
-                <span>Click to explore</span>
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          
-          {/* Enhanced pointer arrow */}
-          <div 
-            className="absolute w-4 h-4 bg-neural-bg-secondary border-l-2 border-b-2 border-neuro-purple transform rotate-45"
-            style={{
-              left: '-8px',
-              top: '25px',
-            }}
-          />
-          
-          {/* Glow effect */}
-          <div 
-            className="absolute inset-0 rounded-xl opacity-20 pointer-events-none"
-            style={{
-              background: 'linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(138, 43, 226, 0.3) 100%)',
-              filter: 'blur(1px)',
-            }}
-          />
-        </div>
-      )}
 
-      {/* Hint indicator */}
-      {showHint && (
-        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-40 bg-neural-bg-secondary border border-electric-blue rounded-full px-6 py-3 flex items-center space-x-3 shadow-lg animate-pulse">
-          <div className="w-3 h-3 bg-electric-blue rounded-full animate-ping"></div>
-          <span className="text-electric-blue text-sm font-medium">Hover over particles to explore services!</span>
-          <svg className="w-4 h-4 text-electric-blue animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-      )}
     </div>
   );
 }

@@ -9,41 +9,40 @@ const services = [
   {
     slug: 'neuro-website',
     icon: Brain,
-    title: "Neuro Marketing ভিত্তিক Website",
-    shortDescription: "আমরা শুধু ওয়েবসাইট বিল্ড করি না, আমরা বিল্ড করি Psychology-driven Conversion Machine।",
-    fullDescription: "আপনার ওয়েবসাইটের প্রতিটি উপাদান - রং, টাইপোগ্রাফি, লেআউট, CTA বাটন - সবকিছুই নিউরো সাইকোলজির নীতি অনুযায়ী ডিজাইন করা হয়। আমরা শুধু সুন্দর ওয়েবসাইট তৈরি করি না, আমরা তৈরি করি এমন ওয়েবসাইট যা ভিজিটরের মস্তিষ্কে সরাসরি প্রভাব ফেলে এবং তাদের কেনাকাটার সিদ্ধান্ত নিতে প্রভাবিত করে।",
+    title: "শুধু সুন্দর ওয়েবসাইট নয়, চাই একটি ২৪/৭ Salesperson",
+    shortDescription: "আপনার ওয়েবসাইট কি শুধু ভিজিটরের জন্য শো-পিস, নাকি সত্যিকারের সেলস পার্সন? আমরা Neuro Binding এ এমন ওয়েবসাইট বিল্ড করি যেটা কথা বলে, আস্থা তৈরি করে এবং সেলস করে।",
+    fullDescription: "আজকের দিনে ৯০% ভিজিটর ওয়েবসাইটে ঢুকে প্রথম ৫ সেকেন্ডেই সিদ্ধান্ত নেয়, থাকবে নাকি চলে যাবে। কারণ: এলোমেলো ডিজাইন → ব্রেইন বলে 'Low Quality', Social Proof নাই → ব্রেইন বলে 'Risky', CTA স্পষ্ট নয় → ব্রেইন বলে 'Confusing'। মানুষ সিদ্ধান্ত নেয় আবেগ + psychology দিয়ে। শুধু লজিক দিয়ে না। তাই ওয়েবসাইটকে এমনভাবে বানাতে হয় যাতে ভিজিটর অবচেতনভাবে বিশ্বাস করে এবং কিনতে বাধ্য হয়।",
     features: [
-      "প্রতিটি ডিজাইন মানুষের ব্রেইনে প্রুভেন প্রভাব ফেলে",
-      "প্রতিটি CTA সাইকোলজিক্যালি অপটিমাইজড",
-      "প্রতিটি কালার কনভার্শন বাড়ায়",
-      "ভিজুয়াল হায়ারার্কি অপটিমাইজেশন",
-      "ইউজার বিহেভিয়ার ট্র্যাকিং",
-      "মোবাইল-ফার্স্ট রেসপন্সিভ ডিজাইন"
+      "রঙ, ফন্ট, লেআউট সবকিছু Neuro Tested",
+      "Eye Direction Theory → CTA এর দিকে দৃষ্টি টানে",
+      "Color Psychology → আস্থা, urgency, excitement তৈরি করে",
+      "PRISM Model ভিত্তিক কনটেন্ট (Problem → React → Inspire → Social Proof → Move)",
+      "Cold Visitor → Warm → Hot Customer রূপান্তর",
+      "বাংলাদেশী কাস্টমারের মানসিকতা অনুযায়ী ডিজাইন"
     ],
     advanced: [
-      "নিউরো-সাইকোলজিক্যাল ডিজাইন প্যাটার্ন",
-      "আই-ট্র্যাকিং হিটম্যাপ ইন্টিগ্রেশন",
-      "কগনিটিভ লোড অপটিমাইজেশন",
-      "কনভার্শন ফানেল অপটিমাইজেশন",
-      "সাবলিমিনাল মেসেজিং টেকনিক",
-      "নিউরো-রেসপন্সিভ ডিজাইন প্যাটার্ন"
+      "Psychology-driven Design প্যাটার্ন",
+      "Conversion Optimized Funnel তৈরি",
+      "Bangladesh Context Ready ডিজাইন",
+      "বাংলা/ইংরেজি মিশ্র ভাষার জন্য অপটিমাইজড",
+      "মোবাইল-ফার্স্ট অভিজ্ঞতা (৭০% ভিজিটর মোবাইল থেকে আসে)",
+      "প্রতিটি সেকশন ভিজিটরকে সিদ্ধান্তের দিকে ঠেলে দেয়"
     ],
     process: [
-      "ইউজার সাইকোলজি রিসার্চ ও অ্যানালাইসিস",
-      "টার্গেট অডিয়েন্স বিহেভিয়ার স্টাডি",
-      "নিউরো-সাইকোলজিক্যাল ওয়্যারফ্রেম তৈরি",
-      "কালার সাইকোলজি প্রয়োগ",
-      "কনভার্শন-ফোকাসড ডিজাইন",
-      "A/B টেস্টিং ও অপটিমাইজেশন"
+      "🔍 Audit & Research – আপনার ব্যবসার Industry বিশ্লেষণ",
+      "🧠 Neuro Strategy Plan – রঙ, ফন্ট, কনটেন্ট প্লেসমেন্টের সিদ্ধান্ত",
+      "🎨 Design & Development – Psychology-driven UI + Funnel তৈরি",
+      "✅ Testing & Optimization – Heatmap setup and Testing",
+      "🚀 Launch & Scale – ডেটা-ড্রিভেন স্কেলিং"
     ],
     results: [
-      "গড়ে 350% কনভার্শন রেট বৃদ্ধি",
-      "ইউজার এনগেজমেন্ট 200% বৃদ্ধি",
-      "বাউন্স রেট 60% কমে যাওয়া",
-      "সেশন ডিউরেশন 180% বৃদ্ধি"
+      "আপনার ওয়েবসাইট শুধু সুন্দর হবে না, বরং ভিজিটরকে কাস্টমারে রূপান্তরিত করবে",
+      "প্রতিটি ভিজিটর অবচেতনভাবে বিশ্বাস করবে এবং কিনতে বাধ্য হবে",
+      "২৪/৭ কাজ করে এমন একটি সেলসপার্সন পাবেন",
+      "Psychology এবং আবেগের মাধ্যমে সিদ্ধান্ত নেওয়া ভিজিটর"
     ],
-    stats: { success: "350%", metric: "Conversion বৃদ্ধি" },
-    price: "শুরু ৫০,০০০ টাকা থেকে",
+    stats: { success: "৯০%", metric: "ভিজিটর প্রথম ৫ সেকেন্ডে থাকার সিদ্ধান্ত" },
+    price: "এখনই ফ্রি কনসালটেশন বুক করুন",
     timeline: "১৫-২১ কর্মদিবস",
     backgroundColor: "from-blue-500/10 to-purple-500/10",
     accentColor: "blue-500"
@@ -297,6 +296,319 @@ export default function ServiceDetailPage({ params }: Props) {
 
   const IconComponent = service.icon
 
+  // Special layout for neuro-website service
+  if (params.slug === 'neuro-website') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section - Custom for Neuro Website */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-electric-blue rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-32 right-20 w-48 h-48 bg-neuro-purple rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-neon-green rounded-full blur-2xl animate-pulse delay-2000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-5xl mx-auto">
+              <div className="flex justify-center mb-8">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-neuro-purple rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-8 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-3xl glassmorphism-dark">
+                    <Brain className="text-electric-blue" size={80} />
+                  </div>
+                </div>
+              </div>
+              
+              <h1 className="text-4xl lg:text-7xl font-montserrat font-bold mb-8 leading-tight">
+                <span className="bg-gradient-to-r from-white via-electric-blue to-neuro-purple bg-clip-text text-transparent">
+                  শুধু সুন্দর ওয়েবসাইট নয়, চাই একটি ২৪/৭ Salesperson
+                </span>
+              </h1>
+              
+              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8">
+                আপনার ওয়েবসাইট কি শুধু ভিজিটরের জন্য শো-পিস, নাকি সত্যিকারের সেলস পার্সন?<br/>
+                👉 আমরা Neuro Binding এ এমন ওয়েবসাইট বিল্ড করি যেটা কথা বলে, আস্থা তৈরি করে এবং সেলস করে।
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <button className="bg-gradient-to-r from-neon-green to-electric-blue hover:from-electric-blue hover:to-neon-green text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neon-green/50">
+                  👉 এখনই আপনার Neuro Marketing ভিত্তিক ওয়েবসাইট এর জন্য বুক করুন
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20">
+                  <div className="text-4xl font-bold text-neon-green mb-2">৯০%</div>
+                  <p className="text-gray-300">ভিজিটর প্রথম ৫ সেকেন্ডেই সিদ্ধান্ত নেয়</p>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20">
+                  <div className="text-4xl font-bold text-electric-blue mb-2">২৪/৭</div>
+                  <p className="text-gray-300">সেলসপার্সন হিসেবে কাজ করবে</p>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neon-green/20">
+                  <div className="text-4xl font-bold text-neuro-purple mb-2">১০০%</div>
+                  <p className="text-gray-300">Psychology-driven ডিজাইন</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Neuro Marketing Important Section */}
+        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-6">
+                ❓ কেন শুধু ডিজাইন নয়, <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">Neuro Marketing জরুরি</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                আজকের দিনে ৯০% ভিজিটর ওয়েবসাইটে ঢুকে প্রথম ৫ সেকেন্ডেই সিদ্ধান্ত নেয়, থাকবে নাকি চলে যাবে।
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="glassmorphism-dark rounded-2xl p-8 border border-red-500/20 hover:border-red-500/40 transition-colors">
+                <div className="w-16 h-16 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-xl flex items-center justify-center mb-6">
+                  <Target className="text-red-400" size={32} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-red-400">এলোমেলো ডিজাইন</h3>
+                <p className="text-gray-300">→ ব্রেইন বলে "Low Quality"</p>
+              </div>
+              
+              <div className="glassmorphism-dark rounded-2xl p-8 border border-orange-500/20 hover:border-orange-500/40 transition-colors">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl flex items-center justify-center mb-6">
+                  <Shield className="text-orange-400" size={32} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-orange-400">Social Proof নাই</h3>
+                <p className="text-gray-300">→ ব্রেইন বলে "Risky"</p>
+              </div>
+              
+              <div className="glassmorphism-dark rounded-2xl p-8 border border-yellow-500/20 hover:border-yellow-500/40 transition-colors">
+                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 rounded-xl flex items-center justify-center mb-6">
+                  <Eye className="text-yellow-400" size={32} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-yellow-400">CTA স্পষ্ট নয়</h3>
+                <p className="text-gray-300">→ ব্রেইন বলে "Confusing"</p>
+              </div>
+            </div>
+
+            <div className="text-center bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 rounded-3xl p-12 border border-electric-blue/20">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-full flex items-center justify-center">
+                  <Brain className="text-electric-blue" size={40} />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">🧠 Neuro Fact:</h3>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                মানুষ সিদ্ধান্ত নেয় আবেগ + psychology দিয়ে। শুধু লজিক দিয়ে না।<br/>
+                👉 তাই ওয়েবসাইটকে এমনভাবে বানাতে হয় যাতে ভিজিটর অবচেতনভাবে বিশ্বাস করে এবং কিনতে বাধ্য হয়।
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-20 bg-neural-bg relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-6">
+                🌟 আমাদের তৈরি <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">ওয়েবসাইটের বৈশিষ্ট্য</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+              {/* Psychology-driven Design */}
+              <div className="glassmorphism-dark rounded-3xl p-8 border border-electric-blue/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-xl flex items-center justify-center">
+                    <span className="text-2xl">1️⃣</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-electric-blue">Psychology-driven Design</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">রঙ, ফন্ট, লেআউট সবকিছু Neuro Tested</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">Eye Direction Theory → CTA এর দিকে দৃষ্টি টানে</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">Color Psychology → আস্থা, urgency, excitement তৈরি করে</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Conversion Optimized */}
+              <div className="glassmorphism-dark rounded-3xl p-8 border border-neuro-purple/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-neuro-purple/20 to-neon-green/20 rounded-xl flex items-center justify-center">
+                    <span className="text-2xl">2️⃣</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-neuro-purple">Conversion Optimized Funnel</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">PRISM Model এ ভিত্তিক কনটেন্ট (Problem → React → Inspire → Social Proof → Move)</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">Cold Visitor → Warm → Hot Customer রূপান্তর</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">প্রতিটি সেকশন ভিজিটরকে সিদ্ধান্তের দিকে ঠেলে দেয়</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bangladesh Context */}
+              <div className="glassmorphism-dark rounded-3xl p-8 border border-neon-green/20 md:col-span-2">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-neon-green/20 to-electric-blue/20 rounded-xl flex items-center justify-center">
+                    <span className="text-2xl">4️⃣</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-neon-green">Bangladesh Context Ready</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">লোকাল কাস্টমারের মানসিকতা অনুযায়ী ডিজাইন</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">বাংলা/ইংরেজি মিশ্র ভাষা</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-neon-green flex-shrink-0 mt-1" size={16} />
+                    <p className="text-gray-300">মোবাইল-ফার্স্ট অভিজ্ঞতা (কারণ ৭০% ভিজিটর মোবাইল থেকে আসে)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-3xl p-12 border border-neon-green/20">
+              <h3 className="text-2xl font-bold mb-4">📌 ফলাফল:</h3>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                আপনার ওয়েবসাইট শুধু সুন্দর হবে না, বরং ভিজিটরকে কাস্টমারে রূপান্তরিত করবে।
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-6">
+                🛠️ আমাদের কাজ করার <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">ধাপ</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+              {service.process.map((step, index) => (
+                <div key={index} className="text-center group">
+                  <div className="relative mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-full flex items-center justify-center mx-auto border-2 border-electric-blue/30 group-hover:border-electric-blue/60 transition-colors">
+                      <span className="text-2xl font-bold text-electric-blue">{index + 1}</span>
+                    </div>
+                    {index < service.process.length - 1 && (
+                      <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-electric-blue/30 to-transparent"></div>
+                    )}
+                  </div>
+                  <p className="text-gray-300 group-hover:text-white transition-colors leading-relaxed">
+                    {step}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof Section */}
+        <section className="py-20 bg-neural-bg relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-6">
+                📊 <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">Social Proof / Results</span>
+              </h2>
+              <p className="text-xl text-gray-300">প্রমাণিত ফলাফল এবং সন্তুষ্ট ক্লায়েন্টদের মতামত</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+              {service.results.map((result, index) => (
+                <div key={index} className="text-center glassmorphism-dark rounded-2xl p-8 border border-electric-blue/20 hover:border-electric-blue/40 transition-colors">
+                  <div className="w-16 h-16 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award size={24} className="text-white" />
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">{result}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 rounded-3xl p-12 border border-electric-blue/20">
+              <h3 className="text-2xl font-bold mb-4">Video review গলিব ভাই</h3>
+              <p className="text-gray-300 mb-6">আমাদের ক্লায়েন্টদের সরাসরি মতামত শুনুন</p>
+              <div className="w-full max-w-2xl mx-auto h-64 bg-gradient-to-br from-neural-bg-secondary to-neural-bg rounded-2xl border border-electric-blue/30 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Rocket className="text-electric-blue" size={32} />
+                  </div>
+                  <p className="text-gray-400">Video Content এর জন্য স্থান</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-neuro-purple/20 to-electric-blue/20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-electric-blue rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-48 h-48 bg-neuro-purple rounded-full blur-3xl animate-pulse delay-1000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🔥 আপনার ওয়েবসাইট শুধু শো-পিস না, <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">একটি ২৪/৭ সেলসপার্সন বানান।</span>
+              </h2>
+              
+              <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+                👉 এখনই আমাদের সাথে যোগাযোগ করুন।
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-6">
+                <button className="bg-gradient-to-r from-neon-green to-electric-blue hover:from-electric-blue hover:to-neon-green text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neon-green/50">
+                  ফ্রি কনসালটেশন বুক করুন
+                </button>
+                <button className="glassmorphism-dark border border-electric-blue/30 hover:border-electric-blue/60 text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105">
+                  আরো জানুন
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <Footer />
+      </div>
+    )
+  }
+
+  // Default layout for other services
   return (
     <div className="min-h-screen bg-neural-bg text-white">
       <Navigation />

@@ -2,48 +2,47 @@ import { useRoute } from 'wouter';
 import { notFound } from 'wouter/preact';
 import Navigation from '@/components/layout/navigation';
 import Footer from '@/components/layout/footer';
-import { Brain, TrendingUp, Users, Magnet, FileText, Palette, Check, ChevronLeft, Star, Zap, Target, ArrowRight, Clock, DollarSign, Award, Lightbulb, TrendingUp as TrendingUpIcon, Users as UsersIcon, Eye, Sparkles, Shield, Rocket } from 'lucide-react';
+import { Brain, TrendingUp, Users, Magnet, FileText, Palette, Check, ChevronLeft, Star, Zap, Target, ArrowRight, Clock, DollarSign, Award, Lightbulb, TrendingUp as TrendingUpIcon, Users as UsersIcon, Eye, Sparkles, Shield, Rocket, MousePointer, Smartphone } from 'lucide-react';
 import { Link } from 'wouter';
 
 const services = [
   {
     slug: 'neuro-website',
     icon: Brain,
-    title: "Neuro Marketing ভিত্তিক Website",
-    shortDescription: "আমরা শুধু ওয়েবসাইট বিল্ড করি না, আমরা বিল্ড করি Psychology-driven Conversion Machine।",
-    fullDescription: "আপনার ওয়েবসাইটের প্রতিটি উপাদান - রং, টাইপোগ্রাফি, লেআউট, CTA বাটন - সবকিছুই নিউরো সাইকোলজির নীতি অনুযায়ী ডিজাইন করা হয়। আমরা শুধু সুন্দর ওয়েবসাইট তৈরি করি না, আমরা তৈরি করি এমন ওয়েবসাইট যা ভিজিটরের মস্তিষ্কে সরাসরি প্রভাব ফেলে এবং তাদের কেনাকাটার সিদ্ধান্ত নিতে প্রভাবিত করে।",
+    title: "শুধু সুন্দর ওয়েবসাইট নয়, চাই একটি ২৪/৭ Salesperson",
+    shortDescription: "আপনার ওয়েবসাইট কি শুধু ভিজিটরের জন্য শো-পিস, নাকি সত্যিকারের সেলস পার্সন? 👉 আমরা Neuro Binding এ এমন ওয়েবসাইট বিল্ড করি যেটা কথা বলে, আস্থা তৈরি করে এবং সেলস করে।",
+    fullDescription: "আজকের দিনে ৯০% ভিজিটর ওয়েবসাইটে ঢুকে প্রথম ৫ সেকেন্ডেই সিদ্ধান্ত নেয়, থাকবে নাকি চলে যাবে। কারণ: এলোমেলো ডিজাইন → ব্রেইন বলে 'Low Quality', Social Proof নাই → ব্রেইন বলে 'Risky', CTA স্পষ্ট নয় → ব্রেইন বলে 'Confusing'। 🧠 Neuro Fact: মানুষ সিদ্ধান্ত নেয় আবেগ + psychology দিয়ে। শুধু লজিক দিয়ে না। 👉 তাই ওয়েবসাইটকে এমনভাবে বানাতে হয় যাতে ভিজিটর অবচেতনভাবে বিশ্বাস করে এবং কিনতে বাধ্য হয়।",
     features: [
-      "প্রতিটি ডিজাইন মানুষের ব্রেইনে প্রুভেন প্রভাব ফেলে",
-      "প্রতিটি CTA সাইকোলজিক্যালি অপটিমাইজড",
-      "প্রতিটি কালার কনভার্শন বাড়ায়",
-      "ভিজুয়াল হায়ারার্কি অপটিমাইজেশন",
-      "ইউজার বিহেভিয়ার ট্র্যাকিং",
-      "মোবাইল-ফার্স্ট রেসপন্সিভ ডিজাইন"
+      "রঙ, ফন্ট, লেআউট সবকিছু Neuro Tested",
+      "Eye Direction Theory → CTA এর দিকে দৃষ্টি টানে",
+      "Color Psychology → আস্থা, urgency, excitement তৈরি করে",
+      "PRISM Model ভিত্তিক কনটেন্ট (Problem → React → Inspire → Social Proof → Move)",
+      "Cold Visitor → Warm → Hot Customer রূপান্তর",
+      "বাংলাদেশী কাস্টমারের মানসিকতা অনুযায়ী ডিজাইন"
     ],
     advanced: [
-      "নিউরো-সাইকোলজিক্যাল ডিজাইন প্যাটার্ন",
-      "আই-ট্র্যাকিং হিটম্যাপ ইন্টিগ্রেশন",
-      "কগনিটিভ লোড অপটিমাইজেশন",
-      "কনভার্শন ফানেল অপটিমাইজেশন",
-      "সাবলিমিনাল মেসেজিং টেকনিক",
-      "নিউরো-রেসপন্সিভ ডিজাইন প্যাটার্ন"
+      "Psychology-driven Design প্যাটার্ন",
+      "Conversion Optimized Funnel তৈরি", 
+      "Bangladesh Context Ready ডিজাইন",
+      "বাংলা/ইংরেজি মিশ্র ভাষার জন্য অপটিমাইজড",
+      "মোবাইল-ফার্স্ট অভিজ্ঞতা (৭০% ভিজিটর মোবাইল থেকে আসে)",
+      "প্রতিটি সেকশন ভিজিটরকে সিদ্ধান্তের দিকে ঠেলে দেয়"
     ],
     process: [
-      "ইউজার সাইকোলজি রিসার্চ ও অ্যানালাইসিস",
-      "টার্গেট অডিয়েন্স বিহেভিয়ার স্টাডি",
-      "নিউরো-সাইকোলজিক্যাল ওয়্যারফ্রেম তৈরি",
-      "কালার সাইকোলজি প্রয়োগ",
-      "কনভার্শন-ফোকাসড ডিজাইন",
-      "A/B টেস্টিং ও অপটিমাইজেশন"
+      "🔍 Audit & Research – আপনার ব্যবসার Industry বিশ্লেষণ",
+      "🧠 Neuro Strategy Plan – রঙ, ফন্ট, কনটেন্ট প্লেসমেন্টের সিদ্ধান্ত",
+      "🎨 Design & Development – Psychology-driven UI + Funnel তৈরি",
+      "✅ Testing & Optimization – Heatmap setup and Testing",
+      "🚀 Launch & Scale – ডেটা-ড্রিভেন স্কেলিং"
     ],
     results: [
-      "গড়ে 350% কনভার্শন রেট বৃদ্ধি",
-      "ইউজার এনগেজমেন্ট 200% বৃদ্ধি",
-      "বাউন্স রেট 60% কমে যাওয়া",
-      "সেশন ডিউরেশন 180% বৃদ্ধি"
+      "আপনার ওয়েবসাইট শুধু সুন্দর হবে না, বরং ভিজিটরকে কাস্টমারে রূপান্তরিত করবে",
+      "প্রতিটি ভিজিটর অবচেতনভাবে বিশ্বাস করবে এবং কিনতে বাধ্য হবে",
+      "২৪/৭ কাজ করে এমন একটি সেলসপার্সন পাবেন",
+      "Psychology এবং আবেগের মাধ্যমে সিদ্ধান্ত নেওয়া ভিজিটর"
     ],
-    stats: { success: "350%", metric: "Conversion বৃদ্ধি" },
-    price: "শুরু ৫০,০০০ টাকা থেকে",
+    stats: { success: "৯০%", metric: "ভিজিটর প্রথম ৫ সেকেন্ডে থাকার সিদ্ধান্ত" },
+    price: "👉 এখনই ফ্রি কনসালটেশন বুক করুন",
     timeline: "১৫-২১ কর্মদিবস",
     backgroundColor: "from-blue-500/10 to-purple-500/10",
     accentColor: "blue-500"
@@ -280,94 +279,140 @@ export default function ServiceDetailPage() {
       <Navigation />
       
       <div className="pt-20">
-        {/* Hero Section with Enhanced Design */}
-        <section className={`relative py-24 bg-gradient-to-br ${service.backgroundColor} overflow-hidden`}>
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-10 left-10 w-32 h-32 bg-electric-blue rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute top-32 right-20 w-48 h-48 bg-neuro-purple rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-neon-green rounded-full blur-2xl animate-pulse delay-2000"></div>
-          </div>
-          
+        {/* CLEAN HERO SECTION */}
+        <section className="relative min-h-screen overflow-hidden flex items-center" style={{background: 'linear-gradient(to bottom right, #11141d 0%, #6511a2 50%, #11141d 100%)'}}>
           <div className="container mx-auto px-6 relative z-10">
-            {/* Breadcrumb */}
+            {/* Simple Back Button */}
             <Link 
               href="/services" 
-              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+              className="absolute top-8 left-6 inline-flex items-center text-white/80 hover:text-white transition-colors group"
             >
-              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
-              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
+              <span>সার্ভিস পেজে ফিরুন</span>
             </Link>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div className="space-y-8">
-                <div className="flex items-center gap-6">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-neuro-purple rounded-3xl blur opacity-75 animate-pulse"></div>
-                    <div className="relative p-6 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-3xl glassmorphism-dark">
-                      <IconComponent className="text-electric-blue" size={64} />
-                    </div>
+            <div className="text-center space-y-8 max-w-5xl mx-auto">
+              {/* Clean Stats Display */}
+              <div className="flex items-center justify-center gap-4 mb-8">
+                <div className="p-4 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20">
+                  <IconComponent className="text-white" size={60} />
+                </div>
+                <div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-6xl font-black text-white">{service.stats.success}</span>
+                    <span className="text-2xl text-white/80">%</span>
                   </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-4xl lg:text-6xl font-bold text-neon-green">+{service.stats.success}</span>
-                      <div className="text-sm text-gray-300">
-                        <div>{service.stats.metric}</div>
-                        <div className="text-xs text-electric-blue">গড় ফলাফল</div>
+                  <p className="text-white/70 text-sm">{service.stats.metric}</p>
+                </div>
+              </div>
+              
+              {/* Clean Main Title */}
+              <h1 className="text-5xl lg:text-7xl font-black text-white leading-tight">
+                {service.title}
+              </h1>
+              
+              {/* Simple Description */}
+              <p className="text-xl lg:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+                {service.shortDescription}
+              </p>
+              
+              {/* Simple CTA */}
+              <div className="pt-8">
+                <button className="bg-white text-purple-900 font-bold text-xl px-10 py-4 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                  ফ্রি কনসালটেশন বুক করুন
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* কেন Neuro Marketing জরুরি SECTION */}
+        <section className="py-20 bg-neural-bg relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-black mb-8">
+                <span className="bg-gradient-to-r from-electric-blue via-neuro-purple to-neon-green bg-clip-text text-transparent">
+                  ❓ কেন শুধু ডিজাইন নয়, Neuro Marketing জরুরি
+                </span>
+              </h2>
+              
+              <div className="max-w-4xl mx-auto space-y-8">
+                <p className="text-2xl text-gray-200 leading-relaxed font-medium">
+                  আজকের দিনে <span className="text-red-400 font-bold">৯০% ভিজিটর</span> ওয়েবসাইটে ঢুকে <span className="text-electric-blue font-bold">প্রথম ৫ সেকেন্ডেই</span> সিদ্ধান্ত নেয়, থাকবে নাকি চলে যাবে।
+                </p>
+                
+                <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-2xl p-8">
+                  <h3 className="text-2xl font-bold text-red-400 mb-6 text-center">কারণ:</h3>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="text-center space-y-4">
+                      <div className="flex justify-center">
+                        <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center">
+                          <Palette className="text-red-400" size={40} />
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-lg font-semibold text-red-400">এলোমেলো ডিজাইন</p>
+                        <div className="flex justify-center my-2">
+                          <ArrowRight className="text-gray-300 rotate-90" size={20} />
+                        </div>
+                        <p className="text-white font-bold bg-red-500/20 rounded-lg px-4 py-2 mt-2">
+                          ব্রেইন বলে "Low Quality"
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="text-center space-y-4">
+                      <div className="flex justify-center">
+                        <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center">
+                          <Shield className="text-red-400" size={40} />
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-lg font-semibold text-red-400">Social Proof নাই</p>
+                        <div className="flex justify-center my-2">
+                          <ArrowRight className="text-gray-300 rotate-90" size={20} />
+                        </div>
+                        <p className="text-white font-bold bg-red-500/20 rounded-lg px-4 py-2 mt-2">
+                          ব্রেইন বলে "Risky"
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="text-center space-y-4">
+                      <div className="flex justify-center">
+                        <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center">
+                          <MousePointer className="text-red-400" size={40} />
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-lg font-semibold text-red-400">CTA স্পষ্ট নয়</p>
+                        <div className="flex justify-center my-2">
+                          <ArrowRight className="text-gray-300 rotate-90" size={20} />
+                        </div>
+                        <p className="text-white font-bold bg-red-500/20 rounded-lg px-4 py-2 mt-2">
+                          ব্রেইন বলে "Confusing"
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div>
-                  <h1 className="text-4xl lg:text-6xl font-montserrat font-bold mb-6 leading-tight">
-                    <span className="bg-gradient-to-r from-white via-electric-blue to-neuro-purple bg-clip-text text-transparent">
-                      {service.title}
-                    </span>
-                  </h1>
-                  
-                  <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                    {service.fullDescription}
-                  </p>
-                </div>
-
-                {/* Quick Info Cards */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20 hover:border-electric-blue/40 transition-colors">
-                    <div className="flex items-center gap-3 mb-3">
-                      <DollarSign className="text-neon-green" size={24} />
-                      <h3 className="font-semibold">মূল্য</h3>
+                <div className="bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 border border-electric-blue/20 rounded-2xl p-8 mt-8">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-4">
+                      <span className="text-5xl">🧠</span>
+                      <span>Neuro Fact:</span>
+                    </h3>
+                    <p className="text-2xl text-white leading-relaxed mb-6">
+                      মানুষ সিদ্ধান্ত নেয় <span className="text-neon-green font-bold">আবেগ + psychology</span> দিয়ে। শুধু লজিক দিয়ে না।
+                    </p>
+                    <div className="bg-gradient-to-r from-neon-green/10 to-electric-blue/10 border border-neon-green/30 rounded-2xl p-6">
+                      <p className="text-xl text-white font-semibold flex items-center justify-center gap-3">
+                        <span className="text-3xl">👉</span>
+                        <span>তাই ওয়েবসাইটকে এমনভাবে বানাতে হয় যাতে ভিজিটর অবচেতনভাবে বিশ্বাস করে এবং কিনতে বাধ্য হয়।</span>
+                      </p>
                     </div>
-                    <p className="text-xl font-bold text-neon-green">{service.price}</p>
-                  </div>
-                  
-                  <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20 hover:border-neuro-purple/40 transition-colors">
-                    <div className="flex items-center gap-3 mb-3">
-                      <Clock className="text-electric-blue" size={24} />
-                      <h3 className="font-semibold">সময়কাল</h3>
-                    </div>
-                    <p className="text-xl font-bold text-electric-blue">{service.timeline}</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Content - Visual Stats */}
-              <div className="space-y-6">
-                <div className="glassmorphism-dark rounded-3xl p-8 border border-electric-blue/20">
-                  <h3 className="text-2xl font-bold mb-6 text-center">প্রমাণিত ফলাফল</h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    {service.results.map((result, index) => (
-                      <div 
-                        key={index}
-                        className="text-center p-4 bg-gradient-to-br from-neural-bg-secondary to-neural-bg rounded-2xl border border-gray-800 hover:border-electric-blue/30 transition-colors"
-                      >
-                        <div className="w-12 h-12 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center mx-auto mb-3">
-                          <Award size={20} className="text-white" />
-                        </div>
-                        <p className="text-sm text-gray-300 leading-relaxed">{result}</p>
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>
@@ -375,46 +420,174 @@ export default function ServiceDetailPage() {
           </div>
         </section>
 
-        {/* Features Section - Enhanced */}
-        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
-          {/* Background Animation */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute animate-float-slow">
-              <Brain className="w-64 h-64 text-electric-blue" />
+        {/* STATS & PRICING SECTION */}
+        <section className="py-20 bg-neural-bg-secondary">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Pricing Card */}
+              <div className="bg-gradient-to-br from-electric-blue/10 to-neuro-purple/10 backdrop-blur-lg border border-electric-blue/20 rounded-2xl p-8 text-center">
+                <DollarSign className="text-neon-green mx-auto mb-4" size={48} />
+                <h3 className="text-2xl font-bold mb-2">বিনিয়োগ</h3>
+                <p className="text-3xl font-black text-neon-green">{service.price}</p>
+              </div>
+              
+              {/* Timeline Card */}
+              <div className="bg-gradient-to-br from-neuro-purple/10 to-electric-blue/10 backdrop-blur-lg border border-neuro-purple/20 rounded-2xl p-8 text-center">
+                <Clock className="text-electric-blue mx-auto mb-4" size={48} />
+                <h3 className="text-2xl font-bold mb-2">ডেলিভারি</h3>
+                <p className="text-3xl font-black text-electric-blue">{service.timeline}</p>
+              </div>
+              
+              {/* Success Rate Card */}
+              <div className="bg-gradient-to-br from-neon-green/10 to-electric-blue/10 backdrop-blur-lg border border-neon-green/20 rounded-2xl p-8 text-center">
+                <Award className="text-neon-green mx-auto mb-4" size={48} />
+                <h3 className="text-2xl font-bold mb-2">সফলতার হার</h3>
+                <p className="text-3xl font-black text-neon-green">{service.stats.success}%</p>
+              </div>
             </div>
           </div>
-          
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-6">
-                এই সার্ভিসে যা <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">পাবেন</span>
-              </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                আমাদের প্রতিটি ফিচার নিউরো সাইকোলজির উপর ভিত্তি করে তৈরি এবং প্রমাণিত ফলাফল দেয়
-              </p>
-            </div>
+        </section>
+
+        {/* RESULTS SECTION */}
+        <section className="py-20 bg-neural-bg">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
+              <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">
+                প্রমাণিত ফলাফল
+              </span>
+            </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {service.features.map((feature, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {service.results.map((result, index) => (
                 <div 
                   key={index}
-                  className="group glassmorphism-dark rounded-2xl p-8 hover-lift animate-shimmer border border-transparent hover:border-electric-blue/30 transition-all duration-500"
-                  style={{animationDelay: `${index * 0.1}s`}}
+                  className="bg-gradient-to-br from-neural-bg-secondary/50 to-neural-bg/50 backdrop-blur-lg border border-electric-blue/20 rounded-2xl p-6"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Check className="text-neon-green" size={20} />
-                      </div>
+                    <div className="w-12 h-12 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center flex-shrink-0">
+                      <Sparkles size={20} className="text-white" />
                     </div>
-                    <div>
-                      <p className="text-gray-300 group-hover:text-white transition-colors leading-relaxed">
-                        {feature}
-                      </p>
-                    </div>
+                    <p className="text-lg text-gray-200 leading-relaxed">{result}</p>
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FEATURES SECTION - BEAUTIFUL DESIGN */}
+        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-black mb-8">
+                <span className="bg-gradient-to-r from-electric-blue via-neuro-purple to-neon-green bg-clip-text text-transparent">
+                  🌟 আমাদের তৈরি ওয়েবসাইটের বৈশিষ্ট্য
+                </span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              {/* 1️⃣ Psychology-driven Design */}
+              <div className="bg-gradient-to-br from-electric-blue/10 to-neuro-purple/10 backdrop-blur-lg border border-electric-blue/20 rounded-3xl p-8 hover:border-electric-blue/40 transition-all duration-300 hover:scale-105 group">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-r from-electric-blue to-neuro-purple rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Brain className="text-white" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    1️⃣ Psychology-driven Design
+                  </h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Palette className="text-neon-green mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">রঙ, ফন্ট, লেআউট সবকিছু Neuro Tested</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Eye className="text-electric-blue mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">Eye Direction Theory → CTA এর দিকে দৃষ্টি টানে</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Lightbulb className="text-yellow-400 mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">Color Psychology → আস্থা, urgency, excitement তৈরি করে</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* 2️⃣ Conversion Optimized Funnel */}
+              <div className="bg-gradient-to-br from-neuro-purple/10 to-neon-green/10 backdrop-blur-lg border border-neuro-purple/20 rounded-3xl p-8 hover:border-neuro-purple/40 transition-all duration-300 hover:scale-105 group">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-r from-neuro-purple to-neon-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Target className="text-white" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    2️⃣ Conversion Optimized Funnel
+                  </h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Magnet className="text-neon-green mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">PRISM Model এ ভিত্তিক কনটেন্ট (Problem → React → Inspire → Social Proof → Move)</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <TrendingUp className="text-electric-blue mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">Cold Visitor → Warm → Hot Customer রূপান্তর</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ArrowRight className="text-yellow-400 mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">প্রতিটি সেকশন ভিজিটরকে সিদ্ধান্তের দিকে ঠেলে দেয়</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* 4️⃣ Bangladesh Context Ready */}
+              <div className="bg-gradient-to-br from-neon-green/10 to-electric-blue/10 backdrop-blur-lg border border-neon-green/20 rounded-3xl p-8 hover:border-neon-green/40 transition-all duration-300 hover:scale-105 group">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Users className="text-white" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    4️⃣ Bangladesh Context Ready
+                  </h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Brain className="text-neon-green mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">লোকাল কাস্টমারের মানসিকতা অনুযায়ী ডিজাইন</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <FileText className="text-electric-blue mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">বাংলা/ইংরেজি মিশ্র ভাষা</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Smartphone className="text-yellow-400 mt-1 flex-shrink-0" size={20} />
+                    <p className="text-gray-200">মোবাইল-ফার্স্ট অভিজ্ঞতা (কারণ ৭০% ভিজিটর মোবাইল থেকে আসে)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* 📌 ফলাফল SECTION */}
+            <div className="bg-gradient-to-r from-electric-blue/10 via-neuro-purple/10 to-neon-green/10 border border-electric-blue/30 rounded-3xl p-10 text-center">
+              <div className="mb-6">
+                <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-4">
+                  <span className="text-4xl">📌</span>
+                  <span>ফলাফল:</span>
+                </h3>
+              </div>
+              
+              <p className="text-2xl text-white leading-relaxed max-w-4xl mx-auto">
+                আপনার ওয়েবসাইট <span className="text-red-400 font-bold">শুধু সুন্দর হবে না</span>, বরং 
+                <span className="text-neon-green font-bold"> ভিজিটরকে কাস্টমারে রূপান্তরিত করবে।</span>
+              </p>
+              
+              <div className="mt-8">
+                <button className="bg-gradient-to-r from-neon-green to-electric-blue text-neural-bg font-black text-xl px-12 py-4 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/30">
+                  এখনই শুরু করুন
+                </button>
+              </div>
             </div>
           </div>
         </section>

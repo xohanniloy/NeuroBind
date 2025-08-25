@@ -71,7 +71,7 @@ app.use((req, res, next) => {
   //     log(`serving on port ${port}`);
   //   }
   // );
-  server.listen(port, 'localhost', () => {
+  server.listen(port, '0.0.0.0', () => {
     log(`serving on port ${port}`);
   });
 })();

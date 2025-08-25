@@ -1,111 +1,117 @@
-import { useState } from "react";
-import { Brain, TrendingUp, Users, Magnet, Smartphone, Rocket, Check, ChevronDown, ChevronUp, Zap, Star } from "lucide-react";
+import React, { useState } from "react";
+import { Brain, TrendingUp, Users, Magnet, FileText, Palette, Check, ChevronDown, ChevronUp, Zap, Star, ArrowRight } from "lucide-react";
 
-export default function ServicesSection() {
+export default function ServicesSection(): React.JSX.Element {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const services = [
     {
+      slug: 'neuro-website',
       icon: Brain,
-      title: "Neuro Web Design",
-      description: "Psychology-driven website layouts that guide user behavior and maximize conversions through strategic placement and visual hierarchy.",
+      title: "Neuro Marketing ভিত্তিক Website",
+      description: "আমরা শুধু ওয়েবসাইট বিল্ড করি না, আমরা বিল্ড করি Psychology-driven Conversion Machine।",
       features: [
-        "Conversion-focused layouts",
-        "Psychological trigger placement",
-        "User behavior analysis"
+        "প্রতিটি ডিজাইন মানুষের ব্রেইনে প্রুভেন প্রভাব ফেলে",
+        "প্রতিটি CTA সাইকোলজিক্যালি অপটিমাইজড",
+        "প্রতিটি কালার কনভার্শন বাড়ায়"
       ],
       advanced: [
-        "Eye-tracking heatmap integration",
-        "Cognitive load optimization",
-        "Subliminal messaging techniques",
-        "Neuro-responsive design patterns"
+        "নিউরো-সাইকোলজিক্যাল ডিজাইন প্যাটার্ন",
+        "ভিজুয়াল হায়ারার্কি অপটিমাইজেশন",
+        "ইউজার বিহেভিয়ার ট্র্যাকিং",
+        "কনভার্শন ফানেল অপটিমাইজেশন"
       ],
-      stats: { success: "250%", metric: "Conversion Boost" }
+      stats: { success: "350%", metric: "Conversion বৃদ্ধি" }
     },
     {
+      slug: 'neuro-content',
       icon: TrendingUp,
-      title: "Content Psychology",
-      description: "Story-driven content strategies that create emotional connections and drive action using proven neuro marketing techniques.",
+      title: "Neuro Marketing ভিত্তিক Content",
+      description: "\"Content is King\" – কিন্তু Neuro Marketing-এ Content is Cash।",
       features: [
-        "Emotional storytelling",
-        "Persuasive copywriting",
-        "CTA optimization"
+        "ভিজিটরের আবেগ ছুঁয়ে যাওয়া কনটেন্ট",
+        "অ্যাকশনে নিয়ে আসা কপিরাইটিং",
+        "সাইকোলজিক্যাল ট্রিগার ব্যবহার"
       ],
       advanced: [
-        "Neuro-linguistic programming",
-        "Emotional trigger mapping",
-        "Persuasion psychology frameworks",
-        "Behavioral copywriting patterns"
+        "নিউরো-লিঙ্গুইস্টিক প্রোগ্রামিং",
+        "ইমোশনাল ট্রিগার ম্যাপিং",
+        "পারসুয়েশন সাইকোলজি ফ্রেমওয়ার্ক",
+        "বিহেভিয়ারাল কপিরাইটিং প্যাটার্ন"
       ],
-      stats: { success: "180%", metric: "Engagement Rate" }
+      stats: { success: "280%", metric: "Engagement বৃদ্ধি" }
     },
     {
-      icon: Users,
-      title: "Behavioral Analytics",
-      description: "Deep dive into user behavior patterns using heatmaps, session recordings, and advanced analytics to optimize performance.",
-      features: [
-        "Heatmap analysis",
-        "User journey mapping",
-        "A/B testing"
-      ],
-      advanced: [
-        "Predictive behavior modeling",
-        "Real-time user intent detection",
-        "Advanced session replay analysis",
-        "Conversion path optimization"
-      ],
-      stats: { success: "320%", metric: "Data Insights" }
-    },
-    {
+      slug: 'lead-magnet',
       icon: Magnet,
-      title: "Lead Magnets",
-      description: "Irresistible lead generation systems that capture high-quality prospects using psychological triggers and value-driven offers.",
+      title: "Neuro Marketing ভিত্তিক Lead Magnet",
+      description: "ভিজিটরকে সরাসরি কিছু বিক্রি না করে আগে তার কাছে বিশ্বাস তৈরি করতে হয়।",
       features: [
-        "High-converting opt-ins",
-        "Email automation",
-        "Nurture sequences"
+        "ভিজিটরের ভয় কমানো লিড ম্যাগনেট",
+        "বিশ্বাস তৈরিকারী অফার",
+        "হাই-কনভার্টিং অপ্ট-ইন ফর্ম"
       ],
       advanced: [
-        "Dynamic personalization engines",
-        "Behavioral trigger automation",
-        "Micro-moment capture systems",
-        "Psychology-based funnel design"
+        "ডায়নামিক পার্সোনালাইজেশন ইঞ্জিন",
+        "বিহেভিয়ারাল ট্রিগার অটোমেশন",
+        "সাইকোলজি-বেসড ফানেল ডিজাইন",
+        "মাইক্রো-মোমেন্ট ক্যাপচার সিস্টেম"
       ],
-      stats: { success: "400%", metric: "Lead Quality" }
+      stats: { success: "450%", metric: "Lead Quality বৃদ্ধি" }
     },
     {
-      icon: Smartphone,
-      title: "Mobile Psychology",
-      description: "Mobile-first designs optimized for touch psychology and micro-interactions that enhance user engagement on all devices.",
+      slug: 'neuro-script',
+      icon: FileText,
+      title: "Neuro Marketing ভিত্তিক Script",
+      description: "ভিডিও, বিজ্ঞাপন বা ওয়েবিনারের জন্য সঠিক স্ক্রিপ্ট = কাস্টমারের মনের দরজা খোলার চাবি।",
       features: [
-        "Touch-optimized UI",
-        "Micro-interactions",
-        "Progressive enhancement"
+        "মানুষের অবচেতন মনকে প্রভাবিত করা",
+        "অ্যাকশনে বাধ্য করা স্ক্রিপ্ট",
+        "ইমোশনাল কানেকশন তৈরি"
       ],
       advanced: [
-        "Haptic feedback integration",
-        "Gesture-based navigation",
-        "Mobile neuro-UX patterns",
-        "Device-specific optimization"
+        "নিউরো-লিঙ্গুইস্টিক স্ক্রিপ্টিং",
+        "সাবলিমিনাল মেসেজিং টেকনিক",
+        "পারসুয়েশন সিকুয়েন্সিং",
+        "কগনিটিভ বায়াস অ্যাক্টিভেশন"
       ],
-      stats: { success: "275%", metric: "Mobile Conversion" }
+      stats: { success: "300%", metric: "Response Rate বৃদ্ধি" }
     },
     {
-      icon: Rocket,
-      title: "Growth Optimization",
-      description: "Continuous optimization strategies that scale your business using data-driven insights and psychological principles.",
+      slug: 'business-consultancy',
+      icon: Users,
+      title: "Neuro Marketing ভিত্তিক Business Consultancy",
+      description: "বিজনেসে গ্রোথ শুধু স্ট্র্যাটেজি দিয়ে আসে না, গ্রাহকের মনের ভেতরে ঢুকতে জানতে হয়।",
       features: [
-        "Performance monitoring",
-        "Conversion optimization",
-        "Scaling strategies"
+        "Neuro Marketing ব্যবহার করে ব্র্যান্ড বিল্ডিং",
+        "বিশ্বাসযোগ্য ও লাভজনক করা",
+        "বিজনেসের জন্য প্রপার প্ল্যান"
       ],
       advanced: [
-        "AI-powered optimization",
-        "Predictive growth modeling",
-        "Multi-variate testing frameworks",
-        "Psychological scaling patterns"
+        "সাইকোগ্রাফিক কাস্টমার সেগমেন্টেশন",
+        "নিউরো-ইকোনমিক প্রাইসিং স্ট্র্যাটেজি",
+        "বিহেভিয়ারাল ব্র্যান্ডিং ফ্রেমওয়ার্ক",
+        "কগনিটিভ গ্রোথ হ্যাকিং"
       ],
-      stats: { success: "500%", metric: "Growth Rate" }
+      stats: { success: "400%", metric: "Business Growth" }
+    },
+    {
+      slug: 'full-branding',
+      icon: Palette,
+      title: "Full Branding (ফুল ব্র্যান্ডিং)",
+      description: "একটি ব্যবসা শুধু লোগো বা ওয়েবসাইট দিয়ে ব্র্যান্ড হয় না। ব্র্যান্ডিং মানে হলো, মানুষের মনে আপনার ব্যবসার একটি স্থায়ী ইমেজ তৈরি করা।",
+      features: [
+        "Logo থেকে Color Palette পর্যন্ত সব",
+        "Typography ও Brand Voice ডিজাইন",
+        "Social Media Presence সম্পূর্ণ সেটআপ"
+      ],
+      advanced: [
+        "নিউরো-ব্র্যান্ডিং আর্কিটেকচার",
+        "সাইকোলজিক্যাল কালার থিওরি",
+        "ব্র্যান্ড পার্সোনালিটি ডেভেলপমেন্ট",
+        "ইমোশনাল ব্র্যান্ড পজিশনিং"
+      ],
+      stats: { success: "500%", metric: "Brand Recognition" }
     }
   ];
 
@@ -114,13 +120,15 @@ export default function ServicesSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-montserrat font-bold mb-6">
-            <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
-              Neuro Marketing
-            </span> Services
+            আমাদের <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
+              Neuro Marketing Based
+            </span> সার্ভিসসমূহ
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transform your digital presence using psychological triggers and data-driven design 
-            strategies that convert visitors into loyal customers.
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            আমরা বিশ্বাস করি ওয়েবসাইট, কনটেন্ট, কিংবা বিজনেস স্ট্রেটেজি, সবকিছুই সফল হয় তখনই যখন সেটা মানুষের ব্রেইনের সাথে সংযোগ ঘটায়। তাই আমাদের প্রতিটি সার্ভিস Neuro Marketing-এর গভীর রিসার্চ ও প্রুভেন টেকনিকের ওপর দাঁড়ানো।
+          </p>
+          <p className="text-lg text-electric-blue mt-4 font-semibold">
+            👉 নিচে দেখুন, কোন সার্ভিসটি আপনার জন্য সবচেয়ে দরকারি:
           </p>
         </div>
         
@@ -191,7 +199,7 @@ export default function ServicesSection() {
                 }`}>
                   {service.description}
                 </p>
-                <ul className="text-sm text-gray-400 space-y-3 mb-4">
+                <ul className="text-sm text-gray-400 space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li 
                       key={featureIndex} 
@@ -211,6 +219,18 @@ export default function ServicesSection() {
                     </li>
                   ))}
                 </ul>
+                
+                {/* View Details Button */}
+                <a 
+                  href={`/services/${service.slug}`}
+                  className="block w-full bg-gradient-to-r from-electric-blue to-neuro-purple text-white text-center py-3 rounded-lg font-semibold hover:from-neuro-purple hover:to-electric-blue transition-all duration-300 group"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    বিস্তারিত দেখুন
+                    <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
+                  </span>
+                </a>
                 
                 {/* Expanded Content */}
                 <div className={`transition-all duration-500 overflow-hidden ${

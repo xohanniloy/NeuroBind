@@ -8,6 +8,7 @@ import About from "@/pages/about";
 import Services from "@/pages/services";
 import Portfolio from "@/pages/portfolio";
 import Contact from "@/pages/contact";
+import ServiceDetail from "@/pages/service-detail";
 import NotFound from "@/pages/not-found";
 import FloatingParticles from "@/components/ui/floating-particles";
 import EnhancedFloatingButtons from "@/components/ui/enhanced-floating-buttons";
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
+      <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />

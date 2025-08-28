@@ -7,6 +7,7 @@ import PortfolioSection from "../components/sections/portfolio-section";
 import ContactSection from "../components/sections/contact-section";
 import StatsSection from "../components/sections/stats-section";
 import TestimonialsSection from "../components/sections/testimonials-section";
+import LeadMagnetBlogSection from "../components/sections/lead-magnet-blog-section";
 import Footer from "../components/layout/footer";
 import FloatingActionButton from "../components/ui/floating-action-button";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <ContactSection />
       <StatsSection />
       <TestimonialsSection />
+      <LeadMagnetBlogSection />
       <Footer />
       <FloatingActionButton />
     </div>

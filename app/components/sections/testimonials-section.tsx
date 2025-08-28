@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight, Quote, Heart } from "lucide-react";
 

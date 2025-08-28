@@ -1,0 +1,10 @@
+   ▲ Next.js 15.5.0
+   - Local:        http://localhost:5000
+   - Network:      http://172.31.108.226:5000
+
+ ✓ Starting...
+ ✓ Ready in 3s
+ ○ Compiling / ...
+Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme

@@ -1,3 +1,5 @@
+'use client'
+
 import { Brain, Code, Lightbulb, Target, TrendingUp, Users, Mail, Linkedin, Twitter, Github } from "lucide-react";
 import { Button } from "../ui/button";
 import { useState } from "react";

@@ -1,0 +1,50 @@
+[vite] connecting...
+[vite] connected.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn't have a dependency array, or one of the dependencies changes on every render.
+Warning: Maximum update depth exceeded. This can happen when a component calls setState inside useEffect, but useEffect either doesn&#x27;t have a dependency array, or one of the dependencies changes on every render.
+    at FloatingParticles (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/src/components/ui/floating-particles.tsx:20:3)
+    at Provider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-BPRSWUOE.js?v=863e90f6:42:15)
+    at TooltipProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=863e90f6:52:5)
+    at QueryClientProvider (https://03bbf3e9-7ae8-4982-8418-1a8c98865085-00-3udp9egxfe56w.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=863e90f6:2805:3)
+    at App

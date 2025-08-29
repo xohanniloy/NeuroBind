@@ -11,6 +11,7 @@ import Contact from "@/pages/contact";
 import Blog from "@/pages/blog";
 import ServiceDetail from "@/pages/service-detail";
 import WebsiteTrustGuide from "@/pages/website-trust-guide";
+import WhyNeuroMarketingBlog from "@/pages/why-neuro-marketing-blog";
 import NotFound from "@/pages/not-found";
 import FloatingParticles from "@/components/ui/floating-particles";
 import EnhancedFloatingButtons from "@/components/ui/enhanced-floating-buttons";
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/services/:slug" component={ServiceDetail} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/why-neuro-marketing-comes-in" component={WhyNeuroMarketingBlog} />
       <Route path="/contact" component={Contact} />
       <Route path="/website-trust-guide" component={WebsiteTrustGuide} />
       <Route component={NotFound} />

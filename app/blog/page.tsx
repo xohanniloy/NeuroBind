@@ -1,3 +1,4 @@
+import React from 'react'
 import { Metadata } from 'next'
 import Navigation from '../components/layout/navigation'
 import Footer from '../components/layout/footer'

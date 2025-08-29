@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Calendar, Clock, User, ArrowRight, ChevronDown, ChevronUp, BookOpen, Share2, Heart, Bookmark, UtensilsCrossed, ShoppingCart, Shirt, GraduationCap, Stethoscope } from "lucide-react";
+import { Link } from "wouter";
 import Navigation from "../components/layout/navigation";
 import Footer from "../components/layout/footer";
 import FloatingActionButton from "../components/ui/floating-action-button";
@@ -199,8 +200,90 @@ export default function Blog() {
     <div className="min-h-screen bg-neural-bg text-white">
       <Navigation />
       
+      {/* Featured Blog Post */}
+      <section className="pt-32 pb-8 bg-gradient-to-b from-neural-bg to-neural-bg-secondary">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center text-white mb-12">
+            <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
+              🔥 Latest
+            </span> Article
+          </h2>
+          <Link href="/blog/why-neuro-marketing-comes-in">
+            <div className="glassmorphism-dark rounded-3xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 border border-electric-blue/10 hover:border-electric-blue/30 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                    alt="Why Neuro-Marketing Comes in?"
+                    className="w-full h-80 lg:h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-6 left-6">
+                    <Badge className="bg-gradient-neural text-white px-4 py-2 rounded-full animate-pulse">
+                      🔥 Featured
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="flex items-center gap-4 mb-6">
+                    <Badge variant="outline" className="border-electric-blue text-electric-blue">
+                      Neuro Marketing
+                    </Badge>
+                    <Badge variant="secondary" className="bg-neuro-purple/20 text-gray-300">
+                      Brain Science
+                    </Badge>
+                  </div>
+                  
+                  <h3 className="text-3xl font-montserrat font-bold text-white mb-2 group-hover:text-electric-blue transition-colors duration-300">
+                    🧠 Why Neuro-Marketing Comes in?
+                  </h3>
+                  
+                  <h4 className="text-xl font-montserrat font-medium text-gray-400 mb-6">
+                    কেন নিউরো মার্কেটিং দরকার হয়ে উঠলো?
+                  </h4>
+                  
+                  <p className="text-gray-300 text-lg mb-8 group-hover:text-gray-200 transition-colors duration-300 line-clamp-3">
+                    আজকের ব্যবসার সবচেয়ে বড় চ্যালেঞ্জ হলো মানুষের মনোযোগ পাওয়া। প্রতিদিন একজন মানুষ ৫০০০+ বিজ্ঞাপন দেখে কিন্তু সময় দেয় মাত্র ৮ সেকেন্ড। জানুন কেন নিউরো মার্কেটিং আজকের যুগে অপরিহার্য...
+                  </p>
+                  
+                  <div className="flex items-center justify-between mb-8">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-electric-blue to-neuro-purple rounded-full flex items-center justify-center">
+                        <User className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-white">Neuro Binding Team</p>
+                        <p className="text-sm text-gray-400">Jan 28, 2025 • 12 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-6 text-gray-400">
+                      <div className="flex items-center gap-2">
+                        <Heart size={16} />
+                        <span className="text-sm">245</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Share2 size={16} />
+                        <span className="text-sm">Share</span>
+                      </div>
+                    </div>
+                    
+                    <Button className="bg-gradient-neural px-6 py-3 rounded-full hover-lift group/btn">
+                      Read Full Article
+                      <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" size={16} />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-neural-bg via-neural-bg-secondary to-neural-bg relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-b from-neural-bg-secondary via-neural-bg to-neural-bg relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple/5 via-transparent to-electric-blue/5"></div>
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 rounded-full blur-3xl opacity-30"></div>

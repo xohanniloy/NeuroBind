@@ -1,25 +1,41 @@
+import React from "react";
 import { Calendar, Clock, User, ArrowRight, Heart, MessageCircle, Share2 } from "lucide-react";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
+import Link from "next/link";
 
 export default function BlogPostsSection() {
   const featuredPost = {
-    id: 1,
-    title: "The Psychology Behind Color Choices: How Neuro Marketing Transforms Web Design",
-    excerpt: "Discover how understanding the psychological impact of colors can increase your website's conversion rates by up to 80%. We break down the science behind color psychology and its practical applications.",
-    author: "Dr. Sarah Rahman",
-    authorRole: "Lead Neuro Marketing Psychologist",
-    date: "2024-01-15",
-    readTime: "8 min read",
+    id: 8,
+    title: "Why Neuro-Marketing Comes in?",
+    subtitle: "কেন নিউরো মার্কেটিং দরকার হয়ে উঠলো?",
+    excerpt: "আজকের ব্যবসার সবচেয়ে বড় চ্যালেঞ্জ হলো মানুষের মনোযোগ পাওয়া। প্রতিদিন একজন মানুষ ৫০০০+ বিজ্ঞাপন দেখে কিন্তু সময় দেয় মাত্র ৮ সেকেন্ড। নিউরো মার্কেটিং কেন আজকের যুগে অপরিহার্য হয়ে উঠেছে তা জানুন।",
+    author: "Neuro Binding Team",
+    authorRole: "Neuro Marketing Specialists",
+    date: "2025-01-28",
+    readTime: "12 min read",
     category: "Neuro Marketing",
-    tags: ["Color Psychology", "Conversion Optimization", "UX Design"],
-    image: "https://images.unsplash.com/photo-1558655146-364adaf25c8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    likes: 127,
-    comments: 23,
-    featured: true
+    tags: ["Consumer Psychology", "Brain Science", "Digital Marketing"],
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    likes: 245,
+    comments: 38,
+    featured: true,
+    slug: "why-neuro-marketing-comes-in"
   };
 
   const recentPosts = [
+    {
+      id: 1,
+      title: "The Psychology Behind Color Choices: How Neuro Marketing Transforms Web Design",
+      excerpt: "Discover how understanding the psychological impact of colors can increase your website's conversion rates by up to 80%. We break down the science behind color psychology and its practical applications.",
+      author: "Dr. Sarah Rahman",
+      date: "2024-01-15",
+      readTime: "8 min read",
+      category: "Neuro Marketing",
+      image: "https://images.unsplash.com/photo-1558655146-364adaf25c8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      likes: 127,
+      comments: 23
+    },
     {
       id: 2,
       title: "5 Neuro Marketing Principles That Boosted Our Client's Sales by 150%",
@@ -107,7 +123,8 @@ export default function BlogPostsSection() {
             </h2>
           </div>
           
-          <div className="glassmorphism-dark rounded-3xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 border border-electric-blue/10 hover:border-electric-blue/30">
+          <Link href={`/blog/${featuredPost.slug}`}>
+            <div className="glassmorphism-dark rounded-3xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 border border-electric-blue/10 hover:border-electric-blue/30">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <div className="relative overflow-hidden">
                 <img 
@@ -189,6 +206,7 @@ export default function BlogPostsSection() {
               </div>
             </div>
           </div>
+          </Link>
         </div>
         
         {/* Recent Posts */}
@@ -206,11 +224,11 @@ export default function BlogPostsSection() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentPosts.map((post, index) => (
-              <article 
-                key={post.id}
-                className="glassmorphism-dark rounded-2xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 animate-slide-up border border-electric-blue/10 hover:border-electric-blue/30"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
+              <Link key={post.id} href={post.id === 1 ? "/blog/lead-magnet-ideas-for-bangladeshi-businesses" : "/blog"}>
+                <article 
+                  className="glassmorphism-dark rounded-2xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 animate-slide-up border border-electric-blue/10 hover:border-electric-blue/30"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
                 <div className="relative overflow-hidden">
                   <img 
                     src={post.image} 
@@ -275,6 +293,7 @@ export default function BlogPostsSection() {
                   </div>
                 </div>
               </article>
+              </Link>
             ))}
           </div>
           

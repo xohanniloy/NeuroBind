@@ -6,35 +6,50 @@ import Link from "next/link";
 
 export default function BlogPostsSection() {
   const featuredPost = {
-    id: 8,
-    title: "Why Neuro-Marketing Comes in?",
-    subtitle: "কেন নিউরো মার্কেটিং দরকার হয়ে উঠলো?",
-    excerpt: "আজকের ব্যবসার সবচেয়ে বড় চ্যালেঞ্জ হলো মানুষের মনোযোগ পাওয়া। প্রতিদিন একজন মানুষ ৫০০০+ বিজ্ঞাপন দেখে কিন্তু সময় দেয় মাত্র ৮ সেকেন্ড। নিউরো মার্কেটিং কেন আজকের যুগে অপরিহার্য হয়ে উঠেছে তা জানুন।",
+    id: 9,
+    title: "ল্যান্ডিং পেজের শুরুতেই কেন Problem/Pain Point হাইলাইট করা জরুরি?",
+    subtitle: "Neuro Marketing এর আলোকে",
+    excerpt: "Trust Gap কমানো এবং মানুষের ব্রেইনের survival instinct কে কাজে লাগিয়ে কিভাবে আপনার ল্যান্ডিং পেজে conversion বাড়াবেন। জানুন Problem/Pain Point হাইলাইট করার বৈজ্ঞানিক কৌশল।",
     author: "Neuro Binding Team",
     authorRole: "Neuro Marketing Specialists",
-    date: "2025-01-28",
-    readTime: "12 min read",
+    date: "2025-01-31",
+    readTime: "18 min read",
     category: "Neuro Marketing",
-    tags: ["Consumer Psychology", "Brain Science", "Digital Marketing"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    likes: 245,
-    comments: 38,
+    tags: ["Landing Page", "Pain Point", "Conversion"],
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    likes: 89,
+    comments: 12,
     featured: true,
-    slug: "why-neuro-marketing-comes-in"
+    slug: "landing-page-pain-point-neuro-marketing"
   };
 
   const recentPosts = [
     {
-      id: 1,
-      title: "The Psychology Behind Color Choices: How Neuro Marketing Transforms Web Design",
-      excerpt: "Discover how understanding the psychological impact of colors can increase your website's conversion rates by up to 80%. We break down the science behind color psychology and its practical applications.",
-      author: "Dr. Sarah Rahman",
-      date: "2024-01-15",
-      readTime: "8 min read",
+      id: 8,
+      title: "Why Neuro-Marketing Comes in?",
+      subtitle: "কেন নিউরো মার্কেটিং দরকার হয়ে উঠলো?",
+      excerpt: "আজকের ব্যবসার সবচেয়ে বড় চ্যালেঞ্জ হলো মানুষের মনোযোগ পাওয়া। প্রতিদিন একজন মানুষ ৫০০০+ বিজ্ঞাপন দেখে কিন্তু সময় দেয় মাত্র ৮ সেকেন্ড।",
+      author: "Neuro Binding Team",
+      date: "2025-01-28",
+      readTime: "12 min read",
       category: "Neuro Marketing",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      likes: 245,
+      comments: 38,
+      slug: "why-neuro-marketing-comes-in"
+    },
+    {
+      id: 1,
+      title: "Lead Magnet Ideas for Bangladeshi Businesses",
+      excerpt: "বাংলাদেশি ব্যবসাগুলোর জন্য ৫৭টি অসাধারণ লিড ম্যাগনেট আইডিয়া যা আপনার কাস্টমারদের আকর্ষিত করবে এবং বিক্রয় বৃদ্ধি করবে।",
+      author: "Neuro Binding Team",
+      date: "2025-01-17",
+      readTime: "15 min read",
+      category: "Marketing Strategy",
       image: "https://images.unsplash.com/photo-1558655146-364adaf25c8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       likes: 127,
-      comments: 23
+      comments: 23,
+      slug: "lead-magnet-ideas-for-bangladeshi-businesses"
     },
     {
       id: 2,
@@ -224,7 +239,9 @@ export default function BlogPostsSection() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentPosts.map((post, index) => (
-              <Link key={post.id} href={post.id === 1 ? "/blog/lead-magnet-ideas-for-bangladeshi-businesses" : "/blog"}>
+              <Link key={post.id} href={
+                post.slug ? `/blog/${post.slug}` : "/blog"
+              }>
                 <article 
                   className="glassmorphism-dark rounded-2xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 animate-slide-up border border-electric-blue/10 hover:border-electric-blue/30"
                   style={{animationDelay: `${index * 0.1}s`}}

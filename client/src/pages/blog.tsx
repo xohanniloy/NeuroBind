@@ -10,16 +10,41 @@ import { Badge } from "../components/ui/badge";
 export default function Blog() {
   const [expandedSections, setExpandedSections] = useState<Set<number>>(new Set());
 
-  const blogPost = {
-    title: "Lead Magnet Ideas for Bangladeshi Businesses",
-    subtitle: "বাংলাদেশি ব্যবসাগুলোর জন্য ৫৭টি অসাধারণ লিড ম্যাগনেট আইডিয়া",
-    excerpt: "বাংলাদেশি ব্যবসাগুলোর জন্য ৫৭টি অসাধারণ লিড ম্যাগনেট আইডিয়া যা আপনার কাস্টমারদের আকর্ষিত করবে এবং বিক্রয় বৃদ্ধি করবে। রেস্টুরেন্ট থেকে শুরু করে ফ্যাশন, শিক্ষা, স্বাস্থ্য - প্রতিটি ব্যবসার জন্য বিশেষভাবে তৈরি কৌশল।",
+  const featuredPost = {
+    title: "ল্যান্ডিং পেজের শুরুতেই কেন Problem/Pain Point হাইলাইট করা জরুরি?",
+    subtitle: "Neuro Marketing এর আলোকে",
+    excerpt: "Trust Gap কমানো এবং মানুষের ব্রেইনের survival instinct কে কাজে লাগিয়ে কিভাবে আপনার ল্যান্ডিং পেজে conversion বাড়াবেন। জানুন Problem/Pain Point হাইলাইট করার বৈজ্ঞানিক কৌশল।",
     author: "Neuro Binding Team",
-    date: "2025-01-17",
-    readTime: "15 min read",
-    category: "Marketing Strategy",
-    tags: ["Lead Generation", "Bangladesh Business", "Marketing", "Digital Strategy"],
+    date: "2025-01-31",
+    readTime: "18 min read",
+    category: "Neuro Marketing",
+    tags: ["Landing Page", "Pain Point", "Conversion", "Trust Building"],
+    slug: "landing-page-pain-point-neuro-marketing"
   };
+
+  const recentPosts = [
+    {
+      title: "Lead Magnet Ideas for Bangladeshi Businesses",
+      subtitle: "বাংলাদেশি ব্যবসাগুলোর জন্য ৫৭টি অসাধারণ লিড ম্যাগনেট আইডিয়া",
+      excerpt: "বাংলাদেশি ব্যবসাগুলোর জন্য ৫৭টি অসাধারণ লিড ম্যাগনেট আইডিয়া যা আপনার কাস্টমারদের আকর্ষিত করবে এবং বিক্রয় বৃদ্ধি করবে।",
+      author: "Neuro Binding Team",
+      date: "2025-01-17",
+      readTime: "15 min read",
+      category: "Marketing Strategy",
+      tags: ["Lead Generation", "Bangladesh Business", "Marketing"],
+    },
+    {
+      title: "Why Neuro-Marketing Comes in?",
+      subtitle: "কেন নিউরো মার্কেটিং দরকার হয়ে উঠলো?",
+      excerpt: "আজকের ব্যবসার সবচেয়ে বড় চ্যালেঞ্জ হলো মানুষের মনোযোগ পাওয়া। প্রতিদিন একজন মানুষ ৫০০০+ বিজ্ঞাপন দেখে কিন্তু সময় দেয় মাত্র ৮ সেকেন্ড।",
+      author: "Neuro Binding Team",
+      date: "2025-01-28",
+      readTime: "12 min read",
+      category: "Neuro Marketing",
+      tags: ["Consumer Psychology", "Brain Science"],
+      slug: "why-neuro-marketing-comes-in"
+    }
+  ];
 
   const businessSections = [
     {
@@ -371,7 +396,7 @@ export default function Blog() {
             </div>
             
             <Badge className="bg-gradient-neural text-white px-6 py-2 mb-6 animate-slide-up" style={{animationDelay: "0.1s"}}>
-              {blogPost.category}
+              {featuredPost.category}
             </Badge>
             
             <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-6 animate-slide-up" style={{animationDelay: "0.2s"}}>
@@ -385,18 +410,18 @@ export default function Blog() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up" style={{animationDelay: "0.3s"}}>
-              {blogPost.subtitle}
+              {featuredPost.subtitle}
             </p>
             
             {/* Meta Information */}
             <div className="flex flex-wrap items-center justify-center gap-6 text-gray-400 mb-8 animate-slide-up" style={{animationDelay: "0.4s"}}>
               <div className="flex items-center gap-2">
                 <User size={20} />
-                <span className="text-lg">{blogPost.author}</span>
+                <span className="text-lg">{featuredPost.author}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar size={20} />
-                <span className="text-lg">{new Date(blogPost.date).toLocaleDateString('en-US', { 
+                <span className="text-lg">{new Date(featuredPost.date).toLocaleDateString('en-US', { 
                   year: 'numeric', 
                   month: 'long', 
                   day: 'numeric' 
@@ -404,7 +429,7 @@ export default function Blog() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock size={20} />
-                <span className="text-lg">{blogPost.readTime}</span>
+                <span className="text-lg">{featuredPost.readTime}</span>
               </div>
             </div>
             
@@ -427,112 +452,92 @@ export default function Blog() {
       <section className="py-16 neural-bg-secondary relative">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            {/* Article Content */}
-            <article className="glassmorphism-dark rounded-2xl p-8 md:p-12 animate-slide-up">
-              {/* Introduction */}
-              <div className="mb-12">
-                <p className="text-xl leading-relaxed text-gray-300 mb-8">
-                  {blogPost.excerpt}
-                </p>
-                
-                {/* Tags */}
-                <div className="flex flex-wrap gap-3 mb-8">
-                  {blogPost.tags.map((tag, index) => (
-                    <span 
-                      key={index}
-                      className="px-4 py-2 bg-gradient-to-r from-neuro-purple/20 to-electric-blue/20 border border-electric-blue/30 rounded-full text-sm text-gray-300 hover:border-electric-blue/50 transition-colors cursor-pointer"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Business Sections */}
-              <div className="border-t border-gray-700 pt-8 space-y-6">
-                {businessSections.map((section, index) => (
-                  <div 
-                    key={section.id} 
-                    className="glassmorphism-dark rounded-xl p-6 hover-lift transition-all duration-300"
-                    style={{animationDelay: `${index * 0.1}s`}}
-                  >
-                    {/* Section Header */}
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="p-3 bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 rounded-full">
-                        <section.icon className={`${section.iconColor} w-8 h-8`} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-montserrat font-bold text-white mb-2">
-                          🔥 ব্যবসা {section.id}: {section.title}
-                        </h3>
-                        <p className="text-gray-400 text-sm mb-4">{section.preview}</p>
-                        
-                        {/* Expand/Collapse Button */}
-                        <Button
-                          onClick={() => toggleSection(section.id)}
-                          variant="outline"
-                          className="border-electric-blue/30 text-electric-blue hover:bg-electric-blue/10 transition-all duration-300"
-                        >
-                          <span className="flex items-center gap-2">
-                            {expandedSections.has(section.id) ? (
-                              <>
-                                Hide Ideas <ChevronUp size={16} />
-                              </>
-                            ) : (
-                              <>
-                                Show All Ideas <ChevronDown size={16} />
-                              </>
-                            )}
-                          </span>
-                        </Button>
-                      </div>
+            {/* Featured Post */}
+            <article className="glassmorphism-dark rounded-2xl p-8 md:p-12 animate-slide-up mb-8">
+              <Link href={`/blog/${featuredPost.slug}`}>
+                <div className="cursor-pointer group">
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    {featuredPost.tags.map((tag: string, index: number) => (
+                      <Badge 
+                        key={index}
+                        variant="outline" 
+                        className="border-electric-blue/30 text-electric-blue"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                  
+                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-electric-blue transition-colors">
+                    {featuredPost.title}
+                  </h3>
+                  
+                  <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                    {featuredPost.excerpt}
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4 text-gray-400">
+                      <span className="flex items-center gap-2">
+                        <User size={16} />
+                        {featuredPost.author}
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <Calendar size={16} />
+                        {new Date(featuredPost.date).toLocaleDateString('bn-BD')}
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <Clock size={16} />
+                        {featuredPost.readTime}
+                      </span>
                     </div>
+                    
+                    <Button className="bg-gradient-neural hover:bg-gradient-to-r hover:from-electric-blue hover:to-neuro-purple transition-all duration-300">
+                      পড়ুন <ArrowRight className="ml-2" size={16} />
+                    </Button>
+                  </div>
+                </div>
+              </Link>
+            </article>
 
-                    {/* Expandable Content */}
-                    {expandedSections.has(section.id) && (
-                      <div className="animate-slide-up ml-16 border-l-2 border-electric-blue/20 pl-6">
-                        <div className="space-y-3">
-                          {section.content.map((idea, ideaIndex) => (
-                            <div 
-                              key={ideaIndex}
-                              className="flex items-start gap-3 p-3 bg-gradient-to-r from-neuro-purple/5 to-electric-blue/5 rounded-lg hover:from-neuro-purple/10 hover:to-electric-blue/10 transition-all duration-300"
-                            >
-                              <div className="w-6 h-6 bg-gradient-neural rounded-full flex items-center justify-center text-white text-xs font-bold mt-1">
-                                {ideaIndex + 1}
-                              </div>
-                              <p className="text-gray-300 leading-relaxed flex-1">
-                                "{idea}"
-                              </p>
-                            </div>
-                          ))}
+            {/* Recent Posts */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-white mb-6">আরও পোস্ট</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {recentPosts.map((post, index) => (
+                  <article key={index} className="glassmorphism-dark rounded-xl p-6 animate-slide-up group">
+                    <Link href={post.slug ? `/blog/${post.slug}` : "/blog"}>
+                      <div className="cursor-pointer">
+                        <div className="flex items-center gap-2 mb-3">
+                          <Badge variant="outline" className="border-electric-blue/30 text-electric-blue text-xs">
+                            {post.category}
+                          </Badge>
+                        </div>
+                        
+                        <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-electric-blue transition-colors">
+                          {post.title}
+                        </h3>
+                        
+                        <p className="text-gray-400 mb-4 text-sm leading-relaxed">
+                          {post.excerpt}
+                        </p>
+                        
+                        <div className="flex items-center justify-between text-xs text-gray-500">
+                          <span className="flex items-center gap-2">
+                            <User size={12} />
+                            {post.author}
+                          </span>
+                          <span className="flex items-center gap-2">
+                            <Clock size={12} />
+                            {post.readTime}
+                          </span>
                         </div>
                       </div>
-                    )}
-                  </div>
+                    </Link>
+                  </article>
                 ))}
-
-                {/* Call to Action */}
-                <div className="bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 border border-electric-blue/20 rounded-2xl p-8 text-center mt-12">
-                  <h3 className="text-2xl font-montserrat font-bold text-white mb-4">
-                    Ready to Implement These Strategies?
-                  </h3>
-                  <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
-                    আপনার ব্যবসার জন্য কাস্টমাইজড লিড ম্যাগনেট তৈরি করতে চান? আমাদের এক্সপার্ট টিমের সাথে যোগাযোগ করুন এবং ৩০০% পর্যন্ত conversion বৃদ্ধি পান।
-                  </p>
-                  <div className="flex flex-wrap items-center justify-center gap-4">
-                    <Button className="bg-gradient-neural hover:bg-gradient-to-r hover:from-electric-blue hover:to-neuro-purple transition-all duration-300 px-8 py-3 text-lg">
-                      <span className="flex items-center gap-2">
-                        Contact Our Team <ArrowRight size={20} />
-                      </span>
-                    </Button>
-                    <Button variant="outline" className="border-electric-blue text-electric-blue hover:bg-electric-blue/10 px-8 py-3 text-lg">
-                      <Heart size={20} className="mr-2" />
-                      Like This Article
-                    </Button>
-                  </div>
-                </div>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>

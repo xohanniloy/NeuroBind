@@ -13,6 +13,7 @@ import ServiceDetail from "@/pages/service-detail";
 import WebsiteTrustGuide from "@/pages/website-trust-guide";
 import WhyNeuroMarketingBlog from "@/pages/why-neuro-marketing-blog";
 import NeuroMarketingSecretBlog from "@/pages/neuro-marketing-secret-blog";
+import LandingPagePainPointBlog from "@/pages/landing-page-pain-point-blog";
 import NotFound from "@/pages/not-found";
 import FloatingParticles from "@/components/ui/floating-particles";
 import EnhancedFloatingButtons from "@/components/ui/enhanced-floating-buttons";
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/why-neuro-marketing-comes-in" component={WhyNeuroMarketingBlog} />
       <Route path="/blog/24-7-neuro-marketing-secret" component={NeuroMarketingSecretBlog} />
+      <Route path="/blog/landing-page-pain-point-neuro-marketing" component={LandingPagePainPointBlog} />
       <Route path="/contact" component={Contact} />
       <Route path="/website-trust-guide" component={WebsiteTrustGuide} />
       <Route component={NotFound} />

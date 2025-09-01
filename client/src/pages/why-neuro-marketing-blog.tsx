@@ -375,6 +375,246 @@ AI যত উন্নতই হোক না কেন, মানুষের �
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div className="bg-red-500/20 rounded-xl p-6 border border-red-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">🦎 Reptilian Brain</h3>
+                      <p className="text-sm text-gray-300 mb-2">(Survival Focus)</p>
+                      <p className="text-gray-200">ভয় ও নিরাপত্তা দেখে</p>
+                    </div>
+                    <div className="bg-purple-500/20 rounded-xl p-6 border border-purple-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">💜 Limbic Brain</h3>
+                      <p className="text-sm text-gray-300 mb-2">(Emotion Focus)</p>
+                      <p className="text-gray-200">আবেগ দেখে</p>
+                    </div>
+                    <div className="bg-blue-500/20 rounded-xl p-6 border border-blue-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">🧠 Neocortex</h3>
+                      <p className="text-sm text-gray-300 mb-2">(Logic Focus)</p>
+                      <p className="text-gray-200">ডেটা ও যুক্তি দেখে</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-neural-bg/60 rounded-lg p-4 border border-electric-blue/30">
+                    <p className="text-lg text-center text-gray-200">
+                      👉 <span className="text-electric-blue font-bold">Neuro Marketing একসাথে এই তিনটি brain system কে টার্গেট করে।</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* AI vs Neuro Marketing Section */}
+                <div className="bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-2xl p-8 border border-green-500/20">
+                  <h2 className="text-3xl font-montserrat font-bold text-white mb-6 flex items-center gap-3">
+                    🤖 <span>AI ও Automation যতই আসুক, সিদ্ধান্ত নেয় মানুষই</span>
+                  </h2>
+                  
+                  <div className="bg-neural-bg/50 rounded-lg p-6 mb-6 border border-blue-400/20">
+                    <p className="text-lg text-gray-200 mb-4">
+                      আজকে ChatGPT, Gemini, Canva AI, Shopify AI—সব জায়গায় automation চলে এসেছে।<br/>
+                      ব্যবসায়ীরা ভেবে নিচ্ছে AI-ই সব করে দেবে।
+                    </p>
+                    <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-lg p-4 border border-red-400/30">
+                      <p className="text-xl font-semibold text-white text-center">
+                        কিন্তু আসল সত্য হলো—<br/>
+                        👉 AI কনটেন্ট বানায়, ওয়েবসাইট বানায়, ইমেইল পাঠায়, কিন্তু <span className="text-electric-blue">কিনে সিদ্ধান্ত নেয় মানুষ।</span><br/>
+                        আর মানুষ সবসময় <span className="text-neon-green">feeling-driven decision</span> নেয়।
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div className="bg-blue-500/10 rounded-lg p-6 border border-blue-400/20">
+                      <h3 className="text-xl font-bold text-white mb-4">📱 ফোন কেনার উদাহরণ:</h3>
+                      <p className="text-gray-300 mb-3">আপনি যখন ফোন কিনতে যান, তখন শুধু configuration দেখে কিনেন না—</p>
+                      <div className="space-y-2 text-gray-200">
+                        <p>👉 রঙ, লুক, হাতে কেমন লাগে</p>
+                        <p>👉 ব্র্যান্ডটা কতটা বিশ্বাসযোগ্য মনে হচ্ছে</p>
+                        <p>👉 এসবই সিদ্ধান্তকে প্রভাবিত করে</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-pink-500/10 rounded-lg p-6 border border-pink-400/20">
+                      <h3 className="text-xl font-bold text-white mb-4">🧸 খেলনা কেনার উদাহরণ:</h3>
+                      <p className="text-gray-300 mb-3">একটা বাচ্চার জন্য খেলনা কেনার সময় মা শুধু দাম দেখে কেনেন না—</p>
+                      <div className="space-y-2 text-gray-200">
+                        <p>👉 খেলনাটা নিরাপদ কিনা</p>
+                        <p>👉 ব্র্যান্ডটা কতটা care করে</p>
+                        <p>👉 এসব দেখেই কেনেন</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-lg p-6 border border-electric-blue/30">
+                    <p className="text-xl font-bold text-center text-white">
+                      AI যত উন্নতই হোক না কেন, মানুষের এই emotion-driven decision কে বাইপাস করতে পারবে না।<br/>
+                      👉 <span className="text-electric-blue">আর এখানেই Neuro Marketing অপরিহার্য।</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Science + Design + Psychology */}
+                <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 rounded-2xl p-8 border border-purple-500/20">
+                  <h2 className="text-3xl font-montserrat font-bold text-white mb-6 flex items-center gap-3">
+                    🔬 <span>Neuro Marketing = Science + Design + Psychology</span>
+                  </h2>
+                  
+                  <p className="text-lg text-gray-200 mb-6">
+                    সাধারণ ডিজাইন বা মার্কেটিং শুধু চোখে পড়ার মতো জিনিস বানায়।<br/>
+                    কিন্তু Neuro Marketing তিনটি জিনিস একসাথে আনে:
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div className="bg-blue-500/20 rounded-xl p-6 border border-blue-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">🔬 Science</h3>
+                      <div className="text-gray-200 space-y-1 text-sm">
+                        <p>→ Brain research</p>
+                        <p>→ Neuroscience</p>
+                        <p>→ Behavior study</p>
+                      </div>
+                    </div>
+                    <div className="bg-purple-500/20 rounded-xl p-6 border border-purple-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">🎨 Design</h3>
+                      <div className="text-gray-200 space-y-1 text-sm">
+                        <p>→ Visual layout</p>
+                        <p>→ Colors, typography</p>
+                        <p>→ CTA placement</p>
+                      </div>
+                    </div>
+                    <div className="bg-indigo-500/20 rounded-xl p-6 border border-indigo-500/30 text-center">
+                      <h3 className="text-xl font-bold text-white mb-3">🧠 Psychology</h3>
+                      <div className="text-gray-200 space-y-1 text-sm">
+                        <p>→ Fear trigger</p>
+                        <p>→ Trust signal</p>
+                        <p>→ Social proof</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg p-6 border border-purple-400/30">
+                    <p className="text-xl font-bold text-center text-white">
+                      👉 যখন এই তিনটি একসাথে মিলে যায়, তখন আপনার ওয়েবসাইট বা ব্র্যান্ড শুধু দেখা যায় না—বরং <span className="text-electric-blue">মনের ভেতরে বসে যায়।</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Branding Game Change */}
+                <div className="bg-gradient-to-br from-red-500/10 to-yellow-500/10 rounded-2xl p-8 border border-red-500/20">
+                  <h2 className="text-3xl font-montserrat font-bold text-white mb-6 flex items-center gap-3">
+                    📈 <span>আগামী ৫ বছরে Branding Game বদলে যাবে</span>
+                  </h2>
+                  
+                  <div className="bg-red-500/20 rounded-lg p-6 mb-6 border border-red-400/30">
+                    <h3 className="text-xl font-bold text-white mb-4">যারা এখনো শুধু Facebook Ad এর ওপর নির্ভর করছে, তাদের জন্য খারাপ খবর আছে।</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="text-center text-gray-200">
+                        <span className="text-red-400 text-2xl">⚠️</span>
+                        <p className="mt-2">Facebook/Google algorithm একদিনে বদলে যেতে পারে</p>
+                      </div>
+                      <div className="text-center text-gray-200">
+                        <span className="text-orange-400 text-2xl">📈</span>
+                        <p className="mt-2">Ad cost দিন দিন বাড়ছে</p>
+                      </div>
+                      <div className="text-center text-gray-200">
+                        <span className="text-yellow-400 text-2xl">👥</span>
+                        <p className="mt-2">মানুষ এখন Sponsored লেখা দেখলে এড়িয়ে চলে যায়</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-500/20 rounded-lg p-6 mb-6 border border-green-400/30">
+                    <h3 className="text-xl font-bold text-white mb-4 text-center">
+                      👉 <span className="text-neon-green">টিকে থাকবে শুধু সেই ব্র্যান্ডগুলো</span>—<br/>
+                      যারা মানুষের মনস্তত্ত্বকে ব্র্যান্ডের সাথে বেঁধে ফেলবে।
+                    </h3>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div className="bg-pink-500/20 rounded-lg p-4 border border-pink-400/20 text-center">
+                      <h4 className="text-lg font-bold text-white mb-2">💳 Bikash</h4>
+                      <p className="text-gray-200 text-sm">শুধু একটি গোলাপি রঙ দেখলেই মানুষ বুঝে যায় এটি Bikash</p>
+                    </div>
+                    <div className="bg-blue-500/20 rounded-lg p-4 border border-blue-400/20 text-center">
+                      <h4 className="text-lg font-bold text-white mb-2">📱 Grameenphone</h4>
+                      <p className="text-gray-200 text-sm">নীল রঙ + "নিরাপদ কানেকশন" এর perception মানুষের মনে গেঁথে গেছে</p>
+                    </div>
+                    <div className="bg-gray-500/20 rounded-lg p-4 border border-gray-400/20 text-center">
+                      <h4 className="text-lg font-bold text-white mb-2">🍎 Apple</h4>
+                      <p className="text-gray-200 text-sm">শুধু লোগো না, বরং "প্রিমিয়াম লাইফস্টাইল" হিসেবে মানুষের মনে বসানো আছে</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-yellow-500/20 to-red-500/20 rounded-lg p-6 border border-yellow-400/30">
+                    <p className="text-xl font-bold text-center text-white">
+                      👉 আগামী ৫ বছরে ছোট ব্যবসাও যদি ব্র্যান্ড হতে চায়, তবে তাদের <span className="text-electric-blue">Neuro Marketing adopt</span> করতে হবে।
+                    </p>
+                  </div>
+                </div>
+
+                {/* Comparison Example */}
+                <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl p-8 border border-green-500/20">
+                  <h2 className="text-3xl font-montserrat font-bold text-white mb-6 flex items-center gap-3">
+                    ⚡ <span>যারা এখন থেকেই Neuro Marketing adopt করবে, তারা এগিয়ে থাকবে</span>
+                  </h2>
+                  
+                  <p className="text-lg text-gray-200 mb-6 text-center">
+                    একটা উদাহরণ ভাবুন: দুইজন উদ্যোক্তা একই প্রোডাক্ট বিক্রি করছে।
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div className="bg-red-500/20 rounded-xl p-6 border border-red-400/30">
+                      <h3 className="text-2xl font-bold text-white mb-4 text-center">❌ A: Traditional Approach</h3>
+                      <div className="space-y-3 text-gray-200">
+                        <p>✗ শুধু সুন্দর ওয়েবসাইট বানাল</p>
+                        <p>✗ ফেসবুক বিজ্ঞাপন চালাল</p>
+                        <p>✗ Basic marketing strategy</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-green-500/20 rounded-xl p-6 border border-green-400/30">
+                      <h3 className="text-2xl font-bold text-white mb-4 text-center">✅ B: Neuro Marketing Approach</h3>
+                      <div className="space-y-3 text-gray-200">
+                        <p>✓ Hero section এ visitor এর ভয় দেখানো হলো</p>
+                        <p>✓ CTA তে urgency যোগ করা হলো</p>
+                        <p>✓ Social proof যুক্ত করা হলো</p>
+                        <p>✓ Lead magnet দিয়ে প্রথমে trust build করা হলো</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-green-500/20 to-teal-500/20 rounded-lg p-8 border border-green-400/30 text-center">
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      👉 <span className="text-neon-green">Guess করুন কার সেলস 2x, 3x, এমনকি 5x হবে?</span>
+                    </h3>
+                    <p className="text-xl text-white mb-4">অবশ্যই B-এর।</p>
+                    <p className="text-lg text-gray-200">
+                      কারণ B শুধু ওয়েবসাইট বানায়নি, বরং <span className="text-electric-blue font-bold">মানুষের ব্রেইনকে বুঝে</span> ওয়েবসাইট বানিয়েছে।
+                    </p>
+                  </div>
+
+                  <div className="mt-8 bg-neural-bg/60 rounded-lg p-6 border border-teal-400/30">
+                    <p className="text-lg text-gray-200 text-center">
+                      ভবিষ্যতে সফল হতে চাইলে শুধু সুন্দর ওয়েবসাইট বা catchy কনটেন্ট যথেষ্ট নয়।<br/>
+                      👉 ব্র্যান্ডকে মানুষের <span className="text-electric-blue font-bold">brain chemistry</span> এর সাথে bind করতে হবে।<br/>
+                      👉 আর এ কাজ কেবলমাত্র <span className="text-neon-green font-bold">Neuro Marketing</span> দিয়েই সম্ভব।
+                    </p>
+                  </div>
+
+                  <div className="mt-6 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-lg p-6 border border-electric-blue/30">
+                    <p className="text-2xl font-bold text-center text-white">
+                      <span className="text-electric-blue">AI + Automation</span> আসবে যাবে, কিন্তু <span className="text-neon-green">Neuro Marketing</span> থাকবে ভবিষ্যতের সবচেয়ে বড় Competitive Advantage।
+                    </p>
+                  </div>
+                </div>
+
+                {/* What is Neuro Marketing Section - old content */}
+                <div className="bg-gradient-to-br from-electric-blue/10 to-neuro-purple/10 rounded-2xl p-8 border border-electric-blue/30" style={{display: 'none'}}>
+                  <h2 className="text-3xl font-montserrat font-bold text-white mb-6 flex items-center gap-3">
+                    🧠 <span>Neuro Marketing আসলে কী করে?</span>
+                  </h2>
+                  <div className="mb-6">
+                    <p className="text-lg text-gray-200 mb-4">
+                      Neuro Marketing হলো <span className="text-electric-blue font-bold">ব্রেইন-ভিত্তিক মার্কেটিং</span>, যেখানে কাস্টমারের decision-making process কে decode করা হয়।
+                    </p>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div className="bg-red-500/20 rounded-xl p-6 border border-red-500/30 text-center">
                       <div className="text-4xl mb-4">🦎</div>
                       <h4 className="text-xl font-bold text-red-400 mb-2">Reptilian Brain</h4>
                       <p className="text-sm text-gray-300 mb-2">(Survival Focus)</p>

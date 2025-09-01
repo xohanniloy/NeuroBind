@@ -200,14 +200,87 @@ export default function Blog() {
     <div className="min-h-screen bg-neural-bg text-white">
       <Navigation />
       
-      {/* Featured Blog Post */}
+      {/* Featured Blog Posts */}
       <section className="pt-32 pb-8 bg-gradient-to-b from-neural-bg to-neural-bg-secondary">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center text-white mb-12">
             <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
               🔥 Latest
-            </span> Article
+            </span> Articles
           </h2>
+          
+          {/* New Featured Post - 24/7 Neuro Marketing Secret */}
+          <div className="mb-12">
+            <Link href="/blog/24-7-neuro-marketing-secret">
+              <div className="glassmorphism-dark rounded-3xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 border border-electric-blue/10 hover:border-electric-blue/30 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                      alt="24/7 Neuro Marketing Secret"
+                      className="w-full h-80 lg:h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-6 left-6">
+                      <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-2 rounded-full animate-pulse">
+                        🔥 New
+                      </Badge>
+                    </div>
+                  </div>
+                  
+                  <div className="p-8 lg:p-12 flex flex-col justify-center">
+                    <div className="flex items-center gap-4 mb-6">
+                      <Badge variant="outline" className="border-orange-400 text-orange-400">
+                        Website Optimization
+                      </Badge>
+                      <Badge variant="secondary" className="bg-red-500/20 text-gray-300">
+                        Sales Strategy
+                      </Badge>
+                    </div>
+                    
+                    <h3 className="text-3xl font-montserrat font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
+                      ⚡ ওয়েবসাইটকে 24/7 সেলসম্যান বানানোর ৭টি Neuro Marketing Secret
+                    </h3>
+                    
+                    <p className="text-gray-300 text-lg mb-8 group-hover:text-gray-200 transition-colors duration-300 line-clamp-3">
+                      আজকের ডিজিটাল যুগে একটা ওয়েবসাইট শুধু "অনলাইন ভিজিটিং কার্ড" থাকলেই হবে না। সেটা হতে হবে একজন নিরবচ্ছিন্ন সেলসম্যান। জানুন ৭টি গোপন কৌশল যা আপনার ওয়েবসাইটকে ২৪/৭ কাস্টমার আনতে থাকবে...
+                    </p>
+                    
+                    <div className="flex items-center justify-between mb-8">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+                          <User className="text-white" size={20} />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-white">Neuro Binding Team</p>
+                          <p className="text-sm text-gray-400">Jan 29, 2025 • 15 min read</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-6 text-gray-400">
+                        <div className="flex items-center gap-2">
+                          <Heart size={16} />
+                          <span className="text-sm">412</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Share2 size={16} />
+                          <span className="text-sm">Share</span>
+                        </div>
+                      </div>
+                      
+                      <Button className="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 rounded-full hover-lift group/btn">
+                        Read Full Article
+                        <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" size={16} />
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Previous Featured Post */}
           <Link href="/blog/why-neuro-marketing-comes-in">
             <div className="glassmorphism-dark rounded-3xl overflow-hidden hover-lift cursor-pointer group transition-all duration-500 border border-electric-blue/10 hover:border-electric-blue/30 max-w-5xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -218,8 +291,8 @@ export default function Blog() {
                     className="w-full h-80 lg:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-6 left-6">
-                    <Badge className="bg-gradient-neural text-white px-4 py-2 rounded-full animate-pulse">
-                      🔥 Featured
+                    <Badge className="bg-gradient-neural text-white px-4 py-2 rounded-full">
+                      Popular
                     </Badge>
                   </div>
                 </div>

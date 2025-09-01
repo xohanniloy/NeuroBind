@@ -303,9 +303,65 @@ AI যত উন্নতই হোক না কেন, মানুষের �
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <article className="glassmorphism-dark rounded-2xl p-8 lg:p-12">
-              <div className="prose prose-lg max-w-none text-gray-300">
-                <div className="whitespace-pre-line text-gray-300 leading-relaxed text-lg space-y-6">
-                  {fullContent}
+              <div className="prose prose-lg prose-invert max-w-none">
+                <div className="text-gray-300 leading-relaxed space-y-6">
+                  {fullContent.split('\n\n').map((paragraph, index) => {
+                    if (paragraph.trim() === '') return null;
+                    
+                    // Handle headings
+                    if (paragraph.startsWith('##')) {
+                      const text = paragraph.replace(/^#+\s*/, '');
+                      return (
+                        <h2 key={index} className="text-3xl font-montserrat font-bold text-electric-blue mt-12 mb-6">
+                          {text}
+                        </h2>
+                      );
+                    }
+                    
+                    if (paragraph.startsWith('#')) {
+                      const text = paragraph.replace(/^#+\s*/, '');
+                      return (
+                        <h1 key={index} className="text-4xl font-montserrat font-bold text-white mt-12 mb-6">
+                          {text}
+                        </h1>
+                      );
+                    }
+                    
+                    // Handle numbered sections
+                    if (/^\d️⃣/.test(paragraph)) {
+                      return (
+                        <div key={index} className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-400/30 rounded-lg p-6 my-8">
+                          <div className="text-lg font-semibold text-white whitespace-pre-line">
+                            {paragraph}
+                          </div>
+                        </div>
+                      );
+                    }
+                    
+                    // Handle separators
+                    if (paragraph.trim() === '---') {
+                      return <hr key={index} className="border-blue-400/30 my-8" />;
+                    }
+                    
+                    // Regular paragraphs
+                    return (
+                      <div key={index} className="text-lg text-gray-300 whitespace-pre-line leading-relaxed">
+                        {paragraph.split('**').map((part, i) => 
+                          i % 2 === 1 ? (
+                            <strong key={i} className="text-white font-semibold">{part}</strong>
+                          ) : (
+                            part.split('👉').map((subpart, j) =>
+                              j % 2 === 1 ? (
+                                <span key={j}>👉</span>
+                              ) : (
+                                subpart
+                              )
+                            )
+                          )
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               

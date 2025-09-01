@@ -206,108 +206,168 @@ Landing Page এর শুরুতে Pain Point হাইলাইট কর�
   return (
     <div className="min-h-screen bg-neural-bg text-white">
       <Navigation />
-
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-electric-blue/10" />
+      
+      {/* Blog Header */}
+      <section className="pt-32 pb-12 bg-gradient-to-br from-neural-bg via-deep-purple to-neural-bg relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple/10 via-transparent to-electric-blue/10"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-electric-blue/20 to-neuro-purple/20 rounded-full blur-3xl opacity-30"></div>
         
-        <div className="max-w-4xl mx-auto relative z-10">
-          <Link 
-            href="/blog" 
-            className="inline-flex items-center gap-2 text-electric-blue hover:text-neon-green transition-colors duration-300 mb-8"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            ব্লগে ফিরে যান
-          </Link>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Back Button */}
+            <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8">
+              <ArrowLeft size={20} />
+              <span>ব্লগে ফিরে যান</span>
+            </Link>
 
-          <div className="flex flex-wrap gap-2 mb-6">
-            <Badge className="bg-electric-blue/20 text-electric-blue border-electric-blue/30">
-              {blogPost.category}
-            </Badge>
-            {blogPost.tags.map((tag, index) => (
-              <Badge key={index} variant="outline" className="border-purple-500/30 text-purple-300">
-                {tag}
+            {/* Blog Meta */}
+            <div className="flex flex-wrap items-center gap-4 mb-6">
+              <Badge className="bg-gradient-neural text-white px-4 py-2">
+                {blogPost.category}
               </Badge>
-            ))}
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-electric-blue to-neon-green bg-clip-text text-transparent mb-4 leading-tight">
-            {blogPost.title}
-          </h1>
-          
-          <p className="text-xl text-electric-blue font-medium mb-6">
-            {blogPost.subtitle}
-          </p>
-
-          <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-3xl">
-            {blogPost.excerpt}
-          </p>
-
-          <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4 text-electric-blue" />
-              <span>{blogPost.author}</span>
+              <div className="flex items-center gap-4 text-gray-400 text-sm">
+                <div className="flex items-center gap-2">
+                  <User size={16} />
+                  <span>{blogPost.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar size={16} />
+                  <span>{new Date(blogPost.date).toLocaleDateString('bn-BD')}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock size={16} />
+                  <span>{blogPost.readTime}</span>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-electric-blue" />
-              <span>{new Date(blogPost.date).toLocaleDateString('bn-BD')}</span>
+
+            {/* Blog Title */}
+            <h1 className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-4 leading-tight">
+              {blogPost.title}
+            </h1>
+            
+            {/* Subtitle */}
+            <h2 className="text-2xl md:text-3xl font-montserrat font-medium text-gray-300 mb-6">
+              {blogPost.subtitle}
+            </h2>
+
+            {/* Blog Excerpt */}
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              {blogPost.excerpt}
+            </p>
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {blogPost.tags.map((tag, index) => (
+                <span 
+                  key={index}
+                  className="px-3 py-1 bg-gradient-to-r from-neuro-purple/20 to-electric-blue/20 border border-electric-blue/30 rounded-full text-sm text-gray-300"
+                >
+                  #{tag}
+                </span>
+              ))}
             </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-electric-blue" />
-              <span>{blogPost.readTime}</span>
+
+            {/* Share Button */}
+            <div className="flex items-center gap-4">
+              <Button className="bg-gradient-neural hover:bg-gradient-to-r hover:from-electric-blue hover:to-neuro-purple transition-all duration-300">
+                <span className="flex items-center gap-2">
+                  <Share2 size={16} />
+                  শেয়ার করুন
+                </span>
+              </Button>
             </div>
-            <Button 
-              variant="outline" 
-              size="sm" 
-              className="border-electric-blue/30 text-electric-blue hover:bg-electric-blue/10"
-            >
-              <Share2 className="w-4 h-4 mr-2" />
-              শেয়ার করুন
-            </Button>
           </div>
         </div>
       </section>
 
       {/* Blog Content */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="prose prose-lg prose-invert max-w-none">
-            <div 
-              className="text-gray-300 leading-relaxed space-y-6"
-              style={{
-                fontSize: '1.1rem',
-                lineHeight: '1.8',
-              }}
-              dangerouslySetInnerHTML={{
-                __html: fullContent
-                  .split('\n')
-                  .map(line => {
-                    if (line.startsWith('## ')) {
-                      return `<h2 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-electric-blue pl-4">${line.substring(3)}</h2>`
+      <section className="py-20 bg-neural-bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <article className="glassmorphism-dark rounded-2xl p-8 lg:p-12">
+              <div className="prose prose-lg prose-invert max-w-none">
+                <div className="text-gray-300 leading-relaxed space-y-6">
+                  {fullContent.split('\n\n').map((paragraph, index) => {
+                    if (paragraph.trim() === '') return null;
+                    
+                    // Handle headings
+                    if (paragraph.startsWith('##')) {
+                      const text = paragraph.replace(/^#+\s*/, '');
+                      return (
+                        <h2 key={index} className="text-3xl font-montserrat font-bold text-electric-blue mt-12 mb-6">
+                          {text}
+                        </h2>
+                      );
                     }
-                    if (line.startsWith('### ')) {
-                      return `<h3 class="text-xl font-bold text-electric-blue mt-8 mb-4">${line.substring(4)}</h3>`
+                    
+                    if (paragraph.startsWith('#')) {
+                      const text = paragraph.replace(/^#+\s*/, '');
+                      return (
+                        <h1 key={index} className="text-4xl font-montserrat font-bold text-white mt-12 mb-6">
+                          {text}
+                        </h1>
+                      );
                     }
-                    if (line.startsWith('**') && line.endsWith('**')) {
-                      return `<p class="font-semibold text-neon-green my-4">${line.slice(2, -2)}</p>`
+                    
+                    // Handle special sections with icons
+                    if (/^🧠|^📌|^🧩|^⚡|^🎯/.test(paragraph)) {
+                      return (
+                        <div key={index} className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-blue-400/30 rounded-lg p-6 my-8">
+                          <div className="text-lg font-semibold text-white whitespace-pre-line">
+                            {paragraph}
+                          </div>
+                        </div>
+                      );
                     }
-                    if (line.startsWith('👉')) {
-                      return `<p class="ml-4 text-electric-blue my-3">${line}</p>`
+                    
+                    // Handle separators
+                    if (paragraph.trim() === '---') {
+                      return <hr key={index} className="border-blue-400/30 my-8" />;
                     }
-                    if (line.includes('❌') || line.includes('✅')) {
-                      return `<p class="bg-gray-800/50 p-4 rounded-lg border-l-4 ${line.includes('❌') ? 'border-red-500' : 'border-green-500'} my-4">${line}</p>`
-                    }
-                    if (line.startsWith('📌') || line.startsWith('🧠') || line.startsWith('🧩') || line.startsWith('⚡') || line.startsWith('🎯')) {
-                      return `<p class="text-neon-green font-medium text-lg my-4">${line}</p>`
-                    }
-                    if (line.trim() === '') {
-                      return '<br>'
-                    }
-                    return `<p class="my-4">${line}</p>`
-                  })
-                  .join('')
-              }}
-            />
+                    
+                    // Regular paragraphs
+                    return (
+                      <div key={index} className="text-lg text-gray-300 whitespace-pre-line leading-relaxed">
+                        {paragraph.split('**').map((part, i) => 
+                          i % 2 === 1 ? (
+                            <strong key={i} className="text-white font-semibold">{part}</strong>
+                          ) : (
+                            part.split('👉').map((subpart, j) =>
+                              j % 2 === 1 ? (
+                                <span key={j}>👉</span>
+                              ) : (
+                                subpart
+                              )
+                            )
+                          )
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              
+              <div className="mt-12 p-6 bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 border border-electric-blue/20 rounded-xl">
+                <h3 className="text-2xl font-montserrat font-bold text-white mb-4">
+                  আপনার ল্যান্ডিং পেজ অপটিমাইজ করতে চান?
+                </h3>
+                <p className="text-gray-300 mb-6 text-lg">
+                  নিউরো মার্কেটিং কৌশল ব্যবহার করে আপনার ল্যান্ডিং পেজের কনভার্শন রেট ৩-৫ গুণ বাড়ান। আমাদের এক্সপার্ট টিমের সাথে যোগাযোগ করুন।
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Button className="bg-gradient-neural hover:bg-gradient-to-r hover:from-electric-blue hover:to-neuro-purple transition-all duration-300 text-lg px-8 py-3">
+                    ফ্রি কনসালটেশন বুক করুন
+                  </Button>
+                  <Button variant="outline" className="border-electric-blue/50 text-electric-blue hover:bg-electric-blue/10 text-lg px-8 py-3">
+                    <span className="flex items-center gap-2">
+                      <BookOpen size={16} />
+                      কেস স্টাডি ডাউনলোড করুন
+                    </span>
+                  </Button>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>

@@ -65,20 +65,20 @@ export default function ServicesSection(): React.JSX.Element {
     {
       slug: 'neuro-script',
       icon: FileText,
-      title: "Neuro Marketing ভিত্তিক Script",
-      description: "ভিডিও, বিজ্ঞাপন বা ওয়েবিনারের জন্য সঠিক স্ক্রিপ্ট = কাস্টমারের মনের দরজা খোলার চাবি।",
+      title: "5️⃣ Neuro Marketing ভিত্তিক Script ✍️",
+      description: "আজকের ডিজিটাল দুনিয়ায়, একজন কাস্টমার আপনার ভিডিও বা বিজ্ঞাপন দেখে মাত্র ৮–১০ সেকেন্ড সময় দেয়। এই কয়েক সেকেন্ডেই ঠিক হয়ে যায়—সে থাকছে নাকি স্ক্রল করে চলে যাচ্ছে।",
       features: [
-        "মানুষের অবচেতন মনকে প্রভাবিত করা",
-        "অ্যাকশনে বাধ্য করা স্ক্রিপ্ট",
-        "ইমোশনাল কানেকশন তৈরি"
+        "🎯 Attention Hook - প্রথম ৩ সেকেন্ডেই Scroll-Stopper হুক",
+        "💭 Emotional Connection - ভিজিটরের ব্যথা, ভয়, আশা ছুঁয়ে দেওয়া",
+        "🧠 Neuro Trigger CTA - অবচেতন মনকে অ্যাকশনে ঠেলে দেওয়া"
       ],
       advanced: [
-        "নিউরো-লিঙ্গুইস্টিক স্ক্রিপ্টিং",
-        "সাবলিমিনাল মেসেজিং টেকনিক",
-        "পারসুয়েশন সিকুয়েন্সিং",
-        "কগনিটিভ বায়াস অ্যাক্টিভেশন"
+        "🎯 Hook Creation Mastery - Fear/Curiosity/Benefit-driven প্রথম ৩-৫ সেকেন্ড",
+        "📝 Storytelling + Neuro Trigger - গল্পের মাধ্যমে অবচেতন মনে প্রভাব",
+        "🎭 Voice Tone Mapping - কোন Voice Tone কাস্টমারের মনে বেশি কাজ করবে",
+        "🚀 Conversion Machine Approach - শুধু দেখানো নয়, কনভার্ট করা"
       ],
-      stats: { success: "300%", metric: "Response Rate বৃদ্ধি" }
+      stats: { success: "৮-১০", metric: "সেকেন্ড সময় পান কাস্টমারের কাছ থেকে" }
     },
     {
       slug: 'business-consultancy',

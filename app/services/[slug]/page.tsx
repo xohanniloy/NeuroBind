@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Navigation from '../../components/layout/navigation'
 import Footer from '../../components/layout/footer'
-import { Brain, TrendingUp, Users, Magnet, FileText, Palette, Check, ChevronLeft, Star, Zap, Target, ArrowRight, Clock, DollarSign, Award, Lightbulb, TrendingUp as TrendingUpIcon, Users as UsersIcon, Eye, Sparkles, Shield, Rocket } from 'lucide-react'
+import { Brain, TrendingUp, Users, Magnet, FileText, Palette, Check, ChevronLeft, Star, Zap, Target, ArrowRight, Clock, DollarSign, Award, Lightbulb, TrendingUp as TrendingUpIcon, Users as UsersIcon, Eye, Sparkles, Shield, Rocket, MousePointer, Smartphone } from 'lucide-react'
 import Link from 'next/link'
 
 const services = [
@@ -175,42 +175,87 @@ const services = [
   {
     slug: 'neuro-script',
     icon: FileText,
-    title: "Neuro Marketing ভিত্তিক Script",
-    shortDescription: "ভিডিও, বিজ্ঞাপন বা ওয়েবিনারের জন্য সঠিক স্ক্রিপ্ট = কাস্টমারের মনের দরজা খোলার চাবি।",
-    fullDescription: "আমাদের স্ক্রিপ্ট শুধু কথা বলে না, এটি ভিউয়ারের অবচেতন মনে প্রভাব ফেলে। আমরা নিউরো-লিঙ্গুইস্টিক প্রোগ্রামিং, সাবলিমিনাল মেসেজিং এবং পারসুয়েশন সাইকোলজির কৌশল ব্যবহার করে এমন স্ক্রিপ্ট তৈরি করি যা দর্শকদের আবেগের সাথে গভীর সংযোগ স্থাপন করে এবং তাদের কাঙ্ক্ষিত অ্যাকশন নিতে অনুপ্রাণিত করে।",
+    title: "5️⃣ Neuro Marketing ভিত্তিক Script ✍️",
+    shortDescription: "আজকের ডিজিটাল দুনিয়ায়, একজন কাস্টমার আপনার ভিডিও বা বিজ্ঞাপন দেখে মাত্র ৮–১০ সেকেন্ড সময় দেয়। এই কয়েক সেকেন্ডেই ঠিক হয়ে যায়—সে থাকছে নাকি স্ক্রল করে চলে যাচ্ছে।",
+    fullDescription: "আমরা তৈরি করি এমন Script, যা শুধু শোনায় না, বরং মানুষের মনের গভীরে ঢুকে পড়ে। 🧠 Neuro Fact: মানুষের মস্তিষ্ক প্রথমে Visual + Voice Tone ধরে, তারপর Meaning বোঝে। 👉 তাই যদি প্রথম কয়েক সেকেন্ডেই Hook কাজ না করে, আপনার মেসেজ হারিয়ে যাবে।",
+    whyImportant: {
+      title: "❓ কেন Script এত গুরুত্বপূর্ণ?",
+      neuroFact: "🧠 Neuro Fact: মানুষের মস্তিষ্ক প্রথমে Visual + Voice Tone ধরে, তারপর Meaning বোঝে। 👉 তাই যদি প্রথম কয়েক সেকেন্ডেই Hook কাজ না করে, আপনার মেসেজ হারিয়ে যাবে।",
+      problems: [
+        "অনেক লম্বা Intro → Attention হারিয়ে যায়",
+        "শুধু তথ্য দেয়, Emotion জাগায় না", 
+        "CTA এমনভাবে লেখা হয় না যা অবচেতন মনে ঢোকে"
+      ],
+      solution: "💡 Neuro Marketing ভিত্তিক Script এই সমস্যা দূর করে।"
+    },
+    scriptFeatures: [
+      {
+        number: "1️⃣",
+        title: "Attention Hook",
+        description: "প্রথম ৩ সেকেন্ডেই Scroll-Stopper হুক → ভিজিটরের ব্রেইনে 'Pattern Break' ঘটায়।"
+      },
+      {
+        number: "2️⃣", 
+        title: "Emotional Connection",
+        description: "ভিজিটরের ব্যথা, ভয়, আশা বা স্বপ্নকে গল্পের মধ্যে ছুঁয়ে দেওয়া।",
+        extra: "👉 Emotion + Logic Balance → মেসেজ বিশ্বাসযোগ্য হয়।"
+      },
+      {
+        number: "3️⃣",
+        title: "Neuro Trigger CTA", 
+        description: "শুধু 'Call Now' বা 'Buy Now' নয়—বরং অবচেতন মনকে অ্যাকশনে ঠেলে দেওয়া Trigger Word।",
+        example: "যেমন: 'এখন না হলে হয়তো সুযোগ হাতছাড়া হবে।'"
+      },
+      {
+        number: "4️⃣",
+        title: "Multi-Use Format",
+        formats: [
+          "✅ বিজ্ঞাপন ভিডিও",
+          "✅ ইউটিউব / সোশ্যাল মিডিয়া কনটেন্ট", 
+          "✅ ওয়েবিনার Script",
+          "✅ কর্পোরেট প্রেজেন্টেশন",
+          "✅ সেলস পিচ"
+        ]
+      }
+    ],
+    finalCTA: {
+      title: "🚀 Final CTA",
+      description: "আপনার ভিডিও বা বিজ্ঞাপন শুধু 'দেখানো' না— 👉 সেটাকে হতে হবে Conversion Machine।",
+      button: "এখনই ফ্রি Neuro Script পরামর্শ বুক করুন"
+    },
     features: [
-      "মানুষের অবচেতন মনকে প্রভাবিত করা",
-      "অ্যাকশনে বাধ্য করা স্ক্রিপ্ট",
-      "ইমোশনাল কানেকশন তৈরি",
-      "পারসুয়েসিভ স্টোরিটেলিং",
-      "কল টু অ্যাকশন অপটিমাইজেশন",
-      "অডিয়েন্স এনগেজমেন্ট"
+      "🎯 Attention Hook - প্রথম ৩ সেকেন্ডেই Scroll-Stopper হুক যা ভিজিটরের ব্রেইনে Pattern Break ঘটায়",
+      "💭 Emotional Connection - ভিজিটরের ব্যথা, ভয়, আশা বা স্বপ্নকে গল্পের মধ্যে ছুঁয়ে দেওয়া",
+      "🧠 Neuro Trigger CTA - শুধু 'Call Now' বা 'Buy Now' নয়—বরং অবচেতন মনকে অ্যাকশনে ঠেলে দেওয়া Trigger Word",
+      "🎭 Multi-Use Format - বিজ্ঞাপন ভিডিও, ইউটিউব/সোশ্যাল মিডিয়া কনটেন্ট, ওয়েবিনার Script, কর্পোরেট প্রেজেন্টেশন, সেলস পিচ",
+      "⚡ Pattern Break - ভিজিটরের ব্রেইনে Pattern Break ঘটায়",
+      "🎨 Emotion + Logic Balance - মেসেজ বিশ্বাসযোগ্য হয়"
     ],
     advanced: [
-      "নিউরো-লিঙ্গুইস্টিক স্ক্রিপ্টিং",
-      "সাবলিমিনাল মেসেজিং টেকনিক",
-      "পারসুয়েশন সিকুয়েন্সিং",
-      "কগনিটিভ বায়াস অ্যাক্টিভেশন",
-      "ইমোশনাল আর্ক ডেভেলপমেন্ট",
-      "নিউরো-ভার্বাল হাইপনোসিস"
+      "🎯 Hook Creation Mastery - Fear/Curiosity/Benefit-driven প্রথম ৩-৫ সেকেন্ড",
+      "📝 Storytelling + Neuro Trigger - গল্পের মাধ্যমে অবচেতন মনে প্রভাব",
+      "🎭 Voice Tone Mapping - কোন Voice Tone কাস্টমারের মনে বেশি কাজ করবে",
+      "✅ A/B Testing Framework - সেরা Script বাছাই করার পদ্ধতি",
+      "📱 Multi-Platform Optimization - YouTube, Facebook, Instagram, TikTok",
+      "🚀 Conversion Machine Approach - শুধু দেখানো নয়, কনভার্ট করা"
     ],
     process: [
-      "অডিয়েন্স সাইকোলজিক্যাল প্রোফাইলিং",
-      "মেসেজ স্ট্র্যাটেজি ডেভেলপমেন্ট",
-      "স্ক্রিপ্ট স্ট্রাকচার ডিজাইন",
-      "ইমোশনাল ট্রিগার ইনটিগ্রেশন",
-      "টেস্টিং ও রিফাইনমেন্ট",
-      "পারফরমেন্স অ্যানালাইসিস"
+      "🔍 Research – আপনার কাস্টমার কারা, তাদের Pain Point কি",
+      "🧠 Hook Creation – প্রথম ৩–৫ সেকেন্ডের হুক তৈরি",
+      "✍️ Script Writing – Storytelling + Neuro Trigger CTA",
+      "🎭 Tone Mapping – কোন Voice Tone কাস্টমারের মনে বেশি কাজ করবে",
+      "✅ Testing – A/B টেস্টিং এর মাধ্যমে সেরা Script বাছাই"
     ],
     results: [
-      "গড়ে 300% রেসপন্স রেট বৃদ্ধি",
-      "ভিউ কমপ্লিশন রেট 250% বৃদ্ধি",
-      "কনভার্শন রেট 180% বৃদ্ধি",
-      "এনগেজমেন্ট রেট 220% বৃদ্ধি"
+      "⚠️ সাধারণ Script এর সমস্যা দূর করে",
+      "🎯 প্রথম কয়েক সেকেন্ডেই Hook কাজ করে",
+      "💭 শুধু তথ্য নয়, Emotion জাগায়",
+      "🧠 CTA অবচেতন মনে ঢুকে পড়ে",
+      "🚀 আপনার ভিডিও বা বিজ্ঞাপন হয়ে ওঠে Conversion Machine"
     ],
-    stats: { success: "300%", metric: "Response Rate বৃদ্ধি" },
-    price: "শুরু ২০,০০০ টাকা থেকে",
-    timeline: "৫-৭ কর্মদিবস",
+    stats: { success: "৮-১০", metric: "সেকেন্ড সময় পান কাস্টমারের কাছ থেকে" },
+    price: "এখনই ফ্রি Neuro Script পরামর্শ বুক করুন",
+    timeline: "Research থেকে Final Script পর্যন্ত ৫-৭ দিন",
     backgroundColor: "from-purple-500/10 to-pink-500/10",
     accentColor: "purple-500"
   },
@@ -336,6 +381,196 @@ export default function ServiceDetailPage({ params }: Props) {
   }
 
   const IconComponent = service.icon
+
+  // Special layout for neuro-script service
+  if (params.slug === 'neuro-script') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-electric-blue/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-10 w-40 h-40 bg-neuro-purple rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-40 right-20 w-56 h-56 bg-electric-blue rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-32 left-1/3 w-32 h-32 bg-indigo-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="flex justify-center mb-10">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple via-electric-blue to-indigo-500 rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-10 bg-gradient-to-r from-neuro-purple/20 via-electric-blue/20 to-indigo-500/20 rounded-3xl glassmorphism-dark">
+                    <FileText className="text-electric-blue" size={100} />
+                  </div>
+                </div>
+              </div>
+              
+              <h1 className="text-4xl lg:text-7xl font-montserrat font-bold mb-10 leading-tight">
+                <span className="bg-gradient-to-r from-white via-neuro-purple to-electric-blue bg-clip-text text-transparent">
+                  {service.title}
+                </span>
+              </h1>
+              
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
+                {service.shortDescription}
+              </p>
+              
+              <p className="text-lg text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+                {service.fullDescription}
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-6 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neuro-purple to-electric-blue hover:from-electric-blue hover:to-neuro-purple text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neuro-purple/50 flex items-center gap-3"
+                >
+                  <Rocket className="group-hover:rotate-12 transition-transform" size={20} />
+                  এখনই আপনার Neuro Script এর জন্য বুক করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Important Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
+                  {service.whyImportant.title}
+                </span>
+              </h2>
+              
+              <div className="max-w-4xl mx-auto mb-12">
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                  {service.whyImportant.neuroFact}
+                </p>
+                
+                <div className="glassmorphism-dark rounded-2xl p-8 mb-8">
+                  <h3 className="text-2xl font-semibold text-red-400 mb-6">⚠️ সাধারণ Script এর সমস্যা:</h3>
+                  <div className="space-y-4">
+                    {service.whyImportant.problems.map((problem, index) => (
+                      <div key={index} className="flex items-center gap-4">
+                        <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                        <p className="text-gray-300">{problem}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <p className="text-xl font-semibold text-neon-green">
+                  {service.whyImportant.solution}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Script Features Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                🌟 আমাদের <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">Script এর বৈশিষ্ট্য</span>
+              </h2>
+            </div>
+            
+            <div className="space-y-12">
+              {service.scriptFeatures.map((feature, index) => (
+                <div key={index} className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-electric-blue/20 hover:border-electric-blue/40 transition-all duration-500">
+                  <div className="flex items-start gap-6 mb-6">
+                    <div className="text-4xl">{feature.number}</div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-electric-blue mb-4">{feature.title}</h3>
+                      <p className="text-lg text-gray-300 leading-relaxed mb-4">{feature.description}</p>
+                      {feature.extra && (
+                        <p className="text-lg text-neon-green font-semibold">{feature.extra}</p>
+                      )}
+                      {feature.example && (
+                        <p className="text-lg text-yellow-400 italic">{feature.example}</p>
+                      )}
+                      {feature.formats && (
+                        <div className="mt-4 space-y-2">
+                          {feature.formats.map((format, formatIndex) => (
+                            <div key={formatIndex} className="text-gray-300">{format}</div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                🛠️ আমাদের <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">কাজ করার ধাপ</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {service.process.map((step, index) => (
+                <div key={index} className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-neon-green/20 hover:border-neon-green/40 transition-all duration-500">
+                  <div className="text-4xl mb-4">{step.charAt(0)}</div>
+                  <h3 className="text-xl font-semibold text-neon-green mb-4">
+                    {step.split(' –')[0].substring(2)}
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    {step.split(' –')[1]}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">
+                  {service.finalCTA.title}
+                </span>
+              </h2>
+              
+              <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+                {service.finalCTA.description}
+              </p>
+
+              <Link
+                href="/contact"
+                className="group bg-gradient-to-r from-neon-green to-electric-blue hover:from-electric-blue hover:to-neon-green text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neon-green/50 flex items-center gap-3 justify-center max-w-md mx-auto"
+              >
+                <Rocket className="group-hover:rotate-12 transition-transform" size={24} />
+                {service.finalCTA.button}
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={24} />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    )
+  }
 
   // Special layout for neuro-lead-magnet-pro service
   if (params.slug === 'neuro-lead-magnet-pro') {

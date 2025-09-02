@@ -255,6 +255,46 @@ const services = [
     timeline: "৩০-৬০ কর্মদিবস",
     backgroundColor: "from-pink-500/10 to-rose-500/10",
     accentColor: "pink-500"
+  },
+  {
+    slug: 'neuro-lead-magnet-pro',
+    icon: Magnet,
+    title: "🎯 Neuro Marketing ভিত্তিক Lead Magnet (Pro)",
+    shortDescription: "Cold ভিজিটরকে কি আপনি সরাসরি কাস্টমারে রূপান্তর করতে চাইছেন? সেটা কখনো কাজ করবে না। কারণ মানুষের মস্তিষ্ক অপরিচিত কাউকে 'Buy Now' শুনলেই Danger Signal পাঠায়।",
+    fullDescription: "কিন্তু যদি আপনি প্রথমেই একটি ছোট্ট Free Value দেন—তাহলে সেই ভয় কমে যায়, তৈরি হয় বিশ্বাস। মানুষ অপরিচিতের অফারকে সন্দেহজনক ভাবে। কিন্তু ফ্রি ভ্যালু → Reciprocity Trigger চালু করে।",
+    features: [
+      "🧠 Neuro Fact ভিত্তিক সাইকোলজি প্রয়োগ",
+      "🎯 Reciprocity Trigger সক্রিয়করণ",
+      "📚 4 ধরনের Lead Magnet - Ebook, Checklist, Course, Template",
+      "🔍 গভীর Customer Psychology Research",
+      "🎨 Scroll-Stopper Design এবং Cover",
+      "📊 বাংলাদেশি ব্যবসার জন্য কাস্টমাইজড"
+    ],
+    advanced: [
+      "🎭 রয়াল মালাবার কৌশল প্রয়োগ",
+      "🧠 Hook Creation - Fear/Curiosity/Benefit-driven",
+      "✍️ Neuro Framework Content Development",
+      "📱 Multi-channel Delivery System",
+      "🎯 Expert Positioning Strategy",
+      "🚀 Future Sales Pipeline Setup"
+    ],
+    process: [
+      "🔍 Research → কাস্টমারের ভয় ও চাহিদা বোঝা",
+      "🧠 Hook Creation → মানুষকে ক্লিক করাবে এমন টাইটেল তৈরি",
+      "✍️ Content & Design → Neuro Framework + Scroll-Stopper Cover",
+      "🚀 Delivery → Email / WhatsApp / Funnel"
+    ],
+    results: [
+      "✅ ভিজিটরের ভয় কমায়",
+      "✅ আপনাকে Expert প্রমাণ করে",
+      "✅ Relationship তৈরি করে",
+      "✅ Future Sales এর পথ খুলে দেয়"
+    ],
+    stats: { success: "Cold Visitor", metric: "→ Warm Lead → Loyal Customer" },
+    price: "এখনই ফ্রি লিড ম্যাগনেট বুক করুন",
+    timeline: "Research থেকে Delivery পর্যন্ত",
+    backgroundColor: "from-orange-500/10 to-red-500/10",
+    accentColor: "orange-500"
   }
 ];
 
@@ -272,6 +312,167 @@ export default function ServiceDetailPage() {
   }
 
   const IconComponent = service.icon;
+
+  // Special layout for neuro-lead-magnet-pro service
+  if (params.slug === 'neuro-lead-magnet-pro') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-orange-500/10 to-red-500/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-orange-400 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-32 right-20 w-48 h-48 bg-red-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-yellow-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-orange-400 hover:text-red-400 transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="flex justify-center mb-8">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-8 bg-gradient-to-r from-orange-400/20 to-red-500/20 rounded-3xl glassmorphism-dark">
+                    <div className="text-6xl mb-4">🎯</div>
+                    <Magnet className="text-orange-400" size={80} />
+                  </div>
+                </div>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8 leading-tight">
+                <span className="bg-gradient-to-r from-white via-orange-400 to-red-500 bg-clip-text text-transparent">
+                  "Cold ভিজিটরকে কি আপনি সরাসরি কাস্টমারে রূপান্তর করতে চাইছেন?"
+                </span>
+              </h1>
+              
+              <div className="text-2xl lg:text-4xl text-red-400 font-bold mb-8">
+                👉 সেটা কখনো কাজ করবে না।
+              </div>
+              
+              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8 max-w-5xl mx-auto">
+                কারণ মানুষের মস্তিষ্ক অপরিচিত কাউকে "Buy Now" শুনলেই <span className="text-red-400 font-bold">Danger Signal</span> পাঠায়।<br/>
+                কিন্তু যদি আপনি প্রথমেই একটি ছোট্ট <span className="text-orange-400 font-bold">Free Value</span> দেন—<br/>
+                তাহলে সেই ভয় কমে যায়, তৈরি হয় বিশ্বাস।
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <button className="bg-gradient-to-r from-orange-400 to-red-500 hover:from-red-500 hover:to-orange-400 text-white font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-400/50">
+                  📌 আপনার লিড ম্যাগনেট এখনই তৈরি করুন
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* কেন Lead Magnet জরুরি */}
+        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                ❓ কেন <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Lead Magnet জরুরি?</span>
+              </h2>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl p-12 border border-orange-400/20 mb-16">
+                <div className="flex justify-center mb-8">
+                  <div className="w-24 h-24 bg-gradient-to-r from-orange-400/20 to-red-500/20 rounded-full flex items-center justify-center">
+                    <Brain className="text-orange-400" size={48} />
+                  </div>
+                </div>
+                <h3 className="text-3xl font-bold mb-8 text-center">🧠 Neuro Fact:</h3>
+                <div className="space-y-6 text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed text-center">
+                  <p className="text-2xl">মানুষ অপরিচিতের অফারকে সন্দেহজনক ভাবে।</p>
+                  <p className="text-2xl">কিন্তু ফ্রি ভ্যালু → <span className="text-orange-400 font-bold text-3xl">Reciprocity Trigger</span> চালু করে।</p>
+                  <div className="bg-orange-400/10 p-8 rounded-2xl border border-orange-400/30 my-8">
+                    <p className="text-3xl font-bold text-orange-400">মানে →</p>
+                    <p className="text-2xl font-bold text-white mt-4">"ওরা আমাকে কিছু দিল, আমিও কিছু ফিরিয়ে দিই।"</p>
+                  </div>
+                  <p className="text-2xl font-bold text-white">👉 তাই ব্যবসার প্রথম ধাপ হওয়া উচিত লিড ম্যাগনেট অফার করা।</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* রয়াল মালাবারের গল্প */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🎭 গল্প থেকে শিক্ষা <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">(রয়াল মালাবারের কোল্ড ড্রিঙ্ক)</span>
+              </h2>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-3xl p-12 border border-blue-400/20">
+                <div className="space-y-8 text-lg leading-relaxed">
+                  <p className="text-xl">একদিন আমি আর আমার ওয়াইফ গিয়েছিলাম ডায়মন্ড ওয়ার্ল্ড থেকে গিফট কিনতে। কিন্তু ভেতরে ঢোকার আগেই রয়াল মালাবারের স্টোরে ঢুকে পড়লাম।</p>
+                  
+                  <div className="bg-green-500/20 p-8 rounded-2xl border border-green-500/30 text-center">
+                    <p className="text-2xl font-bold text-green-400">তারা আমাদের হাতে ধরিয়ে দিল দুটো কোল্ড ড্রিঙ্ক।</p>
+                  </div>
+
+                  <div className="bg-orange-500/10 p-8 rounded-2xl border border-orange-500/20">
+                    <p className="text-xl font-bold text-orange-400 mb-6">👉 সঙ্গে সঙ্গেই আমাদের মনে হলো—</p>
+                    <div className="text-center">
+                      <p className="text-2xl font-semibold italic">"ওরা আমাদেরকে ফ্রি আপ্যায়ন করল… এখন কিনে না গেলে তো খারাপ লাগবে।"</p>
+                    </div>
+                  </div>
+
+                  <div className="text-center bg-yellow-500/10 p-8 rounded-2xl border border-yellow-500/20">
+                    <p className="text-xl mb-6">আমরা মূলত ডায়মন্ড ওয়ার্ল্ড থেকে কেনার প্ল্যান করেছিলাম,</p>
+                    <p className="text-3xl font-bold text-yellow-400">কিন্তু শেষমেশ কিনলাম রয়াল মালাবার থেকেই।</p>
+                  </div>
+
+                  <div className="bg-red-500/10 p-8 rounded-2xl border border-red-500/20 text-center">
+                    <p className="text-2xl font-bold text-red-400 mb-6">এখানেই আসল সত্য:</p>
+                    <p className="text-xl mb-4">ফ্রি ভ্যালু মানুষকে মানসিকভাবে ঋণী করে তোলে।</p>
+                    <p className="text-2xl font-bold text-orange-400">এটাই Lead Magnet-এর কাজ।</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl p-16 border border-orange-400/20">
+                <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                  🚀 <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Final CTA</span>
+                </h2>
+                
+                <p className="text-3xl lg:text-4xl font-bold mb-8 text-white">"কাস্টমারকে ভয় নয়, বিশ্বাস দিয়ে জয় করুন।"</p>
+                
+                <p className="text-2xl lg:text-3xl mb-12 text-gray-300">
+                  👉 এখনই আপনার <strong className="text-orange-400">Neuro Marketing ভিত্তিক Lead Magnet তৈরি করুন।</strong>
+                </p>
+                
+                <div className="flex flex-wrap justify-center gap-6">
+                  <button className="bg-gradient-to-r from-orange-400 to-red-500 hover:from-red-500 hover:to-orange-400 text-white font-bold py-6 px-12 rounded-full text-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-400/50">
+                    📌 এখনই ফ্রি লিড ম্যাগনেট বুক করুন
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-neural-bg text-white">

@@ -112,6 +112,24 @@ export default function ServicesSection(): React.JSX.Element {
         "ইমোশনাল ব্র্যান্ড পজিশনিং"
       ],
       stats: { success: "500%", metric: "Brand Recognition" }
+    },
+    {
+      slug: 'neuro-lead-magnet-pro',
+      icon: Magnet,
+      title: "🎯 Neuro Lead Magnet (Pro)",
+      description: "Cold ভিজিটরকে কি সরাসরি কাস্টমারে রূপান্তর করতে চাইছেন? সেটা কখনো কাজ করবে না।",
+      features: [
+        "🧠 Neuro Fact ভিত্তিক সাইকোলজি",
+        "🎯 Reciprocity Trigger সক্রিয়করণ",
+        "📚 4 ধরনের Lead Magnet"
+      ],
+      advanced: [
+        "🎭 রয়াল মালাবার কৌশল প্রয়োগ",
+        "🧠 Hook Creation - Fear/Curiosity/Benefit",
+        "✍️ Neuro Framework Content Development",
+        "🚀 Future Sales Pipeline Setup"
+      ],
+      stats: { success: "Cold→Warm→Loyal", metric: "Customer Journey" }
     }
   ];
 

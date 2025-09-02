@@ -319,81 +319,115 @@ export default function ServiceDetailPage() {
       <div className="min-h-screen bg-neural-bg text-white">
         <Navigation />
         
-        {/* Hero Section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-orange-500/10 to-red-500/10 overflow-hidden">
+        {/* Hero Section - Premium Design */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-electric-blue/10 overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-10 left-10 w-32 h-32 bg-orange-400 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute top-32 right-20 w-48 h-48 bg-red-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute bottom-20 left-1/3 w-24 h-24 bg-yellow-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+            <div className="absolute top-20 left-10 w-40 h-40 bg-neuro-purple rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-40 right-20 w-56 h-56 bg-electric-blue rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-32 left-1/3 w-32 h-32 bg-indigo-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
           </div>
           
           <div className="container mx-auto px-6 relative z-10">
             <Link 
               href="/services" 
-              className="inline-flex items-center text-orange-400 hover:text-red-400 transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
             >
               <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
               <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
             </Link>
 
             <div className="text-center max-w-6xl mx-auto">
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-10">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur opacity-75 animate-pulse"></div>
-                  <div className="relative p-8 bg-gradient-to-r from-orange-400/20 to-red-500/20 rounded-3xl glassmorphism-dark">
-                    <div className="text-6xl mb-4">🎯</div>
-                    <Magnet className="text-orange-400" size={80} />
+                  <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple via-electric-blue to-indigo-500 rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-10 bg-gradient-to-r from-neuro-purple/20 via-electric-blue/20 to-indigo-500/20 rounded-3xl glassmorphism-dark">
+                    <Magnet className="text-electric-blue" size={100} />
                   </div>
                 </div>
               </div>
               
-              <h1 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8 leading-tight">
-                <span className="bg-gradient-to-r from-white via-orange-400 to-red-500 bg-clip-text text-transparent">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 rounded-full px-6 py-3 mb-8">
+                <Target className="text-neon-green" size={20} />
+                <span className="text-sm font-semibold text-electric-blue">প্রিমিয়াম লিড ম্যাগনেট সিস্টেম</span>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-montserrat font-bold mb-10 leading-tight">
+                <span className="bg-gradient-to-r from-white via-neuro-purple to-electric-blue bg-clip-text text-transparent">
                   "Cold ভিজিটরকে কি আপনি সরাসরি কাস্টমারে রূপান্তর করতে চাইছেন?"
                 </span>
               </h1>
               
-              <div className="text-2xl lg:text-4xl text-red-400 font-bold mb-8">
+              <div className="text-3xl lg:text-5xl text-red-400 font-bold mb-10">
                 👉 সেটা কখনো কাজ করবে না।
               </div>
               
-              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8 max-w-5xl mx-auto">
+              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-12 max-w-5xl mx-auto">
                 কারণ মানুষের মস্তিষ্ক অপরিচিত কাউকে "Buy Now" শুনলেই <span className="text-red-400 font-bold">Danger Signal</span> পাঠায়।<br/>
-                কিন্তু যদি আপনি প্রথমেই একটি ছোট্ট <span className="text-orange-400 font-bold">Free Value</span> দেন—<br/>
+                কিন্তু যদি আপনি প্রথমেই একটি ছোট্ট <span className="text-neon-green font-bold">Free Value</span> দেন—<br/>
                 তাহলে সেই ভয় কমে যায়, তৈরি হয় বিশ্বাস।
               </p>
 
-              <div className="flex flex-wrap justify-center gap-4 mb-12">
-                <button className="bg-gradient-to-r from-orange-400 to-red-500 hover:from-red-500 hover:to-orange-400 text-white font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-400/50">
+              {/* Key Stats */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neon-green/20 hover:border-neon-green/40 transition-colors">
+                  <div className="text-4xl font-bold text-neon-green mb-2">680%</div>
+                  <div className="text-sm text-gray-300">লিড জেনারেশন বৃদ্ধি</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20 hover:border-electric-blue/40 transition-colors">
+                  <div className="text-4xl font-bold text-electric-blue mb-2">450%</div>
+                  <div className="text-sm text-gray-300">কনভার্শন রেট উন্নতি</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20 hover:border-neuro-purple/40 transition-colors">
+                  <div className="text-4xl font-bold text-neuro-purple mb-2">350%</div>
+                  <div className="text-sm text-gray-300">কাস্টমার রিটেনশন</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-indigo-400/20 hover:border-indigo-400/40 transition-colors">
+                  <div className="text-4xl font-bold text-indigo-400 mb-2">280%</div>
+                  <div className="text-sm text-gray-300">ROI পারফরমেন্স</div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap justify-center gap-6 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neuro-purple to-electric-blue hover:from-electric-blue hover:to-neuro-purple text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neuro-purple/50 flex items-center gap-3"
+                >
+                  <Magnet className="group-hover:rotate-12 transition-transform" size={24} />
                   📌 আপনার লিড ম্যাগনেট এখনই তৈরি করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={24} />
+                </Link>
+                <button className="glassmorphism-dark border-2 border-electric-blue/30 hover:border-electric-blue/60 text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 flex items-center gap-3">
+                  <Eye size={24} />
+                  ডেমো দেখুন
                 </button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* কেন Lead Magnet জরুরি */}
-        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
+        {/* কেন Lead Magnet জরুরি Section */}
+        <section className="py-24 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-20">
               <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
-                ❓ কেন <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Lead Magnet জরুরি?</span>
+                ❓ কেন <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">Lead Magnet জরুরি?</span>
               </h2>
             </div>
 
             <div className="max-w-6xl mx-auto">
-              <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl p-12 border border-orange-400/20 mb-16">
+              <div className="bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 rounded-3xl p-12 border border-neuro-purple/20 mb-16">
                 <div className="flex justify-center mb-8">
-                  <div className="w-24 h-24 bg-gradient-to-r from-orange-400/20 to-red-500/20 rounded-full flex items-center justify-center">
-                    <Brain className="text-orange-400" size={48} />
+                  <div className="w-24 h-24 bg-gradient-to-r from-neuro-purple/20 to-electric-blue/20 rounded-full flex items-center justify-center">
+                    <Brain className="text-electric-blue" size={48} />
                   </div>
                 </div>
                 <h3 className="text-3xl font-bold mb-8 text-center">🧠 Neuro Fact:</h3>
                 <div className="space-y-6 text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed text-center">
                   <p className="text-2xl">মানুষ অপরিচিতের অফারকে সন্দেহজনক ভাবে।</p>
-                  <p className="text-2xl">কিন্তু ফ্রি ভ্যালু → <span className="text-orange-400 font-bold text-3xl">Reciprocity Trigger</span> চালু করে।</p>
-                  <div className="bg-orange-400/10 p-8 rounded-2xl border border-orange-400/30 my-8">
-                    <p className="text-3xl font-bold text-orange-400">মানে →</p>
+                  <p className="text-2xl">কিন্তু ফ্রি ভ্যালু → <span className="text-electric-blue font-bold text-3xl">Reciprocity Trigger</span> চালু করে।</p>
+                  <div className="bg-electric-blue/10 p-8 rounded-2xl border border-electric-blue/30 my-8">
+                    <p className="text-3xl font-bold text-electric-blue">মানে →</p>
                     <p className="text-2xl font-bold text-white mt-4">"ওরা আমাকে কিছু দিল, আমিও কিছু ফিরিয়ে দিই।"</p>
                   </div>
                   <p className="text-2xl font-bold text-white">👉 তাই ব্যবসার প্রথম ধাপ হওয়া উচিত লিড ম্যাগনেট অফার করা।</p>
@@ -403,12 +437,222 @@ export default function ServiceDetailPage() {
           </div>
         </section>
 
-        {/* রয়াল মালাবারের গল্প */}
-        <section className="py-20 bg-neural-bg-secondary relative">
+        {/* ভিজিটরের সাইকোলজি - বাসের গল্প */}
+        <section className="py-24 bg-neural-bg relative">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
-                🎭 গল্প থেকে শিক্ষা <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">(রয়াল মালাবারের কোল্ড ড্রিঙ্ক)</span>
+                🧠 ভিজিটরের <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">সাইকোলজি</span>
+              </h2>
+              <p className="text-2xl text-gray-300 mb-8">বিশ্বাস কিভাবে গড়ে ওঠে</p>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              {/* বাসের গল্প */}
+              <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-3xl p-12 border border-indigo-400/20 mb-12">
+                <div className="space-y-8 text-lg leading-relaxed">
+                  <p className="text-xl text-center font-semibold text-indigo-300 mb-8">📖 একটি বাস্তব গল্প</p>
+                  
+                  <p className="text-xl">একদিন এক লোক অফিস থেকে বাসে করে বাসায় ফিরছিল। বাসে তার পাশের সিটে বসা এক অপরিচিত মানুষ হঠাৎ তার দিকে একটি মিষ্টির বাক্স বাড়িয়ে দিল।</p>
+                  
+                  <div className="bg-neon-green/10 p-8 rounded-2xl border border-neon-green/30 text-center">
+                    <p className="text-2xl font-bold text-neon-green mb-4">লোকটি বললো:</p>
+                    <p className="text-xl italic">"ভাই, আমার মেয়ে এসএসসি পরীক্ষায় A+ পেয়েছে। তাই আনন্দে সবার মাঝে মিষ্টি বিলাচ্ছি, নিন, খান।"</p>
+                  </div>
+
+                  <div className="bg-red-500/10 p-8 rounded-2xl border border-red-500/20">
+                    <p className="text-xl font-bold text-red-400 mb-6 text-center">👉 আপনি যদি সেই যাত্রী হতেন, তাহলে কি মিষ্টি খেতেন?</p>
+                    <div className="text-center space-y-4">
+                      <p className="text-xl mb-4">অধিকাংশ মানুষই বলবে <span className="text-red-400 font-bold">"না"</span>।</p>
+                      <p className="text-lg text-gray-300">কারণ মাথায় সঙ্গে সঙ্গে ভয়ের সিগন্যাল বাজবে:</p>
+                    </div>
+                  </div>
+
+                  {/* ভয়ের কারণগুলো */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+                    <div className="bg-orange-500/10 p-6 rounded-2xl border border-orange-500/20 text-center">
+                      <div className="text-4xl mb-4">😰</div>
+                      <p className="text-lg font-semibold text-orange-400 mb-3">"আমি তো তাকে চিনি না।"</p>
+                    </div>
+                    <div className="bg-yellow-500/10 p-6 rounded-2xl border border-yellow-500/20 text-center">
+                      <div className="text-4xl mb-4">☠️</div>
+                      <p className="text-lg font-semibold text-yellow-400 mb-3">"কে জানে, মিষ্টিতে কিছু মেশানো আছে কিনা!"</p>
+                    </div>
+                    <div className="bg-red-500/10 p-6 rounded-2xl border border-red-500/20 text-center">
+                      <div className="text-4xl mb-4">🚨</div>
+                      <p className="text-lg font-semibold text-red-400 mb-3">"রাস্তায় কত কাহিনি তো শুনেছি!"</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 p-8 rounded-2xl border border-red-500/30 text-center">
+                    <p className="text-2xl font-bold text-white mb-4">📍 মূল সূত্র</p>
+                    <p className="text-2xl font-bold text-red-400">অচেনা মানুষ + হঠাৎ অফার = ব্রেইনের জন্য ডেঞ্জার সিগন্যাল</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* ব্যবসার সাথে তুলনা */}
+              <div className="bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 rounded-3xl p-12 border border-electric-blue/20 mb-12">
+                <h3 className="text-3xl font-bold text-center text-electric-blue mb-8">ব্যবসার ক্ষেত্রে একই ব্যাপার!</h3>
+                
+                <div className="space-y-8">
+                  <p className="text-xl text-center">যখন কোনো ব্যবসায়ী সরাসরি বলে <span className="text-red-400 font-bold">"আমার সার্ভিস কিনুন বা আমার প্রোডাক্ট কিনুন"</span>, তখন সম্ভাব্য কাস্টমারের ব্রেইনেও একই ভয় কাজ করে।</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="bg-red-400/10 p-6 rounded-2xl border border-red-400/20 text-center">
+                      <div className="text-3xl mb-4">🤔</div>
+                      <p className="text-lg text-red-300">"এরা কি সত্যিই ভাল কোম্পানি নাকি স্কেমার?"</p>
+                    </div>
+                    <div className="bg-yellow-400/10 p-6 rounded-2xl border border-yellow-400/20 text-center">
+                      <div className="text-3xl mb-4">💰</div>
+                      <p className="text-lg text-yellow-300">"আমার টাকা নিয়ে গেলে কি আমি ক্ষতিগ্রস্ত হবো না?"</p>
+                    </div>
+                    <div className="bg-orange-400/10 p-6 rounded-2xl border border-orange-400/20 text-center">
+                      <div className="text-3xl mb-4">🎭</div>
+                      <p className="text-lg text-orange-300">"এরা কি শুধু বিক্রি করার জন্য এসব কথা বলছে না?"</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-red-500/10 p-8 rounded-2xl border border-red-500/20 text-center">
+                    <h4 className="text-2xl font-bold text-red-400 mb-4">ফলাফল?</h4>
+                    <p className="text-2xl font-bold text-white">👉 সে অফার না নিয়ে ওয়েবসাইট থেকে বের হয়ে যায়।</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* সমাধান */}
+              <div className="bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-3xl p-12 border border-neon-green/20">
+                <h3 className="text-4xl font-bold text-center text-neon-green mb-8">💡 সমাধান: লিড ম্যাগনেট</h3>
+                
+                <div className="space-y-8">
+                  <p className="text-xl text-center">ভাবুন, সেই বাসের যাত্রী যদি আপনার এক পুরোনো পরিচিত হতো। যেমন আপনার স্কুলের এক স্যার বা পাশের বাড়ির এক চাচা হঠাৎ এসে বললো:</p>
+                  
+                  <div className="bg-neon-green/10 p-8 rounded-2xl border border-neon-green/30 text-center">
+                    <p className="text-2xl font-bold text-neon-green mb-4">পরিচিত ব্যক্তি বললো:</p>
+                    <p className="text-xl italic">"ভাই/বাবা, আমার মেয়ে এসএসসি পরীক্ষায় A+ পেয়েছে। আনন্দে সবাইকে মিষ্টি খাওয়াচ্ছি, নাও একটা খাও।"</p>
+                  </div>
+
+                  <div className="bg-electric-blue/10 p-8 rounded-2xl border border-electric-blue/30 text-center">
+                    <p className="text-2xl font-bold text-electric-blue mb-4">👉 এবার কি আপনি মিষ্টি খেতে ভয় পেতেন?</p>
+                    <p className="text-2xl font-bold text-white">নিশ্চয়ই না। বরং খুশি মনে খেতেন!</p>
+                    <p className="text-xl text-gray-300 mt-4">কারণ আপনি তাকে চেনেন, বিশ্বাস করেন।</p>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 p-8 rounded-2xl border border-neuro-purple/20">
+                    <h4 className="text-2xl font-bold text-center text-neuro-purple mb-6">💡 আসল শিক্ষা:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="text-center">
+                        <div className="text-3xl mb-4">❌</div>
+                        <p className="text-lg text-red-300">অপরিচিত মানুষ হঠাৎ কিছু অফার করলে আমাদের ব্রেইন ডেঞ্জার সিগন্যাল দেয়।</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-3xl mb-4">✅</div>
+                        <p className="text-lg text-neon-green">পরিচিত মানুষ কিছু অফার করলে ভয় থাকে না।</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* লিড ম্যাগনেটের ভূমিকা */}
+        <section className="py-24 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🎯 লিড ম্যাগনেটের <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">ভূমিকা</span>
+              </h2>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-3xl p-12 border border-neon-green/20 mb-12">
+                <div className="space-y-8">
+                  <p className="text-xl text-center">ঠিক একইভাবে, ব্যবসার ক্ষেত্রেও প্রথমে কাস্টমারের কাছে আপনি অপরিচিত। সে আপনাকে দেখে ভাবে:</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="bg-red-400/10 p-8 rounded-2xl border border-red-400/20 text-center">
+                      <div className="text-4xl mb-4">❓</div>
+                      <p className="text-xl font-bold text-red-300">"এরা আসলেই কে?"</p>
+                    </div>
+                    <div className="bg-yellow-400/10 p-8 rounded-2xl border border-yellow-400/20 text-center">
+                      <div className="text-4xl mb-4">🤷</div>
+                      <p className="text-xl font-bold text-yellow-300">"এরা বিশ্বাসযোগ্য তো?"</p>
+                    </div>
+                    <div className="bg-orange-400/10 p-8 rounded-2xl border border-orange-400/20 text-center">
+                      <div className="text-4xl mb-4">💸</div>
+                      <p className="text-xl font-bold text-orange-300">"আমার টাকা দিলে আমি কি ঠকব না তো?"</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-red-500/10 p-8 rounded-2xl border border-red-500/20 text-center">
+                    <p className="text-2xl font-bold text-red-400 mb-4">👉 তাই সরাসরি প্রোডাক্ট/সার্ভিস অফার করলে সে আপনাকে "অপরিচিত" ভাববে।</p>
+                  </div>
+
+                  <div className="bg-neon-green/10 p-12 rounded-2xl border border-neon-green/30">
+                    <h3 className="text-3xl font-bold text-center text-neon-green mb-8">🎁 কিন্তু যখন আপনি আগে একটি লিড ম্যাগনেট দেন...</h3>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                      <div className="text-center">
+                        <div className="text-4xl mb-4">📄</div>
+                        <p className="text-lg text-gray-300">ফ্রি রিপোর্ট</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl mb-4">✅</div>
+                        <p className="text-lg text-gray-300">ফ্রি চেকলিস্ট</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl mb-4">🎁</div>
+                        <p className="text-lg text-gray-300">ফ্রি স্যাম্পল</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-electric-blue/10 p-8 rounded-2xl border border-electric-blue/30 text-center">
+                      <p className="text-xl font-bold text-electric-blue mb-4">তখন কাস্টমার প্রথমে আপনার সাথে পরিচিত হয়। সে ভাবে:</p>
+                      <p className="text-2xl italic text-white">"আচ্ছা, এরা আমাকে সাহায্য করেছে, ভ্যালু দিয়েছে। হয়তো এদের সাথে কাজ করা নিরাপদ।"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* আমাদের তৈরি লিড ম্যাগনেট কেমন হয় */}
+              <div className="bg-gradient-to-r from-electric-blue/10 to-neuro-purple/10 rounded-3xl p-12 border border-electric-blue/20">
+                <h3 className="text-4xl font-bold text-center text-electric-blue mb-12">🔍 আমাদের তৈরি লিড ম্যাগনেট কেমন হয়?</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="text-center glassmorphism-dark p-8 rounded-2xl border border-neon-green/20">
+                    <div className="text-5xl mb-4">😌</div>
+                    <h4 className="text-xl font-bold text-neon-green mb-3">✅ ভিজিটরের ভয় কমায়</h4>
+                    <p className="text-gray-300">বিশ্বাস তৈরি করে</p>
+                  </div>
+                  <div className="text-center glassmorphism-dark p-8 rounded-2xl border border-electric-blue/20">
+                    <div className="text-5xl mb-4">🎓</div>
+                    <h4 className="text-xl font-bold text-electric-blue mb-3">✅ আপনাকে Expert প্রমাণ করে</h4>
+                    <p className="text-gray-300">কর্তৃত্ব স্থাপন করে</p>
+                  </div>
+                  <div className="text-center glassmorphism-dark p-8 rounded-2xl border border-neuro-purple/20">
+                    <div className="text-5xl mb-4">🤝</div>
+                    <h4 className="text-xl font-bold text-neuro-purple mb-3">✅ Relationship তৈরি করে</h4>
+                    <p className="text-gray-300">দীর্ঘমেয়াদী সম্পর্ক</p>
+                  </div>
+                  <div className="text-center glassmorphism-dark p-8 rounded-2xl border border-indigo-400/20">
+                    <div className="text-5xl mb-4">🚀</div>
+                    <h4 className="text-xl font-bold text-indigo-400 mb-3">✅ Future Sales এর পথ খুলে দেয়</h4>
+                    <p className="text-gray-300">ভবিষ্যৎ বিক্রয়</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* রয়াল মালাবারের গল্প */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🎭 গল্প থেকে শিক্ষা <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">(রয়াল মালাবারের কোল্ড ড্রিঙ্ক)</span>
               </h2>
             </div>
 
@@ -444,31 +688,436 @@ export default function ServiceDetailPage() {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="py-20 bg-neural-bg relative">
+        {/* লিড ম্যাগনেটের ধরন */}
+        <section className="py-24 bg-neural-bg-secondary relative">
           <div className="container mx-auto px-6">
-            <div className="text-center max-w-6xl mx-auto">
-              <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl p-16 border border-orange-400/20">
-                <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
-                  🚀 <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Final CTA</span>
-                </h2>
-                
-                <p className="text-3xl lg:text-4xl font-bold mb-8 text-white">"কাস্টমারকে ভয় নয়, বিশ্বাস দিয়ে জয় করুন।"</p>
-                
-                <p className="text-2xl lg:text-3xl mb-12 text-gray-300">
-                  👉 এখনই আপনার <strong className="text-orange-400">Neuro Marketing ভিত্তিক Lead Magnet তৈরি করুন।</strong>
-                </p>
-                
-                <div className="flex flex-wrap justify-center gap-6">
-                  <button className="bg-gradient-to-r from-orange-400 to-red-500 hover:from-red-500 hover:to-orange-400 text-white font-bold py-6 px-12 rounded-full text-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-400/50">
-                    📌 এখনই ফ্রি লিড ম্যাগনেট বুক করুন
-                  </button>
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🌟 লিড ম্যাগনেটের <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">ধরন</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                আপনার ব্যবসার জন্য সবচেয়ে কার্যকর ধরন বেছে নিন
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-neon-green/20 hover:border-neon-green/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">📚</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-neon-green mb-4">1️⃣ Ebook / Guide</h3>
+                    <p className="text-lg text-gray-300 mb-4">বিস্তারিত তথ্যবহুল গাইড</p>
+                    <div className="bg-neon-green/10 p-4 rounded-xl border border-neon-green/20">
+                      <p className="text-sm italic">"আপনার ওয়েবসাইটে কেন ৯০% ভিজিটর বিশ্বাস করে না"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-electric-blue/20 hover:border-electric-blue/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">✅</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-electric-blue mb-4">2️⃣ Checklist</h3>
+                    <p className="text-lg text-gray-300 mb-4">সহজ চেক করার তালিকা</p>
+                    <div className="bg-electric-blue/10 p-4 rounded-xl border border-electric-blue/20">
+                      <p className="text-sm italic">"ওয়েবসাইট ট্রাস্ট স্কোর টেস্ট – ১০টি প্রশ্ন"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-neuro-purple/20 hover:border-neuro-purple/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">🎥</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-neuro-purple mb-4">3️⃣ Mini Course / Video Training</h3>
+                    <p className="text-lg text-gray-300 mb-4">ধাপে ধাপে শিক্ষামূলক ভিডিও</p>
+                    <div className="bg-neuro-purple/10 p-4 rounded-xl border border-neuro-purple/20">
+                      <p className="text-sm italic">"কিভাবে ওয়েবসাইট থেকে বেশি কাস্টমার পাওয়া যায়"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-indigo-400/20 hover:border-indigo-400/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">🛠️</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-indigo-400 mb-4">4️⃣ Template / Toolkit</h3>
+                    <p className="text-lg text-gray-300 mb-4">প্রস্তুত টেমপ্লেট ও ফ্রেমওয়ার্ক</p>
+                    <div className="bg-indigo-400/10 p-4 rounded-xl border border-indigo-400/20">
+                      <p className="text-sm italic">Script, Framework, Ready Template</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* বাংলাদেশি ব্যবসার উদাহরণ */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                📊 বাংলাদেশি <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">ব্যবসার উদাহরণ</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                স্থানীয় ব্যবসার জন্য কার্যকর লিড ম্যাগনেট আইডিয়া
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-green-400/20 hover:border-green-400/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">🍃</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-green-400 mb-4">অর্গানিক ফুড শপ</h3>
+                    <div className="bg-green-400/10 p-6 rounded-2xl border border-green-400/20">
+                      <p className="text-lg font-semibold text-green-300 mb-2">লিড ম্যাগনেট:</p>
+                      <p className="text-base text-gray-300 italic">"বাংলাদেশে ভেজাল খাবার চিনবেন কিভাবে" (PDF Guide)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-amber-400/20 hover:border-amber-400/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">👝</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-amber-400 mb-4">লেদার শপ</h3>
+                    <div className="bg-amber-400/10 p-6 rounded-2xl border border-amber-400/20">
+                      <p className="text-lg font-semibold text-amber-300 mb-2">লিড ম্যাগনেট:</p>
+                      <p className="text-base text-gray-300 italic">"আসল আর নকল লেদার আলাদা করার ৫টি উপায়"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-blue-400/20 hover:border-blue-400/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">📱</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4">গ্যাজেট শপ</h3>
+                    <div className="bg-blue-400/10 p-6 rounded-2xl border border-blue-400/20">
+                      <p className="text-lg font-semibold text-blue-300 mb-2">লিড ম্যাগনেট:</p>
+                      <p className="text-base text-gray-300 italic">"নকল ইয়ারফোনের ভয়ংকর ৫টি ক্ষতি"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glassmorphism-dark rounded-3xl p-8 hover-lift border border-pink-400/20 hover:border-pink-400/40 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                  <div className="text-6xl">🧸</div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-pink-400 mb-4">টয় শপ</h3>
+                    <div className="bg-pink-400/10 p-6 rounded-2xl border border-pink-400/20">
+                      <p className="text-lg font-semibold text-pink-300 mb-2">লিড ম্যাগনেট:</p>
+                      <p className="text-base text-gray-300 italic">"শিশুর বয়স অনুযায়ী সঠিক খেলনা বাছাই গাইড"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* আমাদের কাজ করার ধাপ */}
+        <section className="py-24 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🛠️ আমাদের কাজ করার <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">ধাপ</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                বিজ্ঞান এবং অভিজ্ঞতা ভিত্তিক কার্যকর প্রক্রিয়া
+              </p>
+            </div>
+            
+            <div className="relative max-w-6xl mx-auto">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-2 h-full bg-gradient-to-b from-neuro-purple via-electric-blue to-neon-green rounded-full opacity-40"></div>
+              
+              <div className="space-y-16">
+                <div className="flex items-center gap-12">
+                  <div className="flex-1 text-right">
+                    <div className="glassmorphism-dark rounded-3xl p-8 hover-lift inline-block max-w-lg">
+                      <div className="flex items-center justify-end gap-4 mb-6">
+                        <span className="text-sm font-semibold text-neon-green bg-neon-green/10 px-3 py-1 rounded-full">ধাপ ১</span>
+                        <div className="text-4xl">🔍</div>
+                      </div>
+                      <h3 className="text-2xl font-bold text-neon-green mb-4">Research</h3>
+                      <p className="text-gray-300 leading-relaxed text-lg">কাস্টমারের ভয় ও চাহিদা বোঝা</p>
+                      <div className="w-full h-1 bg-gradient-to-l from-neon-green/50 to-transparent rounded-full mt-4"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center shadow-xl border-4 border-neural-bg-secondary">
+                      <span className="text-white font-bold text-2xl">1</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1"></div>
+                </div>
+
+                <div className="flex items-center gap-12 flex-row-reverse">
+                  <div className="flex-1 text-left">
+                    <div className="glassmorphism-dark rounded-3xl p-8 hover-lift inline-block max-w-lg">
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="text-4xl">🧠</div>
+                        <span className="text-sm font-semibold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full">ধাপ ২</span>
+                      </div>
+                      <h3 className="text-2xl font-bold text-electric-blue mb-4">Hook Creation</h3>
+                      <p className="text-gray-300 leading-relaxed text-lg">মানুষকে ক্লিক করাবে এমন টাইটেল তৈরি</p>
+                      <div className="w-full h-1 bg-gradient-to-r from-electric-blue/50 to-transparent rounded-full mt-4"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-electric-blue to-neuro-purple rounded-full flex items-center justify-center shadow-xl border-4 border-neural-bg-secondary">
+                      <span className="text-white font-bold text-2xl">2</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1"></div>
+                </div>
+
+                <div className="flex items-center gap-12">
+                  <div className="flex-1 text-right">
+                    <div className="glassmorphism-dark rounded-3xl p-8 hover-lift inline-block max-w-lg">
+                      <div className="flex items-center justify-end gap-4 mb-6">
+                        <span className="text-sm font-semibold text-neuro-purple bg-neuro-purple/10 px-3 py-1 rounded-full">ধাপ ৩</span>
+                        <div className="text-4xl">✍️</div>
+                      </div>
+                      <h3 className="text-2xl font-bold text-neuro-purple mb-4">Content & Design</h3>
+                      <p className="text-gray-300 leading-relaxed text-lg">Neuro Framework + Scroll-Stopper Cover</p>
+                      <div className="w-full h-1 bg-gradient-to-l from-neuro-purple/50 to-transparent rounded-full mt-4"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-neuro-purple to-indigo-400 rounded-full flex items-center justify-center shadow-xl border-4 border-neural-bg-secondary">
+                      <span className="text-white font-bold text-2xl">3</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1"></div>
+                </div>
+
+                <div className="flex items-center gap-12 flex-row-reverse">
+                  <div className="flex-1 text-left">
+                    <div className="glassmorphism-dark rounded-3xl p-8 hover-lift inline-block max-w-lg">
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="text-4xl">🚀</div>
+                        <span className="text-sm font-semibold text-indigo-400 bg-indigo-400/10 px-3 py-1 rounded-full">ধাপ ৪</span>
+                      </div>
+                      <h3 className="text-2xl font-bold text-indigo-400 mb-4">Delivery</h3>
+                      <p className="text-gray-300 leading-relaxed text-lg">Email / WhatsApp / Funnel</p>
+                      <div className="w-full h-1 bg-gradient-to-r from-indigo-400/50 to-transparent rounded-full mt-4"></div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-indigo-400 to-neon-green rounded-full flex items-center justify-center shadow-xl border-4 border-neural-bg-secondary">
+                      <span className="text-white font-bold text-2xl">4</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ফলাফল Section */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                💡 <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">ফলাফল</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                কি পাবেন আমাদের লিড ম্যাগনেট দিয়ে
+              </p>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              {/* Main Flow */}
+              <div className="bg-gradient-to-r from-red-500/10 via-yellow-500/10 to-neon-green/10 rounded-3xl p-12 border border-neon-green/20 mb-16">
+                <div className="text-center mb-12">
+                  <h3 className="text-4xl font-bold text-white mb-8">👉 Cold Visitor → Warm Lead → Loyal Customer</h3>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <div className="text-4xl">🧊</div>
+                    </div>
+                    <h4 className="text-2xl font-bold text-red-400 mb-4">Cold Visitor</h4>
+                    <p className="text-gray-300">অপরিচিত ভিজিটর</p>
+                    <p className="text-sm text-red-300 mt-2">সন্দেহ ও ভয়</p>
+                  </div>
+                  
+                  <div className="flex items-center justify-center">
+                    <div className="text-6xl">→</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <div className="text-4xl">🔥</div>
+                    </div>
+                    <h4 className="text-2xl font-bold text-yellow-400 mb-4">Warm Lead</h4>
+                    <p className="text-gray-300">আগ্রহী সম্ভাব্য গ্রাহক</p>
+                    <p className="text-sm text-yellow-300 mt-2">বিশ্বাস ও আগ্রহ</p>
+                  </div>
+                </div>
+                
+                <div className="text-center mt-12">
+                  <div className="text-6xl mb-4">↓</div>
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-neon-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <div className="text-4xl">👑</div>
+                    </div>
+                    <h4 className="text-2xl font-bold text-neon-green mb-4">Loyal Customer</h4>
+                    <p className="text-gray-300">স্থায়ী বিশ্বস্ত গ্রাহক</p>
+                    <p className="text-sm text-neon-green mt-2">দীর্ঘমেয়াদী সম্পর্ক</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Benefits Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center glassmorphism-dark rounded-3xl p-8 hover-lift border border-neon-green/20">
+                  <div className="w-20 h-20 bg-neon-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <TrendingUp className="text-neon-green" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-neon-green mb-4">✅ ভিজিটরকে সহজে কাস্টমারে রূপান্তর</h3>
+                  <p className="text-gray-300">উন্নত কনভার্শন রেট</p>
+                </div>
+                
+                <div className="text-center glassmorphism-dark rounded-3xl p-8 hover-lift border border-electric-blue/20">
+                  <div className="w-20 h-20 bg-electric-blue/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Shield className="text-electric-blue" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-electric-blue mb-4">✅ বিশ্বাস তৈরি</h3>
+                  <p className="text-gray-300">দীর্ঘমেয়াদী সম্পর্ক গড়ে তোলা</p>
+                </div>
+                
+                <div className="text-center glassmorphism-dark rounded-3xl p-8 hover-lift border border-neuro-purple/20">
+                  <div className="w-20 h-20 bg-neuro-purple/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-neuro-purple" size={40} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-neuro-purple mb-4">✅ ভবিষ্যতের সেলসের জন্য কাস্টমার প্রস্তুত</h3>
+                  <p className="text-gray-300">উন্নত সেলস পাইপলাইন</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results Showcase */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                প্রমাণিত <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">ফলাফল</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                আমাদের ক্লায়েন্টদের বাস্তব সাফল্যের গল্প
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {service.results.map((result, index) => (
+                <div 
+                  key={index}
+                  className="text-center glassmorphism-dark rounded-3xl p-8 hover-lift group relative overflow-hidden border border-neon-green/20 hover:border-neon-green/40 transition-all duration-500"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-neon-green/5 to-electric-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                      <TrendingUp className="text-white" size={36} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-neon-green mb-3">{result.split(' ')[0]}</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">{result.substring(result.indexOf(' ') + 1)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-24 bg-gradient-to-br from-neuro-purple/20 to-electric-blue/20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-40 h-40 bg-electric-blue rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-56 h-56 bg-neuro-purple rounded-full blur-3xl animate-pulse delay-1000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center max-w-5xl mx-auto">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-full px-6 py-3 mb-8">
+                <Rocket className="text-neon-green" size={20} />
+                <span className="text-sm font-semibold text-electric-blue">আজই শুরু করুন</span>
+              </div>
+              
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                🚀 <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">Final CTA</span>
+              </h2>
+              
+              <p className="text-3xl lg:text-4xl font-bold mb-8 text-white">"কাস্টমারকে ভয় নয়, বিশ্বাস দিয়ে জয় করুন।"</p>
+              
+              <p className="text-2xl lg:text-3xl mb-12 text-gray-300">
+                👉 এখনই আপনার <strong className="text-neon-green">Neuro Marketing ভিত্তিক Lead Magnet তৈরি করুন।</strong>
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-8 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neon-green to-electric-blue hover:from-electric-blue hover:to-neon-green text-white font-bold py-6 px-16 rounded-full text-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neon-green/50 flex items-center gap-4"
+                >
+                  <Magnet className="group-hover:rotate-12 transition-transform" size={28} />
+                  📌 এখনই ফ্রি লিড ম্যাগনেট বুক করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={28} />
+                </Link>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neon-green/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <Shield className="text-neon-green" size={32} />
+                    <span className="font-bold text-neon-green text-xl">১০০% গ্যারান্টি</span>
+                  </div>
+                  <p className="text-gray-300">সন্তুষ্ট না হলে সম্পূর্ণ টাকা ফেরত</p>
+                </div>
+                
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <UsersIcon className="text-electric-blue" size={32} />
+                    <span className="font-bold text-electric-blue text-xl">৮০০+ ক্লায়েন্ট</span>
+                  </div>
+                  <p className="text-gray-300">সফল প্রজেক্ট এবং সন্তুষ্ট গ্রাহক</p>
+                </div>
+                
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <Award className="text-neuro-purple" size={32} />
+                    <span className="font-bold text-neuro-purple text-xl">৬ বছরের অভিজ্ঞতা</span>
+                  </div>
+                  <p className="text-gray-300">Neuro Marketing এ বিশেষজ্ঞ টিম</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <Footer />
       </div>
     )

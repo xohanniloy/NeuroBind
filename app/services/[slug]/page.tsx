@@ -131,6 +131,48 @@ const services = [
     accentColor: "orange-500"
   },
   {
+    slug: 'neuro-lead-magnet-pro',
+    icon: Magnet,
+    title: "Neuro Lead Magnet Pro - বিশ্বস্ততার মাধ্যমে গ্রাহক অর্জন",
+    shortDescription: "শুধু ইমেইল সংগ্রহ নয়, গভীর মানসিক সংযোগ তৈরি করে স্থায়ী গ্রাহক বানান।",
+    fullDescription: "আমাদের প্রো লিড ম্যাগনেট সিস্টেম নিউরো সাইকোলজি ব্যবহার করে ভিজিটরের অবচেতন মনে বিশ্বাস তৈরি করে। এটি শুধু কন্টাক্ট ইনফরমেশন সংগ্রহ করে না, বরং প্রতিটি ভিজিটরকে একজন বিশ্বস্ত ফ্যান এবং ভবিষ্যত গ্রাহকে রূপান্তরিত করে।",
+    features: [
+      "🧠 নিউরো-সাইকোলজিক্যাল ট্রিগার ব্যবহার",
+      "💰 উচ্চ-মানের লিড জেনারেশন",
+      "🎯 পার্সোনালাইজড ইউজার এক্সপেরিয়েন্স", 
+      "📧 স্মার্ট ইমেইল নার্চারিং সিকুয়েন্স",
+      "📊 রিয়েল-টাইম অ্যানালিটিক্স ড্যাশবোর্ড",
+      "🔄 অটোমেটিক A/B টেস্টিং সিস্টেম"
+    ],
+    advanced: [
+      "🎨 হাই-কনভার্টিং ল্যান্ডিং পেজ ডিজাইন",
+      "⚡ ইনস্ট্যান্ট লিড কোয়ালিফিকেশন সিস্টেম",
+      "🚀 মাল্টি-চ্যানেল ইন্টিগ্রেশন",
+      "📱 মোবাইল-অপ্টিমাইজড এক্সপেরিয়েন্স",
+      "🎭 ডায়নামিক কনটেন্ট পার্সোনালাইজেশন",
+      "💡 প্রেডিক্টিভ লিড স্কোরিং"
+    ],
+    process: [
+      "🔍 টার্গেট অডিয়েন্স গভীর বিশ্লেষণ",
+      "🧠 নিউরো-মার্কেটিং স্ট্র্যাটেজি ডিজাইন",
+      "🎨 আকর্ষণীয় ভিজ্যুয়াল এবং কপি তৈরি",
+      "⚙️ অটোমেশন সিস্টেম সেটআপ",
+      "📊 পারফরমেন্স ট্র্যাকিং সিস্টেম",
+      "🔄 ক্রমাগত অপ্টিমাইজেশন"
+    ],
+    results: [
+      "৬৮০% লিড জেনারেশন বৃদ্ধি",
+      "৪৫০% কনভার্শন রেট উন্নতি", 
+      "৩৫০% কাস্টমার রিটেনশন বৃদ্ধি",
+      "২৮০% ROI পারফরমেন্স"
+    ],
+    stats: { success: "680%", metric: "Lead Generation বৃদ্ধি" },
+    price: "শুরু ৭৫,০০০ টাকা থেকে",
+    timeline: "১৪-২১ কর্মদিবস",
+    backgroundColor: "from-purple-500/10 to-indigo-500/10",
+    accentColor: "purple-500"
+  },
+  {
     slug: 'neuro-script',
     icon: FileText,
     title: "Neuro Marketing ভিত্তিক Script",
@@ -294,6 +336,334 @@ export default function ServiceDetailPage({ params }: Props) {
   }
 
   const IconComponent = service.icon
+
+  // Special layout for neuro-lead-magnet-pro service
+  if (params.slug === 'neuro-lead-magnet-pro') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section - Premium Design */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-electric-blue/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-10 w-40 h-40 bg-neuro-purple rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-40 right-20 w-56 h-56 bg-electric-blue rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-32 left-1/3 w-32 h-32 bg-indigo-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="flex justify-center mb-10">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple via-electric-blue to-indigo-500 rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-10 bg-gradient-to-r from-neuro-purple/20 via-electric-blue/20 to-indigo-500/20 rounded-3xl glassmorphism-dark">
+                    <Magnet className="text-electric-blue" size={100} />
+                  </div>
+                </div>
+              </div>
+              
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-neuro-purple/10 to-electric-blue/10 rounded-full px-6 py-3 mb-8">
+                <Target className="text-neon-green" size={20} />
+                <span className="text-sm font-semibold text-electric-blue">প্রিমিয়াম লিড ম্যাগনেট সিস্টেম</span>
+              </div>
+              
+              <h1 className="text-5xl lg:text-8xl font-montserrat font-bold mb-10 leading-tight">
+                <span className="bg-gradient-to-r from-white via-neuro-purple to-electric-blue bg-clip-text text-transparent">
+                  Neuro Lead Magnet
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-electric-blue via-indigo-400 to-neon-green bg-clip-text text-transparent">
+                  Pro সিস্টেম
+                </span>
+              </h1>
+              
+              <p className="text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+                শুধু ইমেইল সংগ্রহ নয়, <span className="text-neon-green font-semibold">গভীর মানসিক সংযোগ</span> তৈরি করে 
+                <span className="text-electric-blue font-semibold"> স্থায়ী গ্রাহক</span> বানান
+              </p>
+
+              {/* Key Stats */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neon-green/20 hover:border-neon-green/40 transition-colors">
+                  <div className="text-4xl font-bold text-neon-green mb-2">680%</div>
+                  <div className="text-sm text-gray-300">লিড জেনারেশন বৃদ্ধি</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20 hover:border-electric-blue/40 transition-colors">
+                  <div className="text-4xl font-bold text-electric-blue mb-2">450%</div>
+                  <div className="text-sm text-gray-300">কনভার্শন রেট উন্নতি</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20 hover:border-neuro-purple/40 transition-colors">
+                  <div className="text-4xl font-bold text-neuro-purple mb-2">350%</div>
+                  <div className="text-sm text-gray-300">কাস্টমার রিটেনশন</div>
+                </div>
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-indigo-400/20 hover:border-indigo-400/40 transition-colors">
+                  <div className="text-4xl font-bold text-indigo-400 mb-2">280%</div>
+                  <div className="text-sm text-gray-300">ROI পারফরমেন্স</div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap justify-center gap-6 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neuro-purple to-electric-blue hover:from-electric-blue hover:to-neuro-purple text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neuro-purple/50 flex items-center gap-3"
+                >
+                  <Rocket className="group-hover:rotate-12 transition-transform" size={24} />
+                  প্রো সিস্টেম শুরু করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={24} />
+                </Link>
+                <button className="glassmorphism-dark border-2 border-electric-blue/30 hover:border-electric-blue/60 text-white font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 flex items-center gap-3">
+                  <Eye size={24} />
+                  ডেমো দেখুন
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Showcase */}
+        <section className="py-24 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-full px-6 py-3 mb-6">
+                <Sparkles className="text-neon-green" size={20} />
+                <span className="text-sm font-semibold text-electric-blue">প্রিমিয়াম ফিচারসমূহ</span>
+              </div>
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                যা পাবেন এই <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">প্রো সিস্টেমে</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                নিউরো-সাইকোলজি এবং আধুনিক টেকনোলজির নিখুঁত মিশ্রণ
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {service.features.map((feature, index) => (
+                <div 
+                  key={index}
+                  className="group glassmorphism-dark rounded-3xl p-8 hover-lift border border-transparent hover:border-electric-blue/30 transition-all duration-500 relative overflow-hidden"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-neuro-purple/5 to-electric-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="text-6xl mb-4">{feature.charAt(0)}</div>
+                    <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-electric-blue transition-colors">
+                      {feature.substring(2)}
+                    </h3>
+                    <div className="w-16 h-1 bg-gradient-to-r from-neuro-purple to-electric-blue rounded-full"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Advanced Technology Section */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400/10 to-orange-400/10 rounded-full px-6 py-3 mb-6">
+                <Zap className="text-yellow-400" size={20} />
+                <span className="text-sm font-semibold text-yellow-400">অ্যাডভান্সড টেকনোলজি</span>
+              </div>
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+                  প্রিমিয়াম ফিচার
+                </span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                যা আপনাকে প্রতিযোগীদের থেকে এগিয়ে রাখবে
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {service.advanced.map((feature, index) => (
+                <div 
+                  key={index}
+                  className="group glassmorphism-dark rounded-3xl p-8 hover-lift border border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-500 relative overflow-hidden"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
+                  <div className="absolute top-6 right-6 opacity-20 group-hover:opacity-60 transition-opacity">
+                    <Star className="text-yellow-400" size={32} />
+                  </div>
+                  
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="text-5xl">{feature.charAt(0)}</div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-yellow-300 transition-colors">
+                        {feature.substring(2)}
+                      </h3>
+                      <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Timeline */}
+        <section className="py-24 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                আমাদের কাজের <span className="bg-gradient-to-r from-neuro-purple to-electric-blue bg-clip-text text-transparent">প্রক্রিয়া</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                প্রতিটি ধাপ বিজ্ঞান এবং অভিজ্ঞতা ভিত্তিক
+              </p>
+            </div>
+            
+            <div className="relative max-w-4xl mx-auto">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-2 h-full bg-gradient-to-b from-neuro-purple via-electric-blue to-neon-green rounded-full opacity-40"></div>
+              
+              <div className="space-y-12">
+                {service.process.map((step, index) => (
+                  <div 
+                    key={index}
+                    className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                  >
+                    <div className={`flex-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                      <div className="glassmorphism-dark rounded-3xl p-6 hover-lift inline-block max-w-md">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="text-2xl">{step.charAt(0)}</div>
+                          <span className="text-sm font-semibold text-electric-blue">ধাপ {index + 1}</span>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed text-lg">{step.substring(2)}</p>
+                      </div>
+                    </div>
+                    
+                    {/* Timeline Node */}
+                    <div className="relative z-10">
+                      <div className="w-20 h-20 bg-gradient-to-r from-neuro-purple to-electric-blue rounded-full flex items-center justify-center shadow-lg border-4 border-neural-bg">
+                        <span className="text-white font-bold text-xl">{index + 1}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex-1"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results Showcase */}
+        <section className="py-24 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl lg:text-6xl font-montserrat font-bold mb-8">
+                প্রমাণিত <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">ফলাফল</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                আমাদের ক্লায়েন্টদের বাস্তব সাফল্যের গল্প
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {service.results.map((result, index) => (
+                <div 
+                  key={index}
+                  className="text-center glassmorphism-dark rounded-3xl p-8 hover-lift group relative overflow-hidden border border-neon-green/20 hover:border-neon-green/40 transition-all duration-500"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-neon-green/5 to-electric-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-24 h-24 bg-gradient-to-r from-neon-green to-electric-blue rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                      <TrendingUp className="text-white" size={36} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-neon-green mb-3">{result.split(' ')[0]}</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed">{result.substring(result.indexOf(' ') + 1)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-24 bg-gradient-to-br from-neuro-purple/20 to-electric-blue/20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-40 h-40 bg-electric-blue rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-56 h-56 bg-neuro-purple rounded-full blur-3xl animate-pulse delay-1000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center max-w-5xl mx-auto">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neon-green/10 to-electric-blue/10 rounded-full px-6 py-3 mb-8">
+                <Rocket className="text-neon-green" size={20} />
+                <span className="text-sm font-semibold text-electric-blue">আজই শুরু করুন</span>
+              </div>
+              
+              <h2 className="text-5xl lg:text-7xl font-montserrat font-bold mb-8">
+                আপনার বিজনেসকে নিয়ে যান <br />
+                <span className="bg-gradient-to-r from-neon-green to-electric-blue bg-clip-text text-transparent">
+                  পরবর্তী লেভেলে
+                </span>
+              </h2>
+              
+              <p className="text-2xl text-gray-300 mb-12 leading-relaxed">
+                এখনই আমাদের প্রো টিমের সাথে যোগাযোগ করুন।
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-8 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neon-green to-electric-blue hover:from-electric-blue hover:to-neon-green text-white font-bold py-6 px-16 rounded-full text-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-neon-green/50 flex items-center gap-4"
+                >
+                  <Shield className="group-hover:rotate-12 transition-transform" size={28} />
+                  ফ্রি কনসালটেশন বুক করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={28} />
+                </Link>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neon-green/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <Shield className="text-neon-green" size={32} />
+                    <span className="font-bold text-neon-green text-xl">১০০% গ্যারান্টি</span>
+                  </div>
+                  <p className="text-gray-300">সন্তুষ্ট না হলে সম্পূর্ণ টাকা ফেরত</p>
+                </div>
+                
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-electric-blue/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <UsersIcon className="text-electric-blue" size={32} />
+                    <span className="font-bold text-electric-blue text-xl">৮০০+ ক্লায়েন্ট</span>
+                  </div>
+                  <p className="text-gray-300">সফল প্রজেক্ট এবং সন্তুষ্ট গ্রাহক</p>
+                </div>
+                
+                <div className="glassmorphism-dark rounded-2xl p-6 border border-neuro-purple/20">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <Award className="text-neuro-purple" size={32} />
+                    <span className="font-bold text-neuro-purple text-xl">৬ বছরের অভিজ্ঞতা</span>
+                  </div>
+                  <p className="text-gray-300">Neuro Marketing এ বিশেষজ্ঞ টিম</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <Footer />
+      </div>
+    )
+  }
 
   // Special layout for neuro-website service
   if (params.slug === 'neuro-website') {

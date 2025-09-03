@@ -96,22 +96,22 @@ export default function ServicesSection(): React.JSX.Element {
       stats: { success: "400%", metric: "Business Growth" }
     },
     {
-      slug: 'full-branding',
+      slug: 'neuro-branding',
       icon: Palette,
-      title: "Full Branding (ফুল ব্র্যান্ডিং)",
-      description: "একটি ব্যবসা শুধু লোগো বা ওয়েবসাইট দিয়ে ব্র্যান্ড হয় না। ব্র্যান্ডিং মানে হলো, মানুষের মনে আপনার ব্যবসার একটি স্থায়ী ইমেজ তৈরি করা।",
+      title: "Neuro Branding - Professional Brand Identity",
+      description: "একটি ব্যবসা হয়তো শুরু করা যায় এক লোগো দিয়ে, কিন্তু একটি ব্র্যান্ড তৈরি হয় মানুষের মনে। Professional এবং memorable brand identity তৈরি করি যা দীর্ঘমেয়াদে কাজ করে।",
       features: [
-        "Logo থেকে Color Palette পর্যন্ত সব",
-        "Typography ও Brand Voice ডিজাইন",
-        "Social Media Presence সম্পূর্ণ সেটআপ"
+        "Professional Logo Design → Clean, Memorable, Scalable",
+        "Brand Color Psychology → Strategic color choices",
+        "Typography System → Professional font hierarchy"
       ],
       advanced: [
-        "নিউরো-ব্র্যান্ডিং আর্কিটেকচার",
-        "সাইকোলজিক্যাল কালার থিওরি",
-        "ব্র্যান্ড পার্সোনালিটি ডেভেলপমেন্ট",
-        "ইমোশনাল ব্র্যান্ড পজিশনিং"
+        "🎯 Professional Brand Strategy – Market positioning",
+        "📐 Clean Visual Identity – Modern, minimalist approach",
+        "📊 Brand Guidelines – Consistent application",
+        "🏢 Corporate Identity – Professional presentation"
       ],
-      stats: { success: "500%", metric: "Brand Recognition" }
+      stats: { success: "Professional", metric: "Brand Recognition" }
     },
     {
       slug: 'neuro-lead-magnet-pro',

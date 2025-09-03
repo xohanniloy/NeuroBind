@@ -260,46 +260,82 @@ const services = [
     accentColor: "indigo-500"
   },
   {
-    slug: 'full-branding',
+    slug: 'neuro-branding',
     icon: Palette,
-    title: "Full Branding (ফুল ব্র্যান্ডিং)",
-    shortDescription: "একটি ব্যবসা শুধু লোগো বা ওয়েবসাইট দিয়ে ব্র্যান্ড হয় না। ব্র্যান্ডিং মানে হলো, মানুষের মনে আপনার ব্যবসার একটি স্থায়ী ইমেজ তৈরি করা।",
-    fullDescription: "আমাদের ফুল ব্র্যান্ডিং সার্ভিস শুধু ভিজুয়াল আইডেন্টিটি তৈরি করে না, এটি আপনার ব্র্যান্ডের সম্পূর্ণ ব্যক্তিত্ব গড়ে তোলে। আমরা নিউরো-সাইকোলজি এবং কালার থেরাপির নীতি ব্যবহার করে এমন একটি ব্র্যান্ড আইডেন্টিটি তৈরি করি যা গ্রাহকদের মনে গভীর এবং স্থায়ী প্রভাব ফেলে এবং তাদের আপনার ব্র্যান্ডের সাথে একটি আবেগপূর্ণ সংযোগ গড়ে তুলতে সাহায্য করে।",
-    features: [
-      "Logo থেকে Color Palette পর্যন্ত সব",
-      "Typography ও Brand Voice ডিজাইন",
-      "Social Media Presence সম্পূর্ণ সেটআপ",
-      "ব্র্যান্ড গাইডলাইন তৈরি",
-      "মার্কেটিং ম্যাটেরিয়াল ডিজাইন",
-      "ব্র্যান্ড স্ট্র্যাটেজি ডেভেলপমেন্ট"
+    title: "একটি ব্যবসা হয়তো শুরু করা যায় এক লোগো দিয়ে, কিন্তু একটি ব্র্যান্ড তৈরি হয় মানুষের মনে।",
+    shortDescription: "আপনার ব্যবসা কি গ্রাহকের চোখে শুধু একটা দোকান বা সার্ভিস, নাকি সত্যিকারের একটি ব্র্যান্ড? আমাদের Full Branding Service নিশ্চিত করে আপনার ব্যবসা মানুষের মনে শুধু আজ নয়—বরং আগামী ১০ বছরেও স্মরণীয় হয়ে থাকবে।",
+    fullDescription: "মানুষের মস্তিষ্ক প্রতিটি ব্র্যান্ডকে একটি 'Shortcut' দিয়ে মনে রাখে—Logo, Color, Tagline বা Tone। যদি আপনার ব্র্যান্ডের সেই Shortcut পরিষ্কার না হয় তবে গ্রাহক আপনাকে প্রতিযোগীদের ভিড়ে হারিয়ে ফেলবে। Branding মানে হলো: Consistency + Communication এর ফলাফল।",
+    brandingProblems: [
+      "আপনার ব্যবসাকে কেউ আলাদা করে চেনে না",
+      "গ্রাহকের মনে বিশ্বাস তৈরি হয় না",
+      "দীর্ঘমেয়াদে Loyalty তৈরি হয় না",
+      "প্রতিযোগীরা সবসময় একধাপ এগিয়ে থাকে"
     ],
+    brandExamples: [
+      {
+        name: "বিকাশের গোলাপি রঙ",
+        description: "দূর থেকে গোলাপি দেখলেই বোঝা যায় বিকাশের বিজ্ঞাপন বা লোগো।"
+      },
+      {
+        name: "গ্রামীণফোনের নীল",
+        description: "যেকোনো জায়গায় নীল দেখলে আমাদের মনে পড়ে গ্রামীণফোনের বিজ্ঞাপন।"
+      },
+      {
+        name: "Google Maps এর রঙের কোড",
+        description: "জ্যাম থাকলে লাল লাইন, জ্যাম না থাকলে নীল লাইন - মানুষের মনে গেঁথে যাওয়া রঙের সংযোগ।"
+      }
+    ],
+    bangladeshMisconception: {
+      wrongIdea: "আগে কোম্পানি বড় হোক, তারপর Branding করব।",
+      rightIdea: "কোম্পানি বড় হওয়ার জন্যই শুরু থেকে Branding করতে হয়।",
+      facebookRisk: "যদি কখনো চীনের মতো আমাদের দেশেও Facebook ব্যান হয়, তখন আপনার ব্যবসার কী হবে?",
+      brandingSolution: "মানুষ Facebook-এর বাইরে গিয়েও আপনার ব্যবসাকে চিনবে, খুঁজবে এবং বিশ্বাস করবে।"
+    },
+    features: [
+      "Logo Design → আপনার ব্র্যান্ডের পরিচয়ের মূল প্রতীক",
+      "Color Psychology Palette → রঙ দিয়ে মানুষের মনে বিশ্বাস ও আবেগ তৈরি",
+      "Typography System → ফন্ট যেটা ব্র্যান্ডের ব্যক্তিত্ব প্রকাশ করে",
+      "Brand Voice & Messaging → কিভাবে আপনার ব্যবসা কথা বলবে",
+      "Social Media Branding Kit → পোস্ট, কভার, ব্যানার, ভিডিও টেমপ্লেট—সবকিছু consistent",
+      "Packaging & Marketing Collateral → প্রোডাক্ট থাকলে Label, Box, Poster, Brochure"
+    ],
+    neuroApproach: [
+      "Perception Design – গ্রাহকের মস্তিষ্কে প্রথম ধারণা তৈরি",
+      "Emotional Triggers – রঙ, টোন, ভিজ্যুয়াল দিয়ে আবেগ ছোঁয়া",
+      "Consistency – প্রতিটি প্ল্যাটফর্মে একরকম Presentation",
+      "Trust Signals – Authority, Social Proof, Community Voice"
+    ],
+    whyDifferent: {
+      generalDesigner: "শুধু সুন্দর কিছু বানায়",
+      neuroBranding: "মনস্তাত্ত্বিকভাবে প্রভাবিত ব্র্যান্ডিং যা মানুষের আবেগ ছোঁয়, আস্থা জাগায়, মনে স্থায়ী ছাপ ফেলে"
+    },
     advanced: [
-      "নিউরো-ব্র্যান্ডিং আর্কিটেকচার",
-      "সাইকোলজিক্যাল কালার থিওরি",
-      "ব্র্যান্ড পার্সোনালিটি ডেভেলপমেন্ট",
-      "ইমোশনাল ব্র্যান্ড পজিশনিং",
-      "কগনিটিভ ব্র্যান্ড রিকগনিশন",
-      "নিউরো-ভিজুয়াল হায়ারার্কি"
+      "🧩 Perception Design – গ্রাহকের মস্তিষ্কে প্রথম ধারণা তৈরি",
+      "🎭 Emotional Triggers – রঙ, টোন, ভিজ্যুয়াল দিয়ে আবেগ ছোঁয়া",
+      "🔄 Consistency – প্রতিটি প্ল্যাটফর্মে একরকম Presentation",
+      "🛡️ Trust Signals – Authority, Social Proof, Community Voice",
+      "🎯 Neuro Marketing ভিত্তিক ব্র্যান্ডিং যা মনস্তাত্ত্বিকভাবে প্রভাবিত করে",
+      "🇧🇩 বাংলাদেশী উদ্যোক্তাদের জন্য বিশেষভাবে তৈরি"
     ],
     process: [
-      "ব্র্যান্ড ডিসকভারি ও রিসার্চ",
-      "ব্র্যান্ড স্ট্র্যাটেজি ডেভেলপমেন্ট",
-      "ভিজুয়াল আইডেন্টিটি ক্রিয়েশন",
-      "ব্র্যান্ড গাইডলাইন তৈরি",
-      "মার্কেটিং কোলেটেরাল ডিজাইন",
-      "ব্র্যান্ড লঞ্চ ও মনিটরিং"
+      "🔍 Research – বাজার, প্রতিযোগী ও কাস্টমারের Psychology বোঝা",
+      "🎨 Identity Design – Logo, Color, Typography ঠিক করা",
+      "🗣️ Voice & Storytelling – ব্র্যান্ডের Tone ও মেসেজ তৈরি",
+      "📱 Digital Presence Setup – ওয়েবসাইট + সোশ্যাল মিডিয়ায় ব্র্যান্ড একরূপ করা",
+      "📦 Packaging / Collateral – প্রোডাক্ট / মার্কেটিং ম্যাটেরিয়াল সাজানো",
+      "🚀 Launch & Monitor – কিভাবে মানুষ ব্র্যান্ড perceive করছে সেটা বিশ্লেষণ"
     ],
     results: [
-      "গড়ে 500% ব্র্যান্ড রিকগনিশন বৃদ্ধি",
-      "কাস্টমার ট্রাস্ট 300% বৃদ্ধি",
-      "মার্কেট শেয়ার 250% বৃদ্ধি",
-      "ব্র্যান্ড ভ্যালু 400% বৃদ্ধি"
+      "আপনার ব্যবসাকে কেউ আলাদা করে চেনে",
+      "গ্রাহকের মনে বিশ্বাস তৈরি হয়",
+      "দীর্ঘমেয়াদে Loyalty তৈরি হয়",
+      "প্রতিযোগীদের থেকে সবসময় এক ধাপ এগিয়ে থাকেন"
     ],
-    stats: { success: "500%", metric: "Brand Recognition" },
-    price: "শুরু ১,৫০,০০০ টাকা থেকে",
-    timeline: "৩০-৬০ কর্মদিবস",
-    backgroundColor: "from-pink-500/10 to-rose-500/10",
-    accentColor: "pink-500"
+    stats: { success: "৯০%", metric: "ব্র্যান্ড মানুষের মনে স্থায়ী হয়" },
+    price: "এখনই আপনার ব্র্যান্ড আইডেন্টিটি তৈরি করুন",
+    timeline: "২১-৩০ কর্মদিবস",
+    backgroundColor: "from-purple-500/10 to-pink-500/10",
+    accentColor: "purple-500"
   },
   {
     slug: 'neuro-script-advanced',
@@ -588,6 +624,308 @@ export default function ServiceDetailPage() {
         <Footer />
       </div>
     )
+  }
+
+  // Special layout for neuro-branding service
+  if (params.slug === 'neuro-branding') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section - Clean Professional */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-hidden">
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-20 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+            <div className="absolute top-40 right-20 w-56 h-56 bg-gray-300 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="flex justify-center mb-10">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-white/20 rounded-3xl blur opacity-30"></div>
+                  <div className="relative p-10 bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20">
+                    <Palette className="text-white" size={100} />
+                  </div>
+                </div>
+              </div>
+              
+              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/20">
+                <Palette className="text-white" size={20} />
+                <span className="text-sm font-semibold text-gray-200">নিউরো ব্র্যান্ডিং সিস্টেম</span>
+              </div>
+              
+              <h1 className="text-3xl lg:text-5xl font-montserrat font-bold mb-10 leading-tight text-white">
+                {service.title}
+              </h1>
+              
+              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed mb-12 max-w-5xl mx-auto">
+                {service.shortDescription}
+              </p>
+
+              {/* Brand Examples Section */}
+              <div className="mb-16">
+                <h3 className="text-2xl font-bold text-white mb-8">বাংলাদেশের সফল ব্র্যান্ডের উদাহরণ:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {service.brandExamples.map((example, index) => (
+                    <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/30 transition-colors">
+                      <h4 className="text-lg font-bold text-white mb-3">{example.name}</h4>
+                      <p className="text-gray-300 text-sm">{example.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-8">
+                <Link
+                  href="/contact"
+                  className="group bg-white text-gray-900 hover:bg-gray-100 font-bold py-6 px-12 rounded-full text-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/20 inline-flex items-center gap-3"
+                >
+                  <Palette className="group-hover:rotate-12 transition-transform" size={24} />
+                  {service.price}
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={24} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Branding Important Section */}
+        <section className="py-20 bg-neural-bg-secondary relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-6xl font-black mb-8 text-white">
+                ❓ কেন ব্র্যান্ডিং এত গুরুত্বপূর্ণ?
+              </h2>
+              
+              <div className="max-w-5xl mx-auto space-y-10">
+                {/* Branding Problems */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                  <div className="bg-red-500/10 backdrop-blur-sm border border-red-400/30 rounded-2xl p-8">
+                    <h3 className="text-2xl font-bold text-red-400 mb-6 text-center">❌ Branding ছাড়া যা হয়:</h3>
+                    <div className="space-y-4">
+                      {service.brandingProblems.map((problem, index) => (
+                        <div key={index} className="flex items-center gap-3">
+                          <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                          <p className="text-gray-300">{problem}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-500/10 backdrop-blur-sm border border-green-400/30 rounded-2xl p-8">
+                    <h3 className="text-2xl font-bold text-green-400 mb-6 text-center">✅ সঠিক Branding এ যা হয়:</h3>
+                    <div className="space-y-4">
+                      {service.results.map((result, index) => (
+                        <div key={index} className="flex items-center gap-3">
+                          <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                          <p className="text-gray-300">{result}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bangladesh Misconception */}
+                <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-2xl p-8">
+                  <div className="text-center mb-6">
+                    <h3 className="text-3xl font-bold text-yellow-400 mb-4">🇧🇩 বাংলাদেশী উদ্যোক্তাদের ভুল ধারণা</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                      <div className="bg-red-500/10 rounded-2xl p-6 border border-red-400/20">
+                        <h4 className="text-xl font-bold text-red-400 mb-4">❌ ভুল চিন্তা:</h4>
+                        <p className="text-lg text-white">{service.bangladeshMisconception.wrongIdea}</p>
+                      </div>
+                      <div className="bg-green-500/10 rounded-2xl p-6 border border-green-400/20">
+                        <h4 className="text-xl font-bold text-green-400 mb-4">✅ সঠিক চিন্তা:</h4>
+                        <p className="text-lg text-white">{service.bangladeshMisconception.rightIdea}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-purple-500/10 rounded-2xl p-6 border border-purple-400/20 mt-6">
+                    <p className="text-xl text-white font-semibold text-center mb-4">
+                      <span className="text-3xl">🤔</span> একটি প্রশ্ন:
+                    </p>
+                    <p className="text-lg text-orange-300 text-center mb-4">{service.bangladeshMisconception.facebookRisk}</p>
+                    <div className="bg-green-500/10 rounded-xl p-4 border border-green-400/20">
+                      <p className="text-lg text-white text-center font-semibold">
+                        <span className="text-green-400">💡 সমাধান:</span> {service.bangladeshMisconception.brandingSolution}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Features */}
+        <section className="py-20 bg-neural-bg">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-8">আমাদের Branding Service এ যা যা থাকছে:</h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {service.features.map((feature, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300 hover:scale-105">
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-white">{feature}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Why Neuro Marketing Different Section */}
+            <div className="mt-20 max-w-6xl mx-auto">
+              <h3 className="text-4xl font-bold text-center text-white mb-12">কেন Neuro Marketing ভিত্তিক ব্র্যান্ডিং আলাদা?</h3>
+              
+              {/* Comparison */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div className="bg-red-500/10 backdrop-blur-sm rounded-2xl p-8 border border-red-400/30">
+                  <h4 className="text-2xl font-bold text-red-400 mb-6 text-center">সাধারণ ডিজাইনাররা:</h4>
+                  <p className="text-xl text-gray-300 text-center mb-6">শুধু সুন্দর কিছু বানায়।</p>
+                  <div className="bg-red-500/20 rounded-xl p-4 border border-red-400/20">
+                    <p className="text-center text-red-300 font-semibold">✖️ শুধু দৃষ্টিনন্দন ডিজাইন</p>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                  <h4 className="text-2xl font-bold text-white mb-6 text-center">👉 আমরা তৈরি করি:</h4>
+                  <p className="text-xl text-gray-300 text-center mb-6">মনস্তাত্ত্বিকভাবে প্রভাবিত ব্র্যান্ডিং, যা—</p>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-green-500/10 rounded-xl p-4 border border-green-400/20 flex items-center gap-3">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                      <p className="text-white font-semibold">মানুষের আবেগ ছোঁয়</p>
+                    </div>
+                    <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-400/20 flex items-center gap-3">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <p className="text-white font-semibold">মানুষের আস্থা জাগায়</p>
+                    </div>
+                    <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-400/20 flex items-center gap-3">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <p className="text-white font-semibold">মানুষের মনে স্থায়ী ছাপ ফেলে</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Neuro Binding Approach */}
+              <div className="bg-gradient-to-r from-slate-800/50 to-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <h4 className="text-3xl font-bold text-center text-white mb-8">
+                  🧩 Neuro Binding এর Branding Approach:
+                </h4>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white/10 rounded-xl p-6 border border-white/20 hover:border-white/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm flex-shrink-0">
+                        1
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-bold text-white mb-2">Perception Design</h5>
+                        <p className="text-gray-300">গ্রাহকের মস্তিষ্কে প্রথম ধারণা তৈরি</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/10 rounded-xl p-6 border border-white/20 hover:border-white/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm flex-shrink-0">
+                        2
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-bold text-white mb-2">Emotional Triggers</h5>
+                        <p className="text-gray-300">রঙ, টোন, ভিজ্যুয়াল দিয়ে আবেগ ছোঁয়া</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/10 rounded-xl p-6 border border-white/20 hover:border-white/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm flex-shrink-0">
+                        3
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-bold text-white mb-2">Consistency</h5>
+                        <p className="text-gray-300">প্রতিটি প্ল্যাটফর্মে একরকম Presentation</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/10 rounded-xl p-6 border border-white/20 hover:border-white/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm flex-shrink-0">
+                        4
+                      </div>
+                      <div>
+                        <h5 className="text-lg font-bold text-white mb-2">Trust Signals</h5>
+                        <p className="text-gray-300">Authority, Social Proof, Community Voice</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-20 bg-neural-bg-secondary">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-8">আমাদের কাজের প্রক্রিয়া:</h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-8">
+              {service.process.map((step, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300 hover:scale-105">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <p className="text-white text-lg">{step}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Final CTA */}
+            <div className="text-center mt-16">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 max-w-3xl mx-auto">
+                <h3 className="text-3xl font-bold text-white mb-4">
+                  🎯 <span className="text-white">{service.stats.success}</span> ব্র্যান্ড মানুষের মনে স্থায়ী হয়
+                </h3>
+                <p className="text-xl text-gray-300 mb-8">
+                  আমাদের Neuro Branding পদ্ধতি ব্যবহার করে
+                </p>
+                <Link
+                  href="/contact"
+                  className="group bg-white text-gray-900 hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/20 inline-flex items-center gap-3"
+                >
+                  <Palette className="group-hover:rotate-12 transition-transform" size={20} />
+                  এখনই ব্র্যান্ড আইডেন্টিটি তৈরি করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    );
   }
 
   // Special layout for neuro-lead-magnet-pro service

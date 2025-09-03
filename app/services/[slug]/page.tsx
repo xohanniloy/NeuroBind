@@ -173,6 +173,48 @@ const services = [
     accentColor: "purple-500"
   },
   {
+    slug: 'neuro-branding',
+    icon: Palette,
+    title: "একটি ব্যবসা হয়তো শুরু করা যায় এক লোগো দিয়ে, কিন্তু একটি ব্র্যান্ড তৈরি হয় মানুষের মনে।",
+    shortDescription: "আপনার ব্যবসা কি গ্রাহকের চোখে শুধু একটা দোকান বা সার্ভিস, নাকি সত্যিকারের একটি ব্র্যান্ড? আমাদের Full Branding Service নিশ্চিত করে আপনার ব্যবসা মানুষের মনে শুধু আজ নয়—বরং আগামী ১০ বছরেও স্মরণীয় হয়ে থাকবে।",
+    fullDescription: "মানুষের মস্তিষ্ক প্রতিটি ব্র্যান্ডকে একটি 'Shortcut' দিয়ে মনে রাখে—Logo, Color, Tagline বা Tone। যদি আপনার ব্র্যান্ডের সেই Shortcut পরিষ্কার না হয় তবে গ্রাহক আপনাকে প্রতিযোগীদের ভিড়ে হারিয়ে ফেলবে। Branding মানে হলো: Consistency + Communication এর ফলাফল।",
+    features: [
+      "Logo Design → আপনার ব্র্যান্ডের পরিচয়ের মূল প্রতীক",
+      "Color Psychology Palette → রঙ দিয়ে মানুষের মনে বিশ্বাস ও আবেগ তৈরি",
+      "Typography System → ফন্ট যেটা ব্র্যান্ডের ব্যক্তিত্ব প্রকাশ করে",
+      "Brand Voice & Messaging → কিভাবে আপনার ব্যবসা কথা বলবে",
+      "Social Media Branding Kit → পোস্ট, কভার, ব্যানার, ভিডিও টেমপ্লেট—সবকিছু consistent",
+      "Packaging & Marketing Collateral → প্রোডাক্ট থাকলে Label, Box, Poster, Brochure"
+    ],
+    advanced: [
+      "🧩 Perception Design – গ্রাহকের মস্তিষ্কে প্রথম ধারণা তৈরি",
+      "🎭 Emotional Triggers – রঙ, টোন, ভিজ্যুয়াল দিয়ে আবেগ ছোঁয়া",
+      "🔄 Consistency – প্রতিটি প্ল্যাটফর্মে একরকম Presentation",
+      "🛡️ Trust Signals – Authority, Social Proof, Community Voice",
+      "🎯 Neuro Marketing ভিত্তিক ব্র্যান্ডিং যা মনস্তাত্ত্বিকভাবে প্রভাবিত করে",
+      "🇧🇩 বাংলাদেশী উদ্যোক্তাদের জন্য বিশেষভাবে তৈরি"
+    ],
+    process: [
+      "🔍 Research – বাজার, প্রতিযোগী ও কাস্টমারের Psychology বোঝা",
+      "🎨 Identity Design – Logo, Color, Typography ঠিক করা",
+      "🗣️ Voice & Storytelling – ব্র্যান্ডের Tone ও মেসেজ তৈরি",
+      "📱 Digital Presence Setup – ওয়েবসাইট + সোশ্যাল মিডিয়ায় ব্র্যান্ড একরূপ করা",
+      "📦 Packaging / Collateral – প্রোডাক্ট / মার্কেটিং ম্যাটেরিয়াল সাজানো",
+      "🚀 Launch & Monitor – কিভাবে মানুষ ব্র্যান্ড perceive করছে সেটা বিশ্লেষণ"
+    ],
+    results: [
+      "আপনার ব্যবসাকে কেউ আলাদা করে চেনে",
+      "গ্রাহকের মনে বিশ্বাস তৈরি হয়",
+      "দীর্ঘমেয়াদে Loyalty তৈরি হয়",
+      "প্রতিযোগীদের থেকে সবসময় এক ধাপ এগিয়ে থাকেন"
+    ],
+    stats: { success: "৯০%", metric: "ব্র্যান্ড মানুষের মনে স্থায়ী হয়" },
+    price: "এখনই আপনার ব্র্যান্ড আইডেন্টিটি তৈরি করুন",
+    timeline: "২১-৩০ কর্মদিবস",
+    backgroundColor: "from-purple-500/10 to-pink-500/10",
+    accentColor: "purple-500"
+  },
+  {
     slug: 'neuro-script',
     icon: FileText,
     title: "5️⃣ Neuro Marketing ভিত্তিক Script ✍️",
@@ -381,6 +423,385 @@ export default function ServiceDetailPage({ params }: Props) {
   }
 
   const IconComponent = service.icon
+
+  // Special layout for neuro-branding service
+  if (params.slug === 'neuro-branding') {
+    return (
+      <div className="min-h-screen bg-neural-bg text-white">
+        <Navigation />
+        
+        {/* Hero Section */}
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-rose-500/10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-10 w-40 h-40 bg-neuro-purple rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-40 right-20 w-56 h-56 bg-pink-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-32 left-1/3 w-32 h-32 bg-rose-400 rounded-full blur-2xl animate-pulse delay-2000"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-electric-blue hover:text-neon-green transition-colors mb-8 group glassmorphism-dark rounded-full px-4 py-2"
+            >
+              <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={18} />
+              <span className="text-sm">সার্ভিসসমূহে ফিরে যান</span>
+            </Link>
+
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="flex justify-center mb-10">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-neuro-purple via-pink-500 to-rose-500 rounded-3xl blur opacity-75 animate-pulse"></div>
+                  <div className="relative p-10 bg-gradient-to-r from-neuro-purple/20 via-pink-500/20 to-rose-500/20 rounded-3xl glassmorphism-dark">
+                    <Palette className="text-pink-400" size={100} />
+                  </div>
+                </div>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-montserrat font-bold mb-10 leading-tight">
+                <span className="bg-gradient-to-r from-white via-neuro-purple to-pink-400 bg-clip-text text-transparent">
+                  {service.title}
+                </span>
+              </h1>
+              
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
+                {service.shortDescription}
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-6 mb-16">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neuro-purple to-pink-500 hover:from-pink-500 hover:to-neuro-purple text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/50 flex items-center gap-3"
+                >
+                  <Palette className="group-hover:rotate-12 transition-transform" size={20} />
+                  এখনই আপনার ব্র্যান্ড আইডেন্টিটি তৈরি করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Branding Important Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-pink-400 bg-clip-text text-transparent">
+                  🧠 কেন Branding অপরিহার্য?
+                </span>
+              </h2>
+              
+              <div className="max-w-4xl mx-auto mb-12">
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                  {service.fullDescription}
+                </p>
+                
+                <div className="glassmorphism-dark rounded-2xl p-8 mb-8">
+                  <h3 className="text-2xl font-semibold text-red-400 mb-6">⚠️ Branding এর অভাবে যা হয়:</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <p className="text-gray-300">আপনার ব্যবসাকে কেউ আলাদা করে চেনে না</p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <p className="text-gray-300">গ্রাহকের মনে বিশ্বাস তৈরি হয় না</p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <p className="text-gray-300">দীর্ঘমেয়াদে Loyalty তৈরি হয় না</p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <p className="text-gray-300">প্রতিযোগীরা সবসময় একধাপ এগিয়ে থাকে</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="glassmorphism-dark rounded-2xl p-8">
+                  <h3 className="text-2xl font-semibold text-green-400 mb-6">✅ Brand Shortcut এর শক্তি:</h3>
+                  <div className="space-y-6">
+                    <div className="border-l-4 border-pink-400 pl-6">
+                      <h4 className="text-lg font-semibold text-pink-400 mb-2">বিকাশের গোলাপি রঙ</h4>
+                      <p className="text-gray-300">দূর থেকে গোলাপি দেখলেই বোঝা যায় বিকাশের বিজ্ঞাপন বা লোগো।</p>
+                    </div>
+                    <div className="border-l-4 border-blue-400 pl-6">
+                      <h4 className="text-lg font-semibold text-blue-400 mb-2">গ্রামীণফোনের নীল</h4>
+                      <p className="text-gray-300">যেকোনো জায়গায় নীল দেখলে আমাদের মনে পড়ে গ্রামীণফোনের বিজ্ঞাপন।</p>
+                    </div>
+                    <div className="border-l-4 border-indigo-400 pl-6">
+                      <h4 className="text-lg font-semibold text-indigo-400 mb-2">Google Maps এর রঙের কোড</h4>
+                      <p className="text-gray-300">জ্যাম থাকলে লাল লাইন, জ্যাম না থাকলে নীল লাইন - মানুষের মনে গেঁথে যাওয়া রঙের সংযোগ।</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Bangladesh Entrepreneurs Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                  🇧🇩 বাংলাদেশের উদ্যোক্তাদের ভুল ধারণা
+                </span>
+              </h2>
+              
+              <div className="max-w-4xl mx-auto">
+                <div className="glassmorphism-dark rounded-2xl p-8 mb-8">
+                  <div className="text-center mb-6">
+                    <div className="text-4xl mb-4">🤔</div>
+                    <p className="text-xl text-orange-300 mb-4">"আগে কোম্পানি বড় হোক, তারপর Branding করব।"</p>
+                    <div className="text-2xl text-green-400">👉 কিন্তু আসলেই উল্টোটা সত্যি</div>
+                    <p className="text-lg text-green-300">কোম্পানি বড় হওয়ার জন্যই শুরু থেকে Branding করতে হয়।</p>
+                  </div>
+                </div>
+
+                <div className="glassmorphism-dark rounded-2xl p-8">
+                  <h3 className="text-2xl font-semibold text-yellow-400 mb-6">⚠️ Facebook Ads নির্ভরতার বিপদ:</h3>
+                  <div className="space-y-4 mb-6">
+                    <p className="text-gray-300">আজকে বেশিরভাগ ব্যবসা শুধু Facebook Ads নির্ভরশীল। Ad না দিলে তাদের বিক্রি বন্ধ হয়ে যায়।</p>
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                      <p className="text-red-300 text-lg font-semibold mb-2">🤔 একটু চিন্তা করুন:</p>
+                      <p className="text-gray-300">যদি কখনো চীনের মতো আমাদের দেশেও Facebook ব্যান হয়, তখন আপনার ব্যবসার কী হবে?</p>
+                    </div>
+                  </div>
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                    <p className="text-green-300 text-lg font-semibold mb-2">👉 Branding থাকলে:</p>
+                    <p className="text-gray-300">মানুষ Facebook-এর বাইরে গিয়েও আপনার ব্যবসাকে চিনবে, খুঁজবে এবং বিশ্বাস করবে।</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-pink-400 bg-clip-text text-transparent">
+                  🌟 আমরা যা করি (Scope of Work)
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {service.features.map((feature, index) => (
+                <div key={index} className="glassmorphism-dark rounded-2xl p-6 hover:bg-white/5 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-gradient-to-r from-neuro-purple to-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Check size={16} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-gray-300 leading-relaxed">{feature}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Neuro Marketing Difference Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                  🧠 কেন Neuro Marketing ভিত্তিক ব্র্যান্ডিং আলাদা?
+                </span>
+              </h2>
+              
+              <div className="max-w-4xl mx-auto mb-12">
+                <div className="glassmorphism-dark rounded-2xl p-8 mb-8">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-red-400 mb-4">❌ সাধারণ ডিজাইনার</h3>
+                      <p className="text-gray-300">শুধু সুন্দর কিছু বানায়।</p>
+                    </div>
+                    <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-green-400 mb-4">✅ আমরা তৈরি করি</h3>
+                      <p className="text-gray-300">মনস্তাত্ত্বিকভাবে প্রভাবিত ব্র্যান্ডিং</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                    <div className="text-3xl mb-4">❤️</div>
+                    <h4 className="text-lg font-semibold text-pink-400 mb-2">আবেগ ছোঁয়</h4>
+                    <p className="text-sm text-gray-400">মানুষের আবেগ</p>
+                  </div>
+                  <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                    <div className="text-3xl mb-4">🛡️</div>
+                    <h4 className="text-lg font-semibold text-blue-400 mb-2">আস্থা জাগায়</h4>
+                    <p className="text-sm text-gray-400">মানুষের আস্থা</p>
+                  </div>
+                  <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                    <div className="text-3xl mb-4">🎯</div>
+                    <h4 className="text-lg font-semibold text-purple-400 mb-2">স্থায়ী ছাপ</h4>
+                    <p className="text-sm text-gray-400">মানুষের মনে</p>
+                  </div>
+                  <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                    <div className="text-3xl mb-4">🚀</div>
+                    <h4 className="text-lg font-semibold text-green-400 mb-2">দীর্ঘস্থায়ী</h4>
+                    <p className="text-sm text-gray-400">প্রভাব ফেলে</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Neuro Binding Approach Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-pink-400 bg-clip-text text-transparent">
+                  🧩 Neuro Binding এর Branding Approach
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {service.advanced.map((approach, index) => (
+                <div key={index} className="glassmorphism-dark rounded-2xl p-6 hover:bg-white/5 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-neuro-purple to-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-lg">{index + 1}</span>
+                    </div>
+                    <div>
+                      <p className="text-gray-300 leading-relaxed">{approach}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                  🛠️ আমাদের কাজ করার ধাপ
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
+              {service.process.map((step, index) => (
+                <div key={index} className="glassmorphism-dark rounded-2xl p-6 hover:bg-white/5 transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute top-4 right-4 text-6xl font-bold text-pink-400/10">{index + 1}</div>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 bg-gradient-to-r from-neuro-purple to-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold text-sm">{index + 1}</span>
+                      </div>
+                      <p className="text-gray-300 font-medium">{step}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Results Section */}
+        <section className="py-20 bg-neural-bg-secondary relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-neuro-purple to-pink-400 bg-clip-text text-transparent">
+                  🎯 ফলাফল
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+              {service.results.map((result, index) => (
+                <div key={index} className="glassmorphism-dark rounded-2xl p-6 hover:bg-white/5 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Check size={16} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-gray-300 leading-relaxed">{result}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Stats */}
+            <div className="glassmorphism-dark rounded-3xl p-12 text-center max-w-2xl mx-auto">
+              <div className="text-6xl lg:text-8xl font-bold bg-gradient-to-r from-neuro-purple to-pink-400 bg-clip-text text-transparent mb-4">
+                {service.stats.success}
+              </div>
+              <p className="text-xl text-gray-300">{service.stats.metric}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-20 bg-neural-bg relative">
+          <div className="container mx-auto px-6">
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-4xl lg:text-5xl font-montserrat font-bold mb-8">
+                <span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                  🚀 Final CTA
+                </span>
+              </h2>
+              
+              <div className="glassmorphism-dark rounded-2xl p-8 mb-8">
+                <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+                  👉 মনে রাখবেন, Full Branding মানে শুধু একটি লোগো নয়।
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  এটি হলো একটি মনস্তাত্ত্বিক অভিজ্ঞতা—যা আপনার ব্যবসাকে "অপরিচিত" থেকে "বিশ্বাসযোগ্য ব্র্যান্ড"-এ রূপান্তরিত করবে।
+                </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-6">
+                <Link
+                  href="/contact"
+                  className="group bg-gradient-to-r from-neuro-purple to-pink-500 hover:from-pink-500 hover:to-neuro-purple text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/50 flex items-center gap-3"
+                >
+                  <Palette className="group-hover:rotate-12 transition-transform" size={20} />
+                  আজই আপনার Neuro Branding যাত্রা শুরু করুন
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+
+              {/* Timeline and Price */}
+              <div className="grid md:grid-cols-2 gap-6 mt-12 max-w-2xl mx-auto">
+                <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                  <Clock className="mx-auto mb-3 text-pink-400" size={32} />
+                  <h4 className="text-lg font-semibold text-white mb-2">সময়কাল</h4>
+                  <p className="text-gray-300">{service.timeline}</p>
+                </div>
+                <div className="glassmorphism-dark rounded-xl p-6 text-center">
+                  <Award className="mx-auto mb-3 text-pink-400" size={32} />
+                  <h4 className="text-lg font-semibold text-white mb-2">গ্যারান্টি</h4>
+                  <p className="text-gray-300">১০০% সন্তোষজনক ফলাফল</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    )
+  }
 
   // Special layout for neuro-script service
   if (params.slug === 'neuro-script') {

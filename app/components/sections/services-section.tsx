@@ -99,22 +99,22 @@ export default function ServicesSection(): React.JSX.Element {
       stats: { success: "400%", metric: "Business Growth" }
     },
     {
-      slug: 'full-branding',
+      slug: 'neuro-branding',
       icon: Palette,
-      title: "Full Branding (ফুল ব্র্যান্ডিং)",
-      description: "একটি ব্যবসা শুধু লোগো বা ওয়েবসাইট দিয়ে ব্র্যান্ড হয় না। ব্র্যান্ডিং মানে হলো, মানুষের মনে আপনার ব্যবসার একটি স্থায়ী ইমেজ তৈরি করা।",
+      title: "Neuro Branding - মানুষের মনে ব্র্যান্ড তৈরি করুন",
+      description: "একটি ব্যবসা হয়তো শুরু করা যায় এক লোগো দিয়ে, কিন্তু একটি ব্র্যান্ড তৈরি হয় মানুষের মনে। আমাদের Full Branding Service নিশ্চিত করে আপনার ব্যবসা মানুষের মনে আগামী ১০ বছরেও স্মরণীয় হয়ে থাকবে।",
       features: [
-        "Logo থেকে Color Palette পর্যন্ত সব",
-        "Typography ও Brand Voice ডিজাইন",
-        "Social Media Presence সম্পূর্ণ সেটআপ"
+        "Logo Design → আপনার ব্র্যান্ডের পরিচয়ের মূল প্রতীক",
+        "Color Psychology Palette → রঙ দিয়ে মানুষের মনে বিশ্বাস ও আবেগ তৈরি",
+        "Brand Voice & Messaging → কিভাবে আপনার ব্যবসা কথা বলবে"
       ],
       advanced: [
-        "নিউরো-ব্র্যান্ডিং আর্কিটেকচার",
-        "সাইকোলজিক্যাল কালার থিওরি",
-        "ব্র্যান্ড পার্সোনালিটি ডেভেলপমেন্ট",
-        "ইমোশনাল ব্র্যান্ড পজিশনিং"
+        "🧩 Perception Design – গ্রাহকের মস্তিষ্কে প্রথম ধারণা তৈরি",
+        "🎭 Emotional Triggers – রঙ, টোন, ভিজ্যুয়াল দিয়ে আবেগ ছোঁয়া",
+        "🔄 Consistency – প্রতিটি প্ল্যাটফর্মে একরকম Presentation",
+        "🛡️ Trust Signals – Authority, Social Proof, Community Voice"
       ],
-      stats: { success: "500%", metric: "Brand Recognition" }
+      stats: { success: "৯০%", metric: "ব্র্যান্ড মানুষের মনে স্থায়ী হয়" }
     }
   ];
 
